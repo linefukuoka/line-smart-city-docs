@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ヘルプセンター | LINE SMART CITY GovTechプログラム</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/help.min.20190717.css">
+    <link rel="stylesheet" href="css/style.css?v=20201023">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h1 class="main_title">
+                <a href="https://linefukuoka.co.jp/ja/project/smartcityproject/govtech/">
+                    <span class="sp sp_title">LINE</span>
+                </a>
+            </h1>
+        </header>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1 class="sub_title"><a href="#">よくある質問</a></h1>
+
+            <div class="search">
+                <fieldset>
+                    <legend class="blind">search</legend>
+                    <input type="submit" class="sp sp_glass">
+                    <span class="txt">
+                        <input type="text" name="q" placeholder="検索キーワードを入力" id="searchQuery" class="input_txt"
+                            value="">
+                        <a class="close" id="deleteSearchQueryBtn" style="display: none;">
+                            <span class="sp sp_del">delete</span>
+                        </a>
+                    </span>
+                </fieldset>
+            </div>
+            <div id="faq"></div>
+            <div class="search_result" id="not_found">
+                <h2 class="sr_tit">
+                    検索キーワードに一致する情報はありませんでした。</h2>
+                <ul class="no_result_lst">
+                    <li><span class="sp sp_dot"></span> キーワードが正しく入力されているか、誤字がないか確認してみてください。</li>
+                    <li><span class="sp sp_dot"></span> キーワードが長い場合には、短く簡単な言葉に置き換えてみてください。</li>
+                    <li><span class="sp sp_dot"></span> 同じ意味を持つ別の言葉や、一般的な言葉に置き換えてみてください。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/data.js?v=20201023"></script>
+<script type="text/javascript" src="js/script.js?v=20201023"></script>
+
+</html>

@@ -1,0 +1,28 @@
+.logo {
+    width: 129px;
+    height: 50px;
+}
+
+a.dcjq-parent::after {
+    content: "";
+    position: absolute;
+    right: 1em;
+    top: 1.4em;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #ccc;
+}
+
+a.dcjq-parent.active::after {
+    content: "";
+    position: absolute;
+    right: 1em;
+    top: 1.4em;
+    border-top: 6px solid #ccc;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+h2, h3 {
+    color: #469fd6;
+}
