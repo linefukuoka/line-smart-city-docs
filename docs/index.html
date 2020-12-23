@@ -82,6 +82,10 @@
         <li><a href="#新しい帳票を作成ご連絡フォーム">新しい帳票を作成(ご連絡フォーム)<!-- 目次サブメニュー --></a></li>
         <li><a href="#新しい帳票を作成調査">新しい帳票を作成(調査) <!-- 目次サブメニュー --></a></li>
         <li><a href="#liffwebを開く">LIFF・webを開く<!-- 目次サブメニュー --></a></li>
+        </ul></li>
+        <li><a href="#帳票">帳票 <!-- 目次メインメニュー（HOME、セグメント配信 など） --></a>
+        <ul>
+        <li><a href="#追加型帳票">追加型帳票 <!-- 目次サブメニュー --></a></li>
         <li><a href="#新しい帳票を作成">新しい帳票を作成<!-- 目次サブメニュー --></a></li>
         </ul></li>
         <li><a href="#シナリオ設定">シナリオ設定</a>
@@ -111,14 +115,6 @@
         <li><a href="#ログ-1">ログ <!-- 目次メインメニュー --></a>
         <ul>
         <li><a href="#帳票liff">帳票・LIFF <!-- 目次サブメニュー --></a></li>
-        </ul></li>
-        <li><a href="#テンプレート">テンプレート <!-- 目次メインメニュー（HOME、セグメント配信 など） --></a>
-        <ul>
-        <li><a href="#xxxxxxxx">xxxxxxxx <!-- 目次サブメニュー --></a></li>
-        </ul></li>
-        <li><a href="#テンプレート-1">テンプレート <!-- 目次メインメニュー（HOME、セグメント配信 など） --></a>
-        <ul>
-        <li><a href="#xxxxxxxx-1">xxxxxxxx <!-- 目次サブメニュー --></a></li>
         </ul></li>
         <li><a href="#システム設定">システム設定</a>
         <ul>
@@ -994,6 +990,47 @@
             E4MTU1LDEzMzgyOTI1MTgsLTE4NzI4OTY3MDUsLTcxMzU3MjE3
             MF19
             -->
+            <h2 id="帳票">帳票 <!-- 目次メインメニュー（HOME、セグメント配信 など） --></h2>
+            <h3 id="追加型帳票">追加型帳票 <!-- 目次サブメニュー --></h3>
+            <p>追加型帳票の作成の仕方を説明します。既存の帳票の編集だけでなく、項目の追加が可能になります。<!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「帳票作成」＞「新しいフォームの作成」＞「空白」をクリックすると、空の入力フォームを生成します。</li>
+            </ol>
+            <p><img src='./images/<survey>/&lt;SURVEY_add_1.png&gt;’ style=‘border:solid 2px lightgray’ /&gt; <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「追加型」に切り替えます。</li>
+            </ol>
+            <p><img src='./images/<survey>/&lt;SURVEY_add_2.png&gt;’ style=‘border:solid 2px lightgray’ /&gt;</p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>タイトルの編集、質問内容の記入、記入形式を選択し帳票を作成します。</li>
+            </ol>
+            <p><img src='./images/<survey>/&lt;SURVEY_add_3.png&gt;’ style=‘border:solid 2px lightgray’ /&gt;</p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>プレビューで確認ができます。最後に「帳票登録」をクリックすると作成が完了します。</li>
+            </ol>
+            <p><img src='./images/<survey>/&lt;SURVEY_add_4.png&gt;’ style=‘border:solid 2px lightgray’ /&gt;</p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTkzMjg0MTk1NCwtMTAzMTI2NzQ4MCwtMT
+            Y3ODAyNTUzLDY3MzgyMjY2MywtMTg3Mjg5NjcwNSwtNzEzNTcy
+            MTcwXX0=
+            -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="新しい帳票を作成">新しい帳票を作成<!-- 目次サブメニュー --></h3>
             <p>入力フォームの新規作成について記します。 <!-- 最初に何の説明をするのか明記 --></p>
@@ -1012,7 +1049,8 @@
             <ul>
             <li>アンケートのタイトルとアンケートの説明を記入します。</li>
             <li>質問内容を記入します。</li>
-            <li>記述式、ラジオボタン、チェックボックス、プルダウンの選択が可能です。</li>
+            <li>記述式を選択すると、回答させたい項目に応じてフォーマットの指定が可能です。</li>
+            <li>ラジオボタン、チェックボックス、プルダウン、サジェストを選択できます。サジェストは、プルダウン式形式で文字検索ができるものです。</li>
             </ul>
             <p><img src='./images/survey/SURVEY_create-new_2.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -1020,15 +1058,20 @@
 
             </div>
             <ol start="3" type="1">
-            <li>「質問を追加」で質問を追加することができます。</li>
+            <li>記入項目を埋めていきます。</li>
             </ol>
+            <ul>
+            <li>日付選択は画像のようにカレンダーを表示させることができます。</li>
+            <li>説明文を選択すると、間に説明文を入れて区切ることができます。</li>
+            <li>グループヘッダを選択すると、質問項目等をグループ分けすることができます。</li>
+            </ul>
             <p><img src='./images/survey/SURVEY_create-new_3.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
             <ol start="4" type="1">
-            <li>「プレビュー」をクリックすると携帯画面でのイメージを確認することができます。</li>
+            <li>・「質問を追加」で質問を追加することができます。 ・「プレビュー」をクリックすると携帯画面でのイメージを確認することができます。</li>
             </ol>
             <p><img src='./images/survey/SURVEY_create-new_4.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -1036,13 +1079,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTczMzEyNTI1NiwxNzMzMTI1MjU2LC0xNj
-            Y1MDI5OTQ2LC02MzE4ODc2MTAsMTgwNjU4Mzc2LC0xOTI2NDIz
-            MzU5LDE0NDY2NTE3OTksMTc3ODEzMjg4NywtMTQ4NTEyMjI1Ny
-            wtMTc2NjY4MDE0NiwxNzMzODk0MjU2LDE2OTI4Mjc3NzIsLTY4
-            MzExMjA3OCw3OTI4NzYxNDMsLTEwMzQwMDgzNDgsOTQ2NzY3MT
-            Y2LDc5NTU0OTY4MSwtMTg3Mjg5NjcwNSwtNzEzNTcyMTcwXX0=
-
+            eyJoaXN0b3J5IjpbLTQ4MjMwOTA1MCwyMjMwNjcyMzAsMjk4Nz
+            IwMzEsLTM1NzM1NjUyNCwxMDY3MDk5NDI0LDE3MzMxMjUyNTYs
+            MTczMzEyNTI1NiwtMTY2NTAyOTk0NiwtNjMxODg3NjEwLDE4MD
+            Y1ODM3NiwtMTkyNjQyMzM1OSwxNDQ2NjUxNzk5LDE3NzgxMzI4
+            ODcsLTE0ODUxMjIyNTcsLTE3NjY2ODAxNDYsMTczMzg5NDI1Ni
+            wxNjkyODI3NzcyLC02ODMxMTIwNzgsNzkyODc2MTQzLC0xMDM0
+            MDA4MzQ4XX0=
             -->
             <h2 id="シナリオ設定">シナリオ設定</h2>
             <h3 id="top画面">TOP画面</h3>
@@ -1599,24 +1642,24 @@
             <p>1.「リッチメニュー操作数」から「日次」を選択後、開始日を指定して「表示」をクリックすると、日単位でのリッチメニューのタップされた合計数の推移グラフが表示されます。</p>
             <p><img src='./images/log/LOG_LINEservey1_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --> <br> <!-- 改行 --></p>
             <ol start="2" type="1">
-            <li>「週次」や「月次」を選択すると、グラフの集計単位を変更することができます。</li>
+            <li>「週次」や「月次」を選択すると、グラフの集計単位を変更することができます。 画面下表示項目をクリックするとグラフの表示・非表示を変更することができます。</li>
             </ol>
             <p><img src='./images/log/LOG_LINEservey1_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --> <br></p>
             <p>3.「リッチメニューの各ボタンタップ割合」をクリックすると、リッチメニューがタップされた割合（パーセンテージ）の円グラフが表示されます。</p>
             <p><img src='./images/log/LOG_LINEservey1_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --> <br></p>
-            <p>4.集計の開始日と終了日を指定して、集計期間を変更することができます。</p>
+            <p>4.集計の開始日と終了日を指定して、集計期間を変更することができます。画面下表示項目をクリックするとグラフの表示・非表示を変更することができます。</p>
             <p><img src='./images/log/LOG_LINEservey1_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --> <br></p>
             <div style="page-break-before:always">
 
             </div>
             <p><!-- 強制的に改ページ --></p>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNTA4NTIzOTcxLDEwMDcwODQ2OTUsLTEwOD
-            M5MjExMDQsLTYzNTIwMjEzNiwyMTA4ODg5ODU5LDIwMTg5NTUz
-            NDYsMTkxMDI2Nzk0OSwtMTQyNTEwNDA0MiwxODgyNDA2MDkyLC
-            0xNTE2ODg1NjMwLDczNzcxNzMxOCwxNTQ3NzkxNjIsNzYwNDU3
-            MDYsMTM0MjU3NjMzNywyMDgzOTEyNDA5LC03MTM1NzIxNzBdfQ
-            ==
+            eyJoaXN0b3J5IjpbLTE4NDQwMTQ2NzEsMTQ3MTU0OTQ1MywyMD
+            A1MDIzMDc4LDUwODUyMzk3MSwxMDA3MDg0Njk1LC0xMDgzOTIx
+            MTA0LC02MzUyMDIxMzYsMjEwODg4OTg1OSwyMDE4OTU1MzQ2LD
+            E5MTAyNjc5NDksLTE0MjUxMDQwNDIsMTg4MjQwNjA5MiwtMTUx
+            Njg4NTYzMCw3Mzc3MTczMTgsMTU0Nzc5MTYyLDc2MDQ1NzA2LD
+            EzNDI1NzYzMzcsMjA4MzkxMjQwOSwtNzEzNTcyMTcwXX0=
             -->
             <h2 id="ログ">ログ <!-- 目次メインメニュー --></h2>
             <h3 id="セグメント">セグメント <!-- 目次サブメニュー --></h3>
@@ -1669,86 +1712,6 @@
             Nzk0OSwtMTQyNTEwNDA0MiwxODgyNDA2MDkyLC0xNTE2ODg1Nj
             MwLDczNzcxNzMxOCwxNTQ3NzkxNjIsNzYwNDU3MDYsMTM0MjU3
             NjMzNywyMDgzOTEyNDA5LC03MTM1NzIxNzBdfQ==
-            -->
-            <h2 id="テンプレート">テンプレート <!-- 目次メインメニュー（HOME、セグメント配信 など） --></h2>
-            <h3 id="xxxxxxxx">xxxxxxxx <!-- 目次サブメニュー --></h3>
-            <p>xxxxxxxxxxxxxxxxx <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt; <!-- 画像 --></p>
-            <p><br> <!-- 改行 --></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <p><!-- 強制的に改ページ --></p>
-            <ol start="2" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="3" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="4" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNjczODIyNjYzLC0xODcyODk2NzA1LC03MT
-            M1NzIxNzBdfQ==
-            -->
-            <h2 id="テンプレート-1">テンプレート <!-- 目次メインメニュー（HOME、セグメント配信 など） --></h2>
-            <h3 id="xxxxxxxx-1">xxxxxxxx <!-- 目次サブメニュー --></h3>
-            <p>xxxxxxxxxxxxxxxxx <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt; <!-- 画像 --></p>
-            <p><br> <!-- 改行 --></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <p><!-- 強制的に改ページ --></p>
-            <ol start="2" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="3" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="4" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNjczODIyNjYzLC0xODcyODk2NzA1LC03MT
-            M1NzIxNzBdfQ==
             -->
             <h2 id="システム設定">システム設定</h2>
             <p><!-- 目次メインメニュー --></p>
