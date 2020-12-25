@@ -69,7 +69,6 @@
         <li><a href="#繰り返し配信">繰り返し配信</a></li>
         <li><a href="#手動配信複写">手動配信(複写)</a></li>
         <li><a href="#外部配信設定一覧の表示">外部配信設定一覧の表示</a></li>
-        <li><a href="#受信設定画面作成">受信設定画面作成 <!-- 目次サブメニュー --></a></li>
         <li><a href="#外部配信設定抽出条件">外部配信設定(抽出条件)</a></li>
         <li><a href="#外部配信設定本文変更条件">外部配信設定(本文変更条件)</a></li>
         <li><a href="#外部配信設定防災新規作成">外部配信設定(防災新規作成)</a></li>
@@ -82,6 +81,7 @@
         <li><a href="#新しい帳票を作成配信設定">新しい帳票を作成(配信設定) <!-- 目次サブメニュー --></a></li>
         <li><a href="#新しい帳票を作成ご連絡フォーム">新しい帳票を作成(ご連絡フォーム)<!-- 目次サブメニュー --></a></li>
         <li><a href="#新しい帳票を作成調査">新しい帳票を作成(調査) <!-- 目次サブメニュー --></a></li>
+        <li><a href="#編集">編集 <!-- 目次サブメニュー --></a></li>
         <li><a href="#liffwebを開く">LIFF・webを開く<!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票">追加型帳票 <!-- 目次サブメニュー --></a></li>
         </ul></li>
@@ -90,13 +90,30 @@
         <li><a href="#top画面">TOP画面</a></li>
         <li><a href="#編集ゴミ分別">編集(ゴミ分別) <!-- 目次サブメニュー --></a></li>
         <li><a href="#編集ゴミ出し">編集(ゴミ出し) <!-- 目次サブメニュー --></a></li>
-        <li><a href="#編集損害報告">編集(損害報告) <!-- 目次サブメニュー --></a></li>
+        <li><a href="#編集損傷報告">編集(損傷報告) <!-- 目次サブメニュー --></a></li>
         <li><a href="#編集関連情報">編集(関連情報) <!-- 目次サブメニュー --></a></li>
         <li><a href="#編集リンク集">編集(リンク集)<!-- 目次サブメニュー --></a></li>
         <li><a href="#編集ハザードマップ">編集(ハザードマップ)<!-- 目次サブメニュー --></a></li>
         <li><a href="#編集トークを利用する">編集(トークを利用する)<!-- 目次サブメニュー --></a></li>
         <li><a href="#編集複合メッセージを追加">編集(複合メッセージを追加)<!-- 目次サブメニュー --></a></li>
         <li><a href="#編集防災">編集(防災)<!-- 目次サブメニュー --></a></li>
+        <li><a href="#シナリオの検索">シナリオの検索</a></li>
+        <li><a href="#リッチメニューの作成と編集">リッチメニューの作成と編集</a></li>
+        <li><a href="#あいまい検索">あいまい検索</a></li>
+        </ul></li>
+        <li><a href="#カレンダー">カレンダー</a>
+        <ul>
+        <li><a href="#トップ画面と初期設定">トップ画面と初期設定</a></li>
+        <li><a href="#空き枠数の変更">空き枠数の変更</a></li>
+        </ul></li>
+        <li><a href="#防災">防災</a>
+        <ul>
+        <li><a href="#モード切替">モード切替 <!-- 目次サブメニュー --></a></li>
+        <li><a href="#登録施設施設一覧検索ダウンロード">登録施設(施設一覧・検索・ダウンロード) <!-- 目次サブメニュー --></a></li>
+        <li><a href="#登録施設施設一覧ステータス変更">登録施設(施設一覧・ステータス変更) <!-- 目次サブメニュー --></a></li>
+        <li><a href="#登録施設施設一覧施設登録">登録施設(施設一覧・施設登録)<!-- 目次サブメニュー --></a></li>
+        <li><a href="#登録施設施設一覧削除">登録施設(施設一覧・削除)<!-- 目次サブメニュー --></a></li>
+        <li><a href="#登録施設施設設定">登録施設(施設設定)<!-- 目次サブメニュー --></a></li>
         </ul></li>
         <li><a href="#統計">統計</a>
         <ul>
@@ -442,7 +459,7 @@
             <h3 id="繰り返し配信">繰り返し配信</h3>
             <p>繰り返し配信する方法を説明します。</p>
             <ol type="1">
-            <li>メニュー「セグメント配信」をクリックしてください。</li>
+            <li>メニュー「セグメント配信」＞「配信一覧」＞「新規配信」をクリックします。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-repeat_1.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -450,7 +467,7 @@
 
             </div>
             <ol start="2" type="1">
-            <li>メニュー「配信一覧」＞「新規作成」の順でクリックしてください。</li>
+            <li>「配信名」に任意の配信名を入力、配信先を設定（配信先の設定方法は「セグメント配信-今すぐ配信」のマニュアル参照）、配信日時の「詳しく配信条件を設定する」を選択します。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-repeat_2.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -458,12 +475,18 @@
 
             </div>
             <ol start="3" type="1">
-            <li>配信名、配信先、配信日時、配信内容を記入・選択してください。</li>
+            <li>繰り返し配信の条件を選択し、「指定」ボタンで条件設定を行います。 -「開始日」、「終了日」にて、繰り返し配信の開始日と終了日を設定します。 -「配信時間」にて、繰り返し配信が送信される時間を設定します。</li>
             </ol>
             <ul>
-            <li>配信先で「絞り込み」を選択した場合は帳票を選択し、配信対象を絞り込んでください。</li>
-            <li>配信日時の一番下を選択し、「開始日、終了日、時間、期間」を設定してください。</li>
-            <li>右下のプレビューボタンをクリックすることで送信プレビューを確認できます。</li>
+            <li>配信区分を選択します。「毎日」「毎週」「毎月」「月末」「カスタム」から選択が可能です。</li>
+            <li>毎日：日次で繰り返し配信を行います。</li>
+            <li>毎週：指定の曜日に週次で繰り返し配信を行います。なお、複数の曜日を指定可能です。</li>
+            <li>毎月：指定の日付に月次で繰り返し配信を行います。なお、複数の日付を指定可能です。</li>
+            <li>月末：毎月末に月次で繰り返し配信を行います。</li>
+            <li>カスタム：特別な配信条件で繰り返し配信を指定できます。「何日ごと・何週ごと」「第X 〇曜日（複数指定可）」「カレンダーで指定した日付（複数指定可）」の中から指定できます。</li>
+            <li>「除外日を設定する」チェックボックスにチェックを入れることで、配信しない日を設定できます。</li>
+            <li>曜日：指定の曜日に配信を停止します。なお、複数の曜日を指定可能です。</li>
+            <li>日付：指定の日付に配信を停止します。なお、複数の日付を指定可能です。</li>
             </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-repeat_3.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -471,19 +494,13 @@
 
             </div>
             <ol start="4" type="1">
-            <li>画面下部の「配信」をクリックすることにより配信設定されます。</li>
+            <li>本文を入力し「配信」ボタンで繰り返し配信条件設定を行います。（</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-repeat_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTExMzQ4NDg0ODcsLTkyNDU1NzAxMywtMT
-            k1MDI5MjgxMywtMTgxMzQwMzE4NCwtNTIwMTkyMzk4LC0xNDcw
-            OTgwMTI4LDI3NTY4MTU0MSwtMTE4NTI4NzY2MCw0MzczMDQxOT
-            UsLTMwMTI0MjM4NSwtNzU0MTYwODM2XX0=
-            -->
             <h3 id="手動配信複写">手動配信(複写)</h3>
             <p>配信内容を複写する方法を説明します。</p>
             <ol type="1">
@@ -569,46 +586,6 @@
             eyJoaXN0b3J5IjpbLTE3MTc2NTkwMzUsLTg4MDY1Mjk1OSwtND
             Q5Mzc4MzM1LC0zNTAxMzkzMDAsNTQyMjU5MDksMTc1OTU3OTgy
             OCwyMDEwNzM3ODQ1LDIzMDMxNTc0MV19
-            -->
-            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
-            <h3 id="受信設定画面作成">受信設定画面作成 <!-- 目次サブメニュー --></h3>
-            <p>xxxxxxxxxxxxxxxxx <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt; <!-- 画像 --></p>
-            <p><br> <!-- 改行 --></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <p><!-- 強制的に改ページ --></p>
-            <ol start="2" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="3" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="4" type="1">
-            <li>xxxxx</li>
-            </ol>
-            <p><img src='./images/<該当フォルダ名>/<画像ファイル名>’ style=‘border:solid 2px lightgray’ /&gt;</p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNTkxMTg2OTcyLDY3MzgyMjY2MywtMTg3Mj
-            g5NjcwNSwtNzEzNTcyMTcwXX0=
             -->
             <h3 id="外部配信設定抽出条件">外部配信設定(抽出条件)</h3>
             <p>外部配信設定の抽出条件を設定する方法を説明します。</p>
@@ -986,27 +963,39 @@
             YxMTExLC03MDU4MjI1MjIsMzY2MDc3NzEsLTE4NzI4OTY3MDUs
             LTcxMzU3MjE3MF19
             -->
-            <p>##台票承&lt;！-猿集団花束さ&lt;！-猿集団花束（HOME、集団群集団）-低素）-&gt;</p>
-            <p>###編集&lt;！-坂サブテラス-&lt;！-坂サブテラス-&gt;</p>
-            <p>&lt;！-KOオンラインアンケートします。&lt;！-くに何の表表をするのか結婚-って-&gt;</p>
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="編集">編集 <!-- 目次サブメニュー --></h3>
+            <p>帳票の編集方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>「帳票希望」アンケート票を選択します。</li>
+            <li>「帳票作成」を選択し、編集したい帳票をクリックします。</li>
             </ol>
-            <p>&lt;img src = ‘。/ =’。/ images / s / Survey //SURVEY_update_1。PNG’or= = ’国境:: Six2ピクセルライトグレー "/&gt;！</p>
-            <p><brBR> &lt;！-ミキサー-！-ミキサー-&gt;</p>
-            <p>&lt;div style = = “page-break-before ：： always”&gt; &lt;/ div&gt; &lt;！-強強！-強強制改ページ-&gt;</p>
-            <p>2.帳票編集モードに決決ので、内容を編集し50に「帳票更新」をします。</p>
-            <p>&lt;img src = ‘。/ =’。/ images / s / Survey //SURVEY_update_2。PNG ’続き==’国境:: Sixa2ピクセルライトグレー "/&gt;</p>
-            <p><BR>の&lt;divのののののののののの</p>
-            <p>3.ここでた帳BR&gt;の&lt;divのののののののののののののののののののののの</p>
-            <p>3.投票は、投票票は、ここアンケートの右にあり点はし「無効できり点折り「無効あり」を選択します。</p>
-            <p>&lt;img src = ‘。/ =’。/ images / s / Survey //SURVEY_update_3。PNG ’礼==’接:: Sixa2ピクセルライトグレー "/&gt;</p>
-            <p><BR BR></p>
-            <p>&lt;div style = “=” page-break-before :: always “&gt;”&gt; &lt;/ div&gt; <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTExMjU1MDYwLDg3MzM3NzY3Niw2NjAwND
-            A5OTEsNzcxMTAxMDI0LDE1NTU3ODE2NDAsLTY1NTAzNzI3Nyw3
-            Nzg4OTE4MDIsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF19
-            --> <!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <p><img src='./images/survey/SURVEY_update_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「帳票編集モード」になるので、編集したい箇所を書き換え「帳票更新」を選択します。</li>
+            </ol>
+            <p><img src='./images/survey/SURVEY_update_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>TOP画面「帳票作成」を選択し、「無効」をクリックすると帳票が使えなくなります。</li>
+            </ol>
+            <p><img src='./images/survey/SURVEY_update_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMzUzNjI1NzkwLDY3MzgyMjY2MywtMTg3Mj
+            g5NjcwNSwtNzEzNTcyMTcwXX0=
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="liffwebを開く">LIFF・webを開く<!-- 目次サブメニュー --></h3>
             <p>LIFF・webを開く方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
@@ -1045,7 +1034,7 @@
             <ol type="1">
             <li>「帳票作成」＞「新しいフォームの作成」＞「空白」をクリックすると、空の入力フォームを生成します。</li>
             </ol>
-            <p><img src='./images/<survey>/&lt;SURVEY_add_1.png&gt;’ style=‘border:solid 2px lightgray’ /&gt; <!-- 画像 --></p>
+            <p><img src='./images/survey/SURVEY_add_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -1054,7 +1043,7 @@
             <ol start="2" type="1">
             <li>「追加型」に切り替えます。</li>
             </ol>
-            <p><img src='./images/<survey>/&lt;SURVEY_add_2.png&gt;’ style=‘border:solid 2px lightgray’ /&gt;</p>
+            <p><img src='./images/survey/SURVEY_add_2.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
@@ -1062,7 +1051,7 @@
             <ol start="3" type="1">
             <li>タイトルの編集、質問内容の記入、記入形式を選択し帳票を作成します。</li>
             </ol>
-            <p><img src='./images/<survey>/&lt;SURVEY_add_3.png&gt;’ style=‘border:solid 2px lightgray’ /&gt;</p>
+            <p><img src='./images/survey/SURVEY_add_3.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
@@ -1070,15 +1059,15 @@
             <ol start="4" type="1">
             <li>プレビューで確認ができます。最後に「帳票登録」をクリックすると作成が完了します。</li>
             </ol>
-            <p><img src='./images/<survey>/&lt;SURVEY_add_4.png&gt;’ style=‘border:solid 2px lightgray’ /&gt;</p>
+            <p><img src='./images/survey/SURVEY_add_4.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTEwNDQ0MzQ3NTIsLTkzMjg0MTk1NCwtMT
-            AzMTI2NzQ4MCwtMTY3ODAyNTUzLDY3MzgyMjY2MywtMTg3Mjg5
-            NjcwNSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbLTkwMTA4MjU1NiwtMTA0NDQzNDc1MiwtOT
+            MyODQxOTU0LC0xMDMxMjY3NDgwLC0xNjc4MDI1NTMsNjczODIy
+            NjYzLC0xODcyODk2NzA1LC03MTM1NzIxNzBdfQ==
             -->
             <h2 id="シナリオ設定">シナリオ設定</h2>
             <h3 id="top画面">TOP画面</h3>
@@ -1240,10 +1229,10 @@
             NjA5Ml19
             -->
             <!-- 目次メインメニュー -->
-            <h3 id="編集損害報告">編集(損害報告) <!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、損害報告の編集について記載します。 損害報告のシナリオは固定テンプレートのためシナリオを変更することはできません。 <!-- 最初に何の説明をするのか明記 --></p>
+            <h3 id="編集損傷報告">編集(損傷報告) <!-- 目次サブメニュー --></h3>
+            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、損傷報告の編集について記載します。 損傷報告のシナリオは固定テンプレートのためシナリオを変更することはできません。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>「トーク名」のプルダウンから「損害報告」を選択します。</li>
+            <li>「トーク名」のプルダウンから「損傷報告」を選択します。</li>
             </ol>
             <p><img src='./images/scenario/SCENARIO_update-damage-report_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -1261,13 +1250,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE2OTEwNzUyNDEsLTEwMzA4NzczOTUsOD
-            AwNTE1ODAsLTEzODI4NDU1MjUsMTY2OTMzNjU4MywxNjY4MzM0
-            MzA1LDU4NjEyNzc4MCwtNDY2MjkyNjIyLDE0OTI1MDc3NzEsNj
-            gyNTczODQ5LDE3MDc2ODMxMDYsLTYzNTIwMjEzNiwyMTA4ODg5
-            ODU5LDIwMTg5NTUzNDYsMTkxMDI2Nzk0OSwtMTQyNTEwNDA0Mi
-            wxODgyNDA2MDkyLC0xNTE2ODg1NjMwLDczNzcxNzMxOCwxNTQ3
-            NzkxNjJdfQ==
+            eyJoaXN0b3J5IjpbLTE3MTI0NDkxOTMsLTE2OTEwNzUyNDEsLT
+            EwMzA4NzczOTUsODAwNTE1ODAsLTEzODI4NDU1MjUsMTY2OTMz
+            NjU4MywxNjY4MzM0MzA1LDU4NjEyNzc4MCwtNDY2MjkyNjIyLD
+            E0OTI1MDc3NzEsNjgyNTczODQ5LDE3MDc2ODMxMDYsLTYzNTIw
+            MjEzNiwyMTA4ODg5ODU5LDIwMTg5NTUzNDYsMTkxMDI2Nzk0OS
+            wtMTQyNTEwNDA0MiwxODgyNDA2MDkyLC0xNTE2ODg1NjMwLDcz
+            NzcxNzMxOF19
             -->
             <!-- 目次メインメニュー -->
             <h3 id="編集関連情報">編集(関連情報) <!-- 目次サブメニュー --></h3>
@@ -1425,16 +1414,16 @@
             -->
             <!-- 目次メインメニュー -->
             <h3 id="編集トークを利用する">編集(トークを利用する)<!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、特別なシナリオトークの利用方法について記載します。 特別なシナリオには損害報告、ゴミ分別があり基本的なシナリオは決まっています。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、特別なシナリオトークの利用方法について記載します。 特別なシナリオには損傷報告、ゴミ分別があり基本的なシナリオは決まっています。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
             <li>「トークを利用する」をクリックすると、特別なシナリオトークの利用画面が表示されます。有効になっているシナリオにはチェックマークが付きます。</li>
             </ol>
             <ul>
-            <li>損害報告
+            <li>損傷報告
             <ul>
-            <li>作成：クリックすると損害報告シナリオが作成されます。</li>
-            <li>無効にする：クリックすると損害報告シナリオが無効になります。</li>
-            <li>削除：クリックすると損害報告シナリオが削除されます。</li>
+            <li>作成：クリックすると損傷報告シナリオが作成されます。</li>
+            <li>無効にする：クリックすると損傷報告シナリオが無効になります。</li>
+            <li>削除：クリックすると損傷報告シナリオが削除されます。</li>
             </ul></li>
             <li>ゴミ分別
             <ul>
@@ -1450,13 +1439,13 @@
 
             </div>
             <p><!-- 強制的に改ページ --> <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMzgyNTQxMjU4LDEyNjI2OTUxMDgsLTYwOT
-            A2MTY3NSw0MjU5MTk5NDAsNTYxODg5MTY3LC03NDk2NDM2ODcs
-            MTI0Njg2NzU1NSwxNTE3NTkyMTE2LDE0MTg4MzI3LDgwMDUxNT
-            gwLC0xMzgyODQ1NTI1LDE2NjkzMzY1ODMsMTY2ODMzNDMwNSw1
-            ODYxMjc3ODAsLTQ2NjI5MjYyMiwxNDkyNTA3NzcxLDY4MjU3Mz
-            g0OSwxNzA3NjgzMTA2LC02MzUyMDIxMzYsMjEwODg4OTg1OV19
-
+            eyJoaXN0b3J5IjpbLTEwNTE4Nzk5ODYsMzgyNTQxMjU4LDEyNj
+            I2OTUxMDgsLTYwOTA2MTY3NSw0MjU5MTk5NDAsNTYxODg5MTY3
+            LC03NDk2NDM2ODcsMTI0Njg2NzU1NSwxNTE3NTkyMTE2LDE0MT
+            g4MzI3LDgwMDUxNTgwLC0xMzgyODQ1NTI1LDE2NjkzMzY1ODMs
+            MTY2ODMzNDMwNSw1ODYxMjc3ODAsLTQ2NjI5MjYyMiwxNDkyNT
+            A3NzcxLDY4MjU3Mzg0OSwxNzA3NjgzMTA2LC02MzUyMDIxMzZd
+            fQ==
             --> <!-- 目次メインメニュー --></p>
             <h3 id="編集複合メッセージを追加">編集(複合メッセージを追加)<!-- 目次サブメニュー --></h3>
             <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、複合メッセージを追加の利用方法について記載します。 各トーク名にあるデータを複合して表示することができます。 <!-- 最初に何の説明をするのか明記 --></p>
@@ -1531,6 +1520,327 @@
             EwNiwtNjM1MjAyMTM2LDIxMDg4ODk4NTksMjAxODk1NTM0Nl19
 
             -->
+            <h3 id="シナリオの検索">シナリオの検索</h3>
+            <p>シナリオ編集画面で、検索機能を搭載しました。</p>
+            <ol type="1">
+            <li>編集画面の「内容検索を入力」を書かれた部分に検索したい言葉を入力し、「検索」ボタンを押下します。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_search_1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>文字を投入すると検索します。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_search_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <h3 id="リッチメニューの作成と編集">リッチメニューの作成と編集</h3>
+            <p>シナリオ編集画面からリッチメニューの作成、修正、削除が行えるようになりました。</p>
+            <ol type="1">
+            <li>編集画面の「内容検索を入力」を書かれた部分に検索したい言葉を入力し、「検索」ボタンを押下します。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_rich-menu_1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>作成をするときは「リッチメニュー作成」を押下します。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_rich-menu_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>項目を入力し、「保存」を押下します。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_rich-menu_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>登録すると一覧に表示されます。画面左上の数字は、登録されているリッチメニュー数です。右上部の「検索」に文字を入力すると、リッチメニューのタイトルの中からマッチするものを表示します。画像の左のアイコンを押下すると3の画面が開き、修正できます。各アイコンを押下すると色がつき、それぞれ「通常モード」「災害時モード」に切り替えることができます。また、ごみ箱アイコンを押下すると作成したメニューを削除します。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_rich-menu_4.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <h3 id="あいまい検索">あいまい検索</h3>
+            <p>ごみ検索のあいまい検索を搭載しました。</p>
+            <ol type="1">
+            <li>トークルームより、検索したい言葉を入力します。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_liff-search_1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>文字を投入すると検索します。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_liff-search_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>小文字で入力したり、カタカナで入力しても検索できます。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_liff-search_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <h2 id="カレンダー">カレンダー</h2>
+            <h3 id="トップ画面と初期設定">トップ画面と初期設定</h3>
+            <p>カレンダーの設定方法を説明します。</p>
+            <ol type="1">
+            <li>大分類、中分類、小分類で入力した値で「検索ボタン」を押すと検索し結果が一覧に表示されます。</li>
+            </ol>
+            <ul>
+            <li>システム設定のカレンダー設定で設定したカレンダー名、大分類名、中分類名、小分類名が表示されます。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_01_top_1.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>はじめての場合はカレンダーが登録されていないので、「一括登録」ボタンを押してカレンダーCSVデータをインポートします。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_01_top_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>「ファイルを選択」ボタンを押して、カンレダーCSVデータを選択し、「開く」ボタンを押すとカレンダーがインポートされます。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_01_top_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>カレンダーにインポートするCSVの形式は下記となります。</li>
+            </ol>
+            <ul>
+            <li>1行目1列目に”#”固定にします。</li>
+            <li>1行目2列目以降に連続した日付を設定します。</li>
+            <li>2列目2行目以降に連続した30分単位の時間帯を設定します。（8:30～16:30固定）</li>
+            <li>日付・時間帯毎に空き枠数（予約可能数）を設定します。 <img src='./images/calendar/CALENDAR_01_top_4.png' style='border:solid 2px lightgray' /></li>
+            </ul>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbODI2OTk5OTQ0XX0=
+            -->
+            <h3 id="空き枠数の変更">空き枠数の変更</h3>
+            <p>カレンダーの空き枠数の変更方法を説明します。カレンダーデータをインポートしていない場合は「トップ画面」を参照ください。</p>
+            <ol type="1">
+            <li>大分類、中分類、小分類を選択して「検索ボタン」を押すとカレンダー一覧が表示されます。</li>
+            </ol>
+            <ul>
+            <li>カレンダーには「予約数／空き枠数」が表示されます。</li>
+            <li>予約数は、LINEから予約された数が表示されます。</li>
+            <li>予約は3日目から予約可能となります。（例：本日が12/1の場合、12/1、12/2、12/3は予約できず12/4から予約可能となります）</li>
+            <li>予約変更機能は未実装のため、予約登録された日は、予約枠の変更はできません。</li>
+            <li>過去の予約枠数の変更はできません。</li>
+            <li>「次の週」ボタンを押すと次週のカレンダーが表示されます。</li>
+            <li>「前の週」ボタンを押すと前の週のカレンダーが表示されます。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_02_update_1.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>「編集」ボタンを押すと、空き数の変更が可能です。空き枠数の変更後「保存」ボタンを押すと変更が保存されます。</li>
+            </ol>
+            <ul>
+            <li>予約空き数の最大は99までとなります。</li>
+            <li>週単位での保存のため、他の週を変更したい場合は、一度保存してから他の週へ移動してください。</li>
+            <li>大中小分類単位でカレンダーは管理されているため、他の分類に移動する場合は一度保存してから他の分類へ移動してください。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_02_update_2.png' style='border:solid 2px lightgray' /></p>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTM4MTQ4MTQxXX0=
+            -->
+            <h2 id="防災">防災</h2>
+            <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <h3 id="モード切替">モード切替 <!-- 目次サブメニュー --></h3>
+            <p>防災モードへの切り替え方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「防災」＞「モード切替」の順でクリックします。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_mode_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>本番環境かサンドボックス、どちらの環境でモードを変えたいのか選択します。現在のモードが防災モードなのか通常モードなのかを確認します。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_mode_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>現在のモードが通常モードで防災モードに変更したい場合、「有効にする」を選択します。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_mode_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMjE5NTI2MjM5LDMyMjk4MTA5LC0xOTA0Nj
+            M0MjIzLDIwNzgyODY2ODEsLTMxODkzOTg2MSw4MjEzNDcxMTUs
+            NjczODIyNjYzLC0xODcyODk2NzA1LC03MTM1NzIxNzBdfQ==
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="登録施設施設一覧検索ダウンロード">登録施設(施設一覧・検索・ダウンロード) <!-- 目次サブメニュー --></h3>
+            <p>登録施設の一覧と詳細検索の方法、ダウンロード方法について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「防災」＞「登録施設」＞「施設一覧」の順にクリックすると、施設の一覧を見ることができます。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-search_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「詳細条件」をクリックすると、検索項目が出てきます。下記条件で絞り込みが可能で、選択した後、下部の「検索」をクリックします。 ・フリーワード検索 ・情報公開可否 ・ネットワーク環境の有無 ・各携帯キャリアの電波状況等 ・COVID-19対応備蓄設備の有無</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-search_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>「CSV出力」をクリックすると、登録施設一覧のダウンロードが可能です。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-search_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <h3 id="登録施設施設一覧ステータス変更">登録施設(施設一覧・ステータス変更) <!-- 目次サブメニュー --></h3>
+            <p>避難所のステータス変更の方法について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「防災」＞「登録施設」＞「施設一覧」をクリックし、ステータス変更をしたい施設を選択します。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-change_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「ステータス変更」をクリックします。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-change_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>「ステータス」からプルダウンで「未開設・開設・満」を選択できます。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-change_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <h3 id="登録施設施設一覧施設登録">登録施設(施設一覧・施設登録)<!-- 目次サブメニュー --></h3>
+            <p>施設登録の方法を説明します。<!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「防災」＞「登録施設」＞「施設一覧」＞「＋施設登録」の順でクリックします。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-register_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>ファイルを選択し、「登録する」を押すと上書きされます。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-register_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <h3 id="登録施設施設一覧削除">登録施設(施設一覧・削除)<!-- 目次サブメニュー --></h3>
+            <p>登録施設を削除する方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「防災」＞「登録施設」＞「施設一覧」をクリックし、削除したい施設にチェックを入れます。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-delete_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「削除」をクリックします。「全削除」を押すと、すべての施設が削除されます。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-delete_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <h3 id="登録施設施設設定">登録施設(施設設定)<!-- 目次サブメニュー --></h3>
+            <p>登録施設設定にて避難所の検索範囲を指定する方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「防災」＞「登録施設」＞「施設設定」をクリックし、施設設定画面を表示します。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_facility-config_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「防災検索範囲」で、検索できる避難所の範囲を設定できます。また、「未開設の施設を表示しない」をONにすると、施設一覧画面で未開設の施設を検索対象から外すことができます。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_facility-config_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>「保存」をクリックします。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_facility-config_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
             <h2 id="統計">統計</h2>
             <p><!-- 目次メインメニュー --></p>
             <h3 id="line友だち数情報">LINE友だち数情報 <!-- 目次サブメニュー --></h3>
@@ -1766,7 +2076,7 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>メニュースタイルの「横並び」をクリックし、「保存」をクリックするとメニューが横に並びます。</li>
+            <li>メニュースタイルの「横並び」をクリックし、「更新」をクリックするとメニューが横に並びます。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_menustyle_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <br>
@@ -1774,7 +2084,7 @@
 
             </div>
             <ol start="3" type="1">
-            <li>メニュースタイルの「縦並び」をクリックし、「保存」をクリックするとメニューが縦に並びます。</li>
+            <li>メニュースタイルの「縦並び」をクリックし、「更新」をクリックするとメニューが縦に並びます。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_menustyle_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <br>
@@ -1782,9 +2092,9 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTEyODg0MzMzNzQsMTYzNDYzOTQ1Miw3Nj
-            A0NTcwNiwxMzQyNTc2MzM3LDIwODM5MTI0MDksLTcxMzU3MjE3
-            MF19
+            eyJoaXN0b3J5IjpbMTY2NzkwODE2MiwtMTI4ODQzMzM3NCwxNj
+            M0NjM5NDUyLDc2MDQ1NzA2LDEzNDI1NzYzMzcsMjA4MzkxMjQw
+            OSwtNzEzNTcyMTcwXX0=
             -->
             <!-- 目次メインメニュー -->
             <h3 id="テナント名">テナント名 <!-- 目次サブメニュー --></h3>
@@ -1912,6 +2222,9 @@
             <div style="page-break-before:always">
 
             </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMjExMzkzODYxN119
+            -->
             <h3 id="カレンダー設定分類登録編集">カレンダー設定(分類登録・編集)</h3>
             <p>カレンダーに紐づける分類を設定します。</p>
             <ol type="1">
@@ -2361,7 +2674,7 @@
   </div>
 
   <footer>
-    Copyright (C) LINE Fukuoka Corp. All Rights Reserved. Version 1.1.5
+    Copyright (C) LINE Fukuoka Corp. All Rights Reserved. Version 1.3.0
   </footer>  
   <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
 
