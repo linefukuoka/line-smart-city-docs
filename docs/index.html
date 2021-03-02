@@ -60,6 +60,11 @@
         <li><a href="#検索日付">検索(日付)</a></li>
         <li><a href="#入力情報修正">入力情報修正</a></li>
         <li><a href="#csv出力">CSV出力</a></li>
+        <li><a href="#追加型帳票の削除">追加型帳票の削除 <!-- 目次サブメニュー --></a></li>
+        <li><a href="#追加型帳票のline送信">追加型帳票のLINE送信<!-- 目次サブメニュー --></a></li>
+        <li><a href="#追加型帳票のステータス管理">追加型帳票のステータス管理<!-- 目次サブメニュー --></a></li>
+        <li><a href="#追加型帳票の管理メモ">追加型帳票の管理メモ <!-- 目次サブメニュー --></a></li>
+        <li><a href="#追加型帳票の印刷">追加型帳票の印刷 <!-- 目次サブメニュー --></a></li>
         </ul></li>
         <li><a href="#セグメント配信">セグメント配信</a>
         <ul>
@@ -69,10 +74,10 @@
         <li><a href="#繰り返し配信">繰り返し配信</a></li>
         <li><a href="#手動配信複写">手動配信(複写)</a></li>
         <li><a href="#外部配信設定一覧の表示">外部配信設定一覧の表示</a></li>
+        <li><a href="#外部配信設定新規作成">外部配信設定(新規作成)</a></li>
         <li><a href="#外部配信設定抽出条件">外部配信設定(抽出条件)</a></li>
         <li><a href="#外部配信設定本文変更条件">外部配信設定(本文変更条件)</a></li>
         <li><a href="#外部配信設定防災新規作成">外部配信設定(防災新規作成)</a></li>
-        <li><a href="#外部配信設定新規作成">外部配信設定(新規作成)</a></li>
         </ul></li>
         <li><a href="#帳票作成">帳票作成</a>
         <ul>
@@ -83,6 +88,7 @@
         <li><a href="#新しい帳票を作成調査">新しい帳票を作成(調査) <!-- 目次サブメニュー --></a></li>
         <li><a href="#編集">編集 <!-- 目次サブメニュー --></a></li>
         <li><a href="#liffwebを開く">LIFF・webを開く<!-- 目次サブメニュー --></a></li>
+        <li><a href="#帳票一覧を無効">帳票一覧を無効 <!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票">追加型帳票 <!-- 目次サブメニュー --></a></li>
         </ul></li>
         <li><a href="#シナリオ設定">シナリオ設定</a>
@@ -105,6 +111,8 @@
         <ul>
         <li><a href="#トップ画面と初期設定">トップ画面と初期設定</a></li>
         <li><a href="#空き枠数の変更">空き枠数の変更</a></li>
+        <li><a href="#予約帳票の作り方1">予約帳票の作り方1</a></li>
+        <li><a href="#予約帳票の作り方2">予約帳票の作り方2</a></li>
         </ul></li>
         <li><a href="#防災">防災</a>
         <ul>
@@ -151,6 +159,19 @@
         <li><a href="#cognitoユーザプール管理画面">Cognitoユーザプール(管理画面)</a></li>
         <li><a href="#ip-アドレス制限">IP アドレス制限</a></li>
         <li><a href="#セグメント配信の受信メールアドレス設定">セグメント配信の受信メールアドレス設定</a></li>
+        </ul></li>
+        <li><a href="#ワクチン運用例">ワクチン運用例</a>
+        <ul>
+        <li><a href="#事前準備システム管理者">事前準備(システム管理者)</a></li>
+        <li><a href="#liffでの登録変更キャンセルユーザー">LIFFでの登録・変更・キャンセル(ユーザー)</a></li>
+        <li><a href="#電話受付の際の管理画面からの登録変更キャンセルシステム管理者">電話受付の際の管理画面からの登録・変更・キャンセル(システム管理者)</a></li>
+        <li><a href="#csvエクスポートシステム管理者">CSVエクスポート(システム管理者)</a></li>
+        <li><a href="#ワクチン接種対象者の確認システム管理者">ワクチン接種対象者の確認(システム管理者)</a></li>
+        <li><a href="#接種当日の本人確認オペレーター-外部委託">接種当日の本人確認(オペレーター ※外部委託)</a></li>
+        <li><a href="#問診内容接種内容を追記オペレーター-医師-外部委託">問診内容、接種内容を追記(オペレーター, 医師 ※外部委託))</a></li>
+        <li><a href="#外部システム連携csvエクスポート">外部システム連携（CSVエクスポート）</a></li>
+        <li><a href="#クーポンコードが再発行変更になった際">クーポンコードが再発行（変更）になった際</a></li>
+        <li><a href="#次回接種日のリマインド通知">次回接種日のリマインド通知</a></li>
         </ul></li>
         </ul>
 
@@ -313,6 +334,158 @@
             <!--stackedit_data:
             eyJoaXN0b3J5IjpbMjA4MTUwMzIyMCwxNzc4NzQwMDM5LC0zMT
             M3MTc4NzksLTcxMzU3MjE3MF19
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票の削除">追加型帳票の削除 <!-- 目次サブメニュー --></h3>
+            <p>追加型帳票の削除の仕方について説明します。追加型帳票は、1つの帳票に対して何度も回答することが可能で回答内容が上書きされません。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>回答内容を把握したい追加型帳票を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_delete_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>削除したい帳票を選択し、「選択削除」をクリックします。</li>
+            </ol>
+            <p><img src='./images/home/HOME_delete_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>「削除」をクリックすると、回答が削除されます。</li>
+            </ol>
+            <p><img src='./images/home/HOME_delete_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTE2NzMyNjgwNTgsLTgwMDM1MTU3NCwtMT
+            E1ODA2ODIwNCwxMTIzNDU2NDY5LDY3MzgyMjY2MywtMTg3Mjg5
+            NjcwNSwtNzEzNTcyMTcwXX0=
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票のline送信">追加型帳票のLINE送信<!-- 目次サブメニュー --></h3>
+            <p>追加型帳票のLINE送信の方法について説明します。<!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「HOME」より管理したい追加型帳票を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_LINEsend_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「LINE送信」を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_LINEsend_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>返信内容を入力し、「LINE送信」ボタンをクリックすると送信完了です。</li>
+            </ol>
+            <p><img src='./images/home/HOME_LINEsend_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTIxMzk2OTMyMTcsLTEwODI1ODg5NzksMT
+            A5MDgyMTMzNiw2NzM4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3
+            MjE3MF19
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票のステータス管理">追加型帳票のステータス管理<!-- 目次サブメニュー --></h3>
+            <p>追加型帳票のステータスの変更方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「HOME」よりステータスを変更したい帳票を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_status_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「NG」＞「保存」の順でクリックするとステータスがNGとなります。</li>
+            </ol>
+            <p><img src='./images/home/HOME_status_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbNDg5NTIyMzk4LDY3MzgyMjY2MywtMTg3Mj
+            g5NjcwNSwtNzEzNTcyMTcwXX0=
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票の管理メモ">追加型帳票の管理メモ <!-- 目次サブメニュー --></h3>
+            <p>追加型帳票の管理メモの機能について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p>1.「HOME」より管理メモを記入したい追加型帳票を選択します。</p>
+            <p><img src='./images/home/HOME_memo_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>一番下までスクロールすると「管理者メモ」欄が出てくるので、記載し「保存」をクリックします。</li>
+            </ol>
+            <p><img src='./images/home/HOME_memo_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>もう1つの編集方法を説明します。 HOME画面より編集したい帳票の右欄の「管理者メモ」を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_memo_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>メモを記入し、「保存」を選択し保存完了です。</li>
+            </ol>
+            <p><img src='./images/home/HOME_memo_4.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMTk1ODk1MTkyNywtMTUxNzI3ODQxNSw2Nz
+            M4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF19
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票の印刷">追加型帳票の印刷 <!-- 目次サブメニュー --></h3>
+            <p>追加型帳票の印刷方法について説明します。<!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「HOME」より印刷したい追加型帳票を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_print_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「印刷」ボタンを押すと印刷されます。</li>
+            </ol>
+            <p><img src='./images/home/HOME_print_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTIwNjQ4MTIxNDcsMTk1MTM1NjAyNCw2Nz
+            M4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF19
             -->
             <h2 id="セグメント配信">セグメント配信</h2>
             <h3 id="配信一覧の表示">配信一覧の表示</h3>
@@ -494,13 +667,17 @@
 
             </div>
             <ol start="4" type="1">
-            <li>本文を入力し「配信」ボタンで繰り返し配信条件設定を行います。（</li>
+            <li>本文を入力し「配信」ボタンで繰り返し配信条件設定を行い定されます。 ※同内容の二種類の帳票及び同帳票に、同配信先・同件名・同日時で二つ配信設定をすると配信されるのは一回のみになります。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-repeat_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTM3MzE4MjY5MywtNjU5NzI0NjcwLC0xOT
+            A4ODg4Njg3XX0=
+            -->
             <h3 id="手動配信複写">手動配信(複写)</h3>
             <p>配信内容を複写する方法を説明します。</p>
             <ol type="1">
@@ -586,6 +763,52 @@
             eyJoaXN0b3J5IjpbLTE3MTc2NTkwMzUsLTg4MDY1Mjk1OSwtND
             Q5Mzc4MzM1LC0zNTAxMzkzMDAsNTQyMjU5MDksMTc1OTU3OTgy
             OCwyMDEwNzM3ODQ1LDIzMDMxNTc0MV19
+            -->
+            <h3 id="外部配信設定新規作成">外部配信設定(新規作成)</h3>
+            <p>外部配信設定の新規作成する方法を説明します。</p>
+            <ol type="1">
+            <li>「セグメント配信」＞「外部配信設定」＞「新規作成」の順でクリックしてください。</li>
+            </ol>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-create_1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>「配信名」、「帳票」、「有効」を選択・記入してください。
+            <ul>
+            <li>「帳票」はプルダウン形式で選択できます。</li>
+            </ul></li>
+            </ol>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-create_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>「配信条件」を設定してください。
+            <ul>
+            <li>プルダウン形式で選択できます。</li>
+            </ul></li>
+            </ol>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-create_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>「保存」をクリックしていただけると外部配信設定が新規作成されます。</li>
+            </ol>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-create_4.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTkwNjYwMDM0NCwtOTgyNzM1MzMxLDEwNj
+            UyNjUyMCwtOTA2NTA4Mzk2LC01MTgzMDk5NzgsMTQ2NDU1NDAz
+            Niw1ODE0MTM2MzEsLTM1MDEzOTMwMCw1NDIyNTkwOSwxNzU5NT
+            c5ODI4LDIwMTA3Mzc4NDUsMjMwMzE1NzQxXX0=
             -->
             <h3 id="外部配信設定抽出条件">外部配信設定(抽出条件)</h3>
             <p>外部配信設定の抽出条件を設定する方法を説明します。</p>
@@ -711,52 +934,6 @@
             I1OTA5LDE3NTk1Nzk4MjgsMjAxMDczNzg0NSwyMzAzMTU3NDFd
             fQ==
             -->
-            <h3 id="外部配信設定新規作成">外部配信設定(新規作成)</h3>
-            <p>外部配信設定の新規作成する方法を説明します。</p>
-            <ol type="1">
-            <li>「セグメント配信」＞「外部配信設定」＞「新規作成」の順でクリックしてください。</li>
-            </ol>
-            <p><img src='./images/distribution/DISTRIBUTION_manual-create_1.png' style='border:solid 2px lightgray' /></p>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="2" type="1">
-            <li>「配信名」、「帳票」、「有効」を選択・記入してください。
-            <ul>
-            <li>「帳票」はプルダウン形式で選択できます。</li>
-            </ul></li>
-            </ol>
-            <p><img src='./images/distribution/DISTRIBUTION_manual-create_2.png' style='border:solid 2px lightgray' /></p>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="3" type="1">
-            <li>「配信条件」を設定してください。
-            <ul>
-            <li>プルダウン形式で選択できます。</li>
-            </ul></li>
-            </ol>
-            <p><img src='./images/distribution/DISTRIBUTION_manual-create_3.png' style='border:solid 2px lightgray' /></p>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="4" type="1">
-            <li>「保存」をクリックしていただけると外部配信設定が新規作成されます。</li>
-            </ol>
-            <p><img src='./images/distribution/DISTRIBUTION_manual-create_4.png' style='border:solid 2px lightgray' /></p>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTkwNjYwMDM0NCwtOTgyNzM1MzMxLDEwNj
-            UyNjUyMCwtOTA2NTA4Mzk2LC01MTgzMDk5NzgsMTQ2NDU1NDAz
-            Niw1ODE0MTM2MzEsLTM1MDEzOTMwMCw1NDIyNTkwOSwxNzU5NT
-            c5ODI4LDIwMTA3Mzc4NDUsMjMwMzE1NzQxXX0=
-            -->
             <h2 id="帳票作成">帳票作成</h2>
             <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
             <h3 id="帳票一覧">帳票一覧 <!-- 目次サブメニュー --></h3>
@@ -771,9 +948,9 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE5NzgzMjgwNjksLTEzMjI4NzMzMzEsND
-            E5OTU4MjEsMjEwMDQ1NDg5NiwtMTg3Mjg5NjcwNSwtNzEzNTcy
-            MTcwXX0=
+            eyJoaXN0b3J5IjpbLTE5NzgzMjgwNjksLTE5NzgzMjgwNjksLT
+            EzMjI4NzMzMzEsNDE5OTU4MjEsMjEwMDQ1NDg5NiwtMTg3Mjg5
+            NjcwNSwtNzEzNTcyMTcwXX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="新しい帳票を作成">新しい帳票を作成<!-- 目次サブメニュー --></h3>
@@ -1029,8 +1206,25 @@
             MF19
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="帳票一覧を無効">帳票一覧を無効 <!-- 目次サブメニュー --></h3>
+            <p>作成した帳票一覧を見を無効にする方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「帳票作成」から、各アンケートの一番右にある点をクリックし「無効にする」を選択します。（有効にする場合も同様になります。） ※帳票を無効にしても有効時に定期配信等で既に配信設定をしている内容は配信されます。 ※配信を停止したい場合はセグメント配信から配信内容を削除してください。</li>
+            </ol>
+            <p><img src='./images/survey/SURVEY_noactive_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTU5MjcxNjEwNSwxNDY3Mjk0OTQzLC0xOT
+            c4MzI4MDY5LC0xMzIyODczMzMxLDQxOTk1ODIxLDIxMDA0NTQ4
+            OTYsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF19
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票">追加型帳票 <!-- 目次サブメニュー --></h3>
-            <p>追加型帳票の作成の仕方を説明します。既存の帳票の編集だけでなく、項目の追加が可能になります。<!-- 最初に何の説明をするのか明記 --></p>
+            <p>追加型帳票の作成の仕方を説明します。追加型帳票は、1つの帳票に対して何度も回答することが可能で回答内容が上書きされません。<!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
             <li>「帳票作成」＞「新しいフォームの作成」＞「空白」をクリックすると、空の入力フォームを生成します。</li>
             </ol>
@@ -1065,9 +1259,10 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTkwMTA4MjU1NiwtMTA0NDQzNDc1MiwtOT
-            MyODQxOTU0LC0xMDMxMjY3NDgwLC0xNjc4MDI1NTMsNjczODIy
-            NjYzLC0xODcyODk2NzA1LC03MTM1NzIxNzBdfQ==
+            eyJoaXN0b3J5IjpbMTQ2NzAzNjI5NywtOTAxMDgyNTU2LC0xMD
+            Q0NDM0NzUyLC05MzI4NDE5NTQsLTEwMzEyNjc0ODAsLTE2Nzgw
+            MjU1Myw2NzM4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF
+            19
             -->
             <h2 id="シナリオ設定">シナリオ設定</h2>
             <h3 id="top画面">TOP画面</h3>
@@ -1683,6 +1878,54 @@
             <!--stackedit_data:
             eyJoaXN0b3J5IjpbLTM4MTQ4MTQxXX0=
             -->
+            <h3 id="予約帳票の作り方1">予約帳票の作り方1</h3>
+            <p>カレンダーの帳票作成までの流れを説明します。</p>
+            <ol type="1">
+            <li>帳票作成時に下記の設定が必要となります。</li>
+            </ol>
+            <ul>
+            <li>追加型にします。</li>
+            <li>記述式に分類を設定します。こちらの分類単位で予約管理します。</li>
+            <li>記述式にカレンダーボタンを設定します。こちらのボタンを設定することによりカレンダー画面へ遷移します。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_03_info1_1.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>LINE側で帳票を開くと、分類を設定して、カレンダーボタン「予約日時指定に進む」が表示されます。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_03_info1_2.png' style='border:solid 2px lightgray' /></p>
+            <ol start="3" type="1">
+            <li>カレンダーが表示され、管理画面で設定した予約できる日時が〇で表示されます。予約できない場合は✕で表示されます。予約したい日時を選択し「日付確定」ボタンを押します。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_03_info1_3.png' style='border:solid 2px lightgray' /></p>
+            <ol start="4" type="1">
+            <li>確認画面が表示されますので、「はい」を選択すると次の画面へ遷移します。 キャンセルする場合は「いいえ」を押すとカレンダー画面へ戻ります。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_03_info1_4.png' style='border:solid 2px lightgray' /> <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTExOTQ1MjM3MjgsMTE2MTg3OTY3MiwtMT
+            IzMzIwMjU5NiwtMzgxNDgxNDFdfQ==
+            --></p>
+            <h3 id="予約帳票の作り方2">予約帳票の作り方2</h3>
+            <p>カレンダーの帳票作成までの流れを説明します。</p>
+            <ol type="1">
+            <li>予約確認画面が表示されます。「予約確定」ボタンを押すと予約が確定されます。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_03_info2_1.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>予約完了画面が表示されますので、ウィンドウを閉じます。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_03_info2_2.png' style='border:solid 2px lightgray' /></p>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTkwNDcxNDc0MSw4NDg2ODkzNjMsMTE2MT
+            g3OTY3MiwtMTIzMzIwMjU5NiwtMzgxNDgxNDFdfQ==
+            -->
             <h2 id="防災">防災</h2>
             <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
             <h3 id="モード切替">モード切替 <!-- 目次サブメニュー --></h3>
@@ -1793,7 +2036,27 @@
             <div style="page-break-before:always">
 
             </div>
-            <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <ol start="3" type="1">
+            <li>上記に登録する際のサンプルファイルについて説明します。 ・避難先名称(避難所・避難場所)：正式名称で記載 ・避難先名称(かな)：よみがなを記入 ・住所：マンションやアパート名等まで含める ・緯度：北緯2桁＋小数点以下5桁以上 ・経度：東経3桁＋小数点以下5桁以上 ・電話番号：避難施設の電話番号(ハイフンなし11桁) ・避難所種別：避難所／避難場所等の種類の区分。避難所の種別をフラグで記載(複数選択可) 1：避難場所 2：臨時避難所 3：避難所を兼ねる避難場所 4：広域避難場所：開設措置なし 5：一時避難場所：開設措置なし 9：福祉避難所 ・災害種別：当該避難（場）所の対応している災害種別。本項目で選択した災害種別の発災時避難先として使用可能。 【選択式（択複）】 １：洪水（風水害） ２：崖崩れ、土石流及び地滑り ３：高潮 ４：地震 ５：津波 ６：大規模な火事 ７：内水氾濫 ８：火山現象 ・情報入力者メールアドレス ・ID1(団体コード)：全国地方公共団体コード。発災時は郵便番号・住所から自動入力 ・ＩＤ2(避難所の通し番号)：避難所毎に付与されているID。各市区町村における通し番号を記載。</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-register_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>サンプルファイルの続きを説明します。 　・情報公開可否：本避難先情報の一般公開可否。ある場合は〇 ・最終更新日：避難所情報を最後に更新した日時。yyyy/MM/dd HH:mm ・施設面積（㎡）/ 屋外：校庭・公園等の面積。面積を整数で（約は不要）。 ・施設面積（㎡）/ 屋内：延床面積。面積を整数で（約は不要）。 ・想定収容人数：収容可能人数　／　避難所定員　／　最大の収容人数 。整数。 ・コロナ想定収容人数：COVID-19をふまえた収容可能人数　／　避難所定員　／　最大の収容人数。整数。 ・ネットワーク環境の有無：Wi-Fi等が存在するか。携帯の電波が入るか。避難者に開放可能な無線LANがある場合は〇 ・各携帯キャリアの電波状況等：携帯の電波が入るか。主要キャリア3社が入る場合は〇 　・隔離可能場所の有無：感染症患者／濃厚接触者の発生時に当該施設内で隔離対応可能か。隔離可能場所が用意可能かどうかフラグで記載。。 1：隔離場所を用意可能 2：隔離場所を用意可能でない 0：不明 ・COVID-19対応備蓄設備の有無：コロナ関連の機材・備品等の準備。ダンボールパーティション、体温計、マスク、アルコール消毒液 等ある場合は〇</li>
+            </ol>
+            <p><img src='./images/bosai/BOSAI_list-register_4.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMTE2MjEyNjQwMCwtMTU3MjE1NDMxNSwtMT
+            k3MTg1MzQyOV19
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="登録施設施設一覧削除">登録施設(施設一覧・削除)<!-- 目次サブメニュー --></h3>
             <p>登録施設を削除する方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
@@ -2267,12 +2530,15 @@
             <ul>
             <li>「CSV一括登録」を押します。</li>
             <li>ファイルから登録したい分類CSVファイルを選択し、「開く」を押します。</li>
-            <li>CSVファイルは、「大分類,中分類,小分類」の形式になります。 <img src='./images/system/SYSTEM_08_calendar-category_4.png' style='border:solid 2px lightgray' /></li>
+            <li>CSVファイルは、記入例の通り「大分類,中分類,小分類」の形式になります。小分類がない場合は、中分類までの記入で問題ありません。 <img src='./images/system/SYSTEM_08_calendar-category_4.png' style='border:solid 2px lightgray' /></li>
             </ul>
             <br>
             <div style="page-break-before:always">
 
             </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTIwOTYwMTk3MTVdfQ==
+            -->
             <h2 id="ユーザ設定">ユーザ設定</h2>
             <h3 id="一覧とポリシー設定">一覧とポリシー設定</h3>
             <p>登録されているユーザーやグループの一覧の確認ができます。</p>
@@ -2670,11 +2936,836 @@
             <div style="page-break-before:always">
 
             </div>
+            <h2 id="ワクチン運用例">ワクチン運用例</h2>
+            <h3 id="事前準備システム管理者">事前準備(システム管理者)</h3>
+            <p><a href="./auth.md">権限に関するドキュメントを参照</a></p>
+            <ol type="1">
+            <li>チームの作成</li>
+            </ol>
+            <img src='./images/vaccine/User_Main.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「ユーザー設定」タブをクリック</li>
+            <li>「チーム」をクリック</li>
+            </ul>
+            <img src='./images/vaccine/Team_Main.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「新規作成」をクリック</li>
+            </ul>
+            <img src='./images/vaccine/Team_Detail.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「チーム名」に作成したいチームの名前を入力
+            <ul>
+            <li>ex) 総務課</li>
+            </ul></li>
+            <li>「権限設定」にて作成したいチームに表示を許可するタブのトグルボタンのスイッチを選択</li>
+            <li>「保存」ボタンをクリック</li>
+            </ul>
+            <ol start="2" type="1">
+            <li>システム実施ユーザー、グループの準備</li>
+            </ol>
+            <img src='./images/vaccine/User_Main.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「ユーザー設定」タブをクリック</li>
+            <li>「ユーザ」ボタンをクリック</li>
+            <li>「新規作成」をクリック</li>
+            </ul>
+            <img src='./images/vaccine/User_AddPermissionDetail.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>必要情報を入力
+            <ul>
+            <li>ユーザー名：追加したいユーザーの名前</li>
+            <li>一時パスワード：ワンタイムパスワード</li>
+            <li>メールアドレス：追加したいユーザーのメールアドレス</li>
+            <li>アドミニストレータ権限：ここを「はい」にした場合、スーパーユーザー権限（全権限）が付与</li>
+            <li>チーム：1 で作成したチームの中で、追加したいユーザーの所属チームを選択</li>
+            <li>権限：追加したいユーザーの操作を許可する権限を選択
+            <ul>
+            <li>admins, members, operator, guests</li>
+            </ul></li>
+            <li>この新規ユーザに招待を送信しますか？：メールでアカウント発行通知をしたい場合は、「はい」を選択</li>
+            </ul></li>
+            </ul>
+            <ol start="3" type="1">
+            <li>予約カレンダー項目の作成</li>
+            </ol>
+            <img src='./images/vaccine/calendar_01.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「カレンダー」タブをクリック</li>
+            <li>「カレンダー設定」ボタンをクリック</li>
+            <li>「大分類」、「中分類」、「小分類」に任意の分類名を入力
+            <ul>
+            <li>ex) 大分類⇒新型コロナワクチン接種, 中分類⇒接種回数, 小分類⇒会場</li>
+            <li>これ以上分類は出来ない
+            <ul>
+            <li>ワクチンごとにさらに分けたい場合は小分類に入れ込む
+            <ul>
+            <li>ex) XXXXXXX会場 -ファイザー</li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <img src='./images/vaccine/calendar_02.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「カレンダー名」に任意のカレンダー名を入力</li>
+            <li>「保存」ボタンをクリック</li>
+            </ul>
+            <img src='./images/vaccine/calendar_03.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「分類・カテゴリ」の「サンプルCSV出力」ボタンをクリック</li>
+            <li>エクスポートしたCSVを参考に、分類の内容を定義してインポート用のCSVファイルを作成
+            <ul>
+            <li>ex) 大分類⇒新型コロナワクチン接種, 中分類⇒1回目, 小分類⇒XXXXXXXXXX体育館</li>
+            </ul></li>
+            <li>「CSV一括登録」ボタンから先ほどのCSVをインポート</li>
+            </ul>
+            <ol start="4" type="1">
+            <li>カレンダーのコマ数設定と個別カレンダーの設定</li>
+            </ol>
+            <ul>
+            <li>初回設定時は、CSVファイルでカレンダーの詳細情報を登録(初期状態ではカレンダーの空き枠設定がされていないので、設定自体が不可)
+            <ul>
+            <li>カレンダー設定画面を開いているのであれば閉じてカレンダー画面を開く。</li>
+            <li>次に<a href="./サンプルカレンダーcsv.csv">サンプルカレンダーcsv.csv</a>の内容を参考にインポート用のCSVを作成する。</li>
+            <li>「インポート」ボタンから先ほどのCSVをインポート
+            <ul>
+            <li>カレンダーをインポートする際は最低7日間以上の情報をインポートする事。</li>
+            <li>カレンダーCSVは、文字コードutf-8にする事。sjisには対応しておりません。</li>
+            </ul></li>
+            </ul></li>
+            <li>前提
+            <ul>
+            <li>カレンダーは3 で定義した小項目単位で、予約可能な空き枠数を管理</li>
+            </ul></li>
+            </ul>
+            <img src='./images/vaccine/calendar_05.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「独立カレンダー設定」をクリック</li>
+            <li>「小分類」を選択(3 でCSVインポートした中から、設定対象カレンダーを選択)
+            <ul>
+            <li>ex) 小分類⇒XXXXXXXXXX体育館</li>
+            </ul></li>
+            <li>「本日からの予約可能日」に、予約を許可したい日数を入力
+            <ul>
+            <li>ex) 2日に設定した場合、当日含めて2日前から予約不可となる</li>
+            </ul></li>
+            </ul>
+            <img src='./images/vaccine/calendar_11.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>間違えてカレンダーを作成した場合は対象の「大分類」、「中分類」、「小分類」を選択した後、カレンダー画面の「削除」ボタンから削除可能
+            <ul>
+            <li>その際に、予約情報が入っている状態は削除不可</li>
+            <li>予約情報が既に入っている状態で削除する場合、管理画面から対象の予約キャンセルを行い、予約総数が0になった状態で削除を実施</li>
+            </ul></li>
+            </ul>
+            <ol start="5" type="1">
+            <li>予約帳票の作成</li>
+            </ol>
+            <img src='./images/vaccine/survey-01.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「帳票作成」タブをクリック</li>
+            <li>テンプレートから「新型コロナワクチン接種予約」を選択</li>
+            <li>「分類」のアイテムにて、「分類固定」をONにする</li>
+            <li>「大分類」から、3 で作成したカレンダーの大項目で、当該帳票で利用したいカレンダーの分類を選択
+            <ul>
+            <li>ex) 新型コロナワクチン接種</li>
+            </ul></li>
+            <li>「中分類」を編集不可
+            <ul>
+            <li>1回目の帳票では中分類（回数）を1回目にしておかないと、帳票とカレンダーであべこべになる（1回目の予約なのに2回目の予約で取りに行くなどの裏ワザが出来てしまう。）</li>
+            </ul></li>
+            <li>「帳票登録」ボタンをクリック</li>
+            <li>当該帳票に閲覧させたいチームを選択
+            <ul>
+            <li>ex) 情報システム課のみを選んだ場合、2 で情報システム化をチーム設定したユーザー以外は閲覧不可</li>
+            </ul></li>
+            <li>作成したLIFFに対してJSでバリデーションチェック
+            <ul>
+            <li>当初考えていたCSSのカスタマイズと同じ考え方でJSのカスタマイズが出来ないか？</li>
+            <li>レンダリングの実装確認要
+            <ul>
+            <li>survey-configのテーブルを直接操作することで、実現できないか？
+            <ul>
+            <li>survey-configに何かしらのトリガーを入れる</li>
+            </ul></li>
+            <li>ソースコード上には個別実装が残るが、survey-configにその項目を管理画面から作成することが出来ない為、そこのコード自体はDBを手で編集しないと使われないはず？
+            <ul>
+            <li>survey-configテーブルの対象の帳票項目に対して直接編集を加える(surveySchemaのtype?)</li>
+            <li>直接編集したsurveySchemaのtypeに対して、バリデーションチェックを行う実装を入れる(このsurveySchemaのtypeは管理画面の帳票作成からは登録不可)</li>
+            </ul></li>
+            <li>テンプレートを用意するので、そのテンプレートを利用した場合のみ、当該機能が利用できる
+            <ul>
+            <li>設計(ワクチンのためなので、汎用性は考慮しない)
+            <ul>
+            <li>照会一覧に表示した内容をフロント側で保持</li>
+            <li>予約確定時
+            <ul>
+            <li>surveySchemaのtypeがワクチン固有のitem typeだった場合 ――ここからコロナ利用アイテム――
+            <ul>
+            <li>2回目の予約の場合
+            <ul>
+            <li>フロントで保持しているパーティションキーを元に、前回の接種実施日と今回の予約日を比較</li>
+            <li>チェック期間は21日固定（ファイザー社）
+            <ul>
+            <li>他社ワクチンが認可された段階で、最長間隔期間を設定（28日想定） ※要確認</li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            <li><a href="./survey.pdf">帳票の詳細イメージを参照</a></li>
+            </ul>
+            <ol start="6" type="1">
+            <li>予約帳票のデータCSV作成</li>
+            </ol>
+            <ul>
+            <li>前提
+            <ul>
+            <li>予め、接種券番号等の自治体側で把握している情報をシステムに入力しておくことにより、ユーザーのミス入力及び入力の負担を軽減する。</li>
+            <li>2回分の予約帳票を作成しておくことも可能
+            <ul>
+            <li>一気に2回分取りに行くことは、バリデーションチェックを実施しているので不可</li>
+            <li>1回目を予約した2か月後からしか予約ができない</li>
+            </ul></li>
+            </ul></li>
+            <li>「HOME」タブをクリック</li>
+            <li>5 で作成した帳票を選択</li>
+            <li>コロナワクチン接種用CSVサンプルを基に、接種券番号等の情報を入力
+            <ul>
+            <li>宛名番号 ※初期フォーカスを当てたい項目をインデックスキーの一番上にする</li>
+            <li>接種券番号</li>
+            <li>生年月日</li>
+            <li>性別</li>
+            <li>接種回数
+            <ul>
+            <li>1回目、2回目で各人2レコード用意</li>
+            </ul></li>
+            <li>分類
+            <ul>
+            <li>中項目に1回目または2回目を設定</li>
+            </ul></li>
+            </ul></li>
+            <li>「CSVインポート」ボタンをクリック</li>
+            </ul>
+            <ol start="7" type="1">
+            <li>リッチメニューの設定</li>
+            <li>公開</li>
+            </ol>
+            <h3 id="liffでの登録変更キャンセルユーザー">LIFFでの登録・変更・キャンセル(ユーザー)</h3>
+            <ol type="1">
+            <li>リッチメニュー選択</li>
+            </ol>
+            <ul>
+            <li>「ワクチン接種予約」のリッチメニューをタップ</li>
+            </ul>
+            <ol start="2" type="1">
+            <li>必要情報の入力</li>
+            </ol>
+            <img src='./images/vaccine/survey-modify-01.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>帳票を照会するのに必要なキー項目を入力
+            <ul>
+            <li>&lt;1-事前準備 → 5. 予約帳票の作成&gt;で「照会キー」をONにした項目が照会帳票検索項目として表示される</li>
+            <li>個人情報観点でキーは複数設定することを推奨する</li>
+            </ul></li>
+            </ul>
+            <img src='./images/vaccine/survey-modify-02.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>入力したキー項目に一致した帳票の一覧情報が表示される
+            <ul>
+            <li>ex) 初期状態では予め管理者側で登録しておいた2回分の接種情報が一覧に表示される</li>
+            </ul></li>
+            <li>この時点でline userIDを接種券番号と紐づけて帳票の情報に保存
+            <ul>
+            <li>これにより、全ての帳票は初回アクセス時のline userIDでしかアクセス出来ない</li>
+            <li>line userIDが変更された場合の考慮
+            <ul>
+            <li>ブロック時、引継ぎ登録できない等は、電話してもらい、管理画面側からline userIDをクリアしてもらう</li>
+            </ul></li>
+            </ul></li>
+            <li>1回目or2回目の帳票を一覧から選択</li>
+            </ul>
+            <img src='./images/vaccine/survey-modify-03.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>管理者側で予め入力された情報以外の項目をユーザーは入力
+            <ul>
+            <li>管理者側で予め入力された情報(&lt;1-事前準備 → 5. 予約帳票の作成&gt;で「編集不可」をONにした項目)は編集不可</li>
+            </ul></li>
+            <li>「日時選択」ボタンをクリック</li>
+            </ul>
+            <ol start="3" type="1">
+            <li>予約日時選択</li>
+            </ol>
+            <img src='./images/vaccine/survey-modify-04.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「予約カレンダー」が表示される
+            <ul>
+            <li>&lt;1-事前準備 → 4. 個別カレンダーの設定&gt;で設定された空き枠情報に基づいて、空き枠アリの場合は〇が表示され、選択可</li>
+            </ul></li>
+            <li>〇となってる場所で、予約したい日時の場所をタップ</li>
+            </ul>
+            <ol start="4" type="1">
+            <li>予約情報確認</li>
+            </ol>
+            <img src='./images/vaccine/survey-modify-05.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「予約情報確認」画面が表示される</li>
+            <li>「予約確定」ボタンをタップ</li>
+            </ul>
+            <ol start="5" type="1">
+            <li>予約確定</li>
+            </ol>
+            <ul>
+            <li>「予約確定内容」が表示され、トークに予約情報がpush
+            <ul>
+            <li>カレンダーの予約数が+1される</li>
+            <li>予め登録されていた帳票の扱い
+            <ul>
+            <li>選択帳票のステータスがキャンセルに遷移</li>
+            <li>新たな未処理の帳票が作成される</li>
+            <li>帳票IDは同一</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <ol start="6" type="1">
+            <li>予約の変更</li>
+            </ol>
+            <ul>
+            <li>「ワクチン接種予約」のリッチメニューをタップ</li>
+            </ul>
+            <img src='./images/vaccine/survey-modify-01.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>帳票を照会するのに必要なキー項目を入力
+            <ul>
+            <li>&lt;1-事前準備 → 5. 予約帳票の作成&gt;で「照会キー」をONにした項目が照会帳票検索項目として表示される</li>
+            </ul></li>
+            </ul>
+            <img src='./images/vaccine/survey-modify-06.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>入力したキー項目に一致した帳票の一覧情報が表示される
+            <ul>
+            <li>帳票ID別に最新情報を1件表示</li>
+            <li>要するに表示されるのは2件</li>
+            </ul></li>
+            <li>1回目or2回目の帳票を一覧から選択 –以下、予約フローと同一</li>
+            <li>カレンダーの予約数が-1され、新たに設定した予約数が+1となる</li>
+            <li>元予約帳票の扱い
+            <ul>
+            <li>元予約帳票の予約情報は消去しない</li>
+            <li>元予約帳票のキャンセルとは別の「取り消し」ステータスに遷移 ※要確認</li>
+            <li>新たな未処理の帳票が作成される</li>
+            <li>帳票IDは同一</li>
+            </ul></li>
+            </ul>
+            <ol start="7" type="1">
+            <li>予約のキャンセル</li>
+            </ol>
+            <ul>
+            <li>「ワクチン接種予約」のリッチメニューをタップ</li>
+            </ul>
+            <img src='./images/vaccine/survey-modify-01.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>帳票を照会するのに必要なキー項目を入力
+            <ul>
+            <li>&lt;1-事前準備 → 5. 予約帳票の作成&gt;で「照会キー」をONにした項目が照会帳票検索項目として表示される</li>
+            </ul></li>
+            </ul>
+            <img src='./images/vaccine/survey-modify-06.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>入力したキー項目に一致した帳票の一覧情報が表示される
+            <ul>
+            <li>帳票ID別に最新情報を1件表示</li>
+            <li>要するに表示されるのは2件</li>
+            </ul></li>
+            <li>1回目or2回目の帳票を一覧から選択</li>
+            <li>「キャンセルボタン」をクリック</li>
+            <li>カレンダーの予約数が-1される</li>
+            <li>元予約帳票の扱い
+            <ul>
+            <li>元予約帳票の予約情報は消去しない</li>
+            <li>元予約帳票のステータスがキャンセルに遷移</li>
+            </ul></li>
+            <li>初回予約時にキャンセルをした場合
+            <ul>
+            <li>元予約帳票のステータスがキャンセルに遷移するが、次回予約実施時には帳票IDに紐づく最新の帳票（キャンセルされた帳票）の内容が表示されるため、問題なし
+            <ul>
+            <li>キャンセルステータスの場合、予約日時は引っ張ってこないため</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <ol start="8" type="1">
+            <li>予約したが当日接種できなかった場合</li>
+            </ol>
+            <ul>
+            <li>未実装</li>
+            <li>次回LIFFアクセス時に以下フローを実行
+            <ul>
+            <li>スマートフォンの時計と、予約日時を比較
+            <ul>
+            <li>予約日時が過去日だった場合
+            <ul>
+            <li>接種実施日（ワクチン特有アイテム。詳細は1-5）にvalueがあるか？
+            <ul>
+            <li>なければ、予約情報クリア</li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            <li>再度、予約日を入力（2. 必要情報の入力 参照）</li>
+            </ul>
+            <h3 id="電話受付の際の管理画面からの登録変更キャンセルシステム管理者">電話受付の際の管理画面からの登録・変更・キャンセル(システム管理者)</h3>
+            <ol type="1">
+            <li>予約対象帳票の選択</li>
+            </ol>
+            <img src='./images/vaccine/HOME_IndexkeySearch.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「ホーム」タブをクリック</li>
+            <li>「インデックスキー」に指定した項目（宛名番号を想定）に電話でヒアリングした接種券番号を入力</li>
+            <li>「検索」ボタンをクリック
+            <ul>
+            <li>単一検索のみ対応。AND条件での検索は不可</li>
+            <li>インデックスキーは1帳票に対して２アイテムまで</li>
+            </ul></li>
+            <li>1回目or2回目の接種をヒアリングして、対象の帳票をクリック</li>
+            </ul>
+            <ol start="2" type="1">
+            <li>予約情報の入力</li>
+            </ol>
+            <ul>
+            <li>ヒアリングした必要情報（予約日時）の入力</li>
+            <li>「日時選択」ボタンをクリック</li>
+            </ul>
+            <ol start="3" type="1">
+            <li>予約日時選択</li>
+            </ol>
+            <ul>
+            <li>カレンダーから予約可能日より、ヒアリングした予約希望日を選択</li>
+            </ul>
+            <ol start="4" type="1">
+            <li>予約確認</li>
+            </ol>
+            <ul>
+            <li>「予約情報確認」画面が表示される</li>
+            <li>「確定」ボタンをタップ</li>
+            </ul>
+            <ol start="5" type="1">
+            <li>予約確定</li>
+            </ol>
+            <ul>
+            <li>「予約確定内容」が表示される
+            <ul>
+            <li>カレンダーの予約数が+1される</li>
+            <li>予め登録されていた帳票の扱い
+            <ul>
+            <li>管理画面側からの帳票編集は、その帳票自体が編集される</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <ol start="6" type="1">
+            <li>予約の変更</li>
+            </ol>
+            <ul>
+            <li>予約登録手順と同一</li>
+            <li>元のカレンダーの予約数が-1され、新しいカレンダーの予約数が+1される
+            <ul>
+            <li>カレンダー登録した時点</li>
+            </ul></li>
+            </ul>
+            <ol start="7" type="1">
+            <li>予約のキャンセル</li>
+            </ol>
+            <img src='./images/vaccine/HOME_IndexkeySearch.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「ホーム」タブをクリック</li>
+            <li>「インデックスキー」に指定した項目（宛名番号を想定）に電話でヒアリングした接種券番号を入力</li>
+            <li>「検索」ボタンをクリック
+            <ul>
+            <li>単一検索のみ対応。AND条件での検索は不可</li>
+            <li>インデックスキーは1帳票に対して２アイテムまで</li>
+            </ul></li>
+            <li>1回目or2回目の接種をヒアリングして、対象の帳票をクリック</li>
+            <li>ステータスを「キャンセル」に設定
+            <ul>
+            <li>カレンダーの予約数が+1される</li>
+            <li>ステータスを「キャンセル」にした場合、当該帳票はステータス変更不可</li>
+            <li>再度予約を取りなおす場合は、「新規作成」ボタンから帳票を作りなおす必要がある</li>
+            </ul></li>
+            </ul>
+            <h3 id="csvエクスポートシステム管理者">CSVエクスポート(システム管理者)</h3>
+            <ol type="1">
+            <li>対象日時検索</li>
+            </ol>
+            <ul>
+            <li>「ホーム」タブをクリック</li>
+            <li>「日付」検索ボタンをクリック</li>
+            <li>「カレンダー予約日」に対象の日付範囲を入力
+            <ul>
+            <li>絞り込みは日付まで</li>
+            <li>時間での絞り込みは不可</li>
+            </ul></li>
+            </ul>
+            <ol start="2" type="1">
+            <li>対象帳票のCSVエクスポート</li>
+            </ol>
+            <ul>
+            <li>出力したい対象の帳票のチェックボックスをONにする
+            <ul>
+            <li>絞り込んだ後の全対象の場合は、「全て選択」をクリック</li>
+            </ul></li>
+            <li>「CSVエクスポート」をクリック</li>
+            </ul>
+            <ol start="3" type="1">
+            <li>フォーマット成型(システム外)</li>
+            </ol>
+            <ul>
+            <li>ダウンロードした端末からエクセルでファイルを開く</li>
+            <li>印刷フォーマットにエクセル上で編集する</li>
+            </ul>
+            <ol start="4" type="1">
+            <li>印刷(システム外)</li>
+            </ol>
+            <ul>
+            <li>エクセルの機能で印刷を実施</li>
+            </ul>
+            <h3 id="ワクチン接種対象者の確認システム管理者">ワクチン接種対象者の確認(システム管理者)</h3>
+            <ol type="1">
+            <li>4で出力したCSVから、ユーザーの接種回数・前回実施日をチェック
+            <ul>
+            <li>バリデーションチェックでシステム的にチェックをしているが、ユーザーとの認識を合わせるため実施</li>
+            <li>不要であれば、当オペレーションはスキップ</li>
+            </ul></li>
+            <li>不明点・不備等がある場合は個別にlineで連絡するよう通知</li>
+            </ol>
+            <ul>
+            <li>前提
+            <ul>
+            <li>lineでのやり取りは対象外。一方通行通知のみ。</li>
+            </ul></li>
+            </ul>
+            <img src='./images/vaccine/HOME_IndexkeySearch.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「ホーム」タブをクリック</li>
+            <li>「インデックスキー」に指定した項目（宛名番号を想定）に対象の接種券番号を入力</li>
+            <li>「検索」ボタンをクリック
+            <ul>
+            <li>単一検索のみ対応。AND条件での検索は不可</li>
+            <li>インデックスキーは1帳票に対して２アイテムまで</li>
+            </ul></li>
+            <li>対象の帳票を選択</li>
+            <li>「LINE送信」ボタンをクリック</li>
+            <li>テンプレートの「NG」をクリック</li>
+            <li>編集が必要な場合は、bodyのエリアで直接編集する</li>
+            <li>「LINE送信ボタン」をクリック</li>
+            </ul>
+            <ol start="3" type="1">
+            <li>自治体管理システムにて印刷した対象者の接種回数・前回実施日を突合(システム外)</li>
+            </ol>
+            <ul>
+            <li>自治体管理システムから21日以内に接種したユーザー情報を出力</li>
+            <li>21日以内チェック
+            <ul>
+            <li>出力したエクセルの接種券番号と突合
+            <ul>
+            <li>vlookup</li>
+            </ul></li>
+            </ul></li>
+            <li>同一ワクチンチェック
+            <ul>
+            <li>出力したエクセルの接種券番号と1回目接種ワクチンと突合
+            <ul>
+            <li>vlookup</li>
+            <li>if~“OK”</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <h3 id="接種当日の本人確認オペレーター-外部委託">接種当日の本人確認(オペレーター ※外部委託)</h3>
+            <ol type="1">
+            <li>クーポン券を受領</li>
+            <li>接種券番号の検索・確認(バーコード読み取り)</li>
+            </ol>
+            <img src='./images/vaccine/HOME_IndexkeySearch.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>ログイン後初期フォーカスが「インデックスキー」に指定した項目（宛名番号を想定）に当たっているため、そのままバーコード読込</li>
+            <li>「検索」ボタンクリック
+            <ul>
+            <li>単一検索のみ対応。AND条件での検索は不可</li>
+            <li>インデックスキーは1帳票に対して２アイテムまで</li>
+            </ul></li>
+            <li>表示された一覧の内容と、本人が一致するか確認</li>
+            <li>次の対象者を検索する際は「ホーム」ボタンを再度クリックして初期フォーカスを戻す</li>
+            </ul>
+            <h3 id="問診内容接種内容を追記オペレーター-医師-外部委託">問診内容、接種内容を追記(オペレーター, 医師 ※外部委託))</h3>
+            <ol type="1">
+            <li>問診実施、問診票に記入(医師)</li>
+            <li>クーポン券を問診票貼り付け(医師？オペレーター？)</li>
+            <li>接種券番号を検索(バーコード読み取り)</li>
+            </ol>
+            <img src='./images/vaccine/HOME_IndexkeySearch.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>ログイン後初期フォーカスが「インデックスキー」に指定した項目（宛名番号を想定）に当たっているため、そのままバーコード読込</li>
+            <li>「検索」ボタンクリック
+            <ul>
+            <li>単一検索のみ対応。AND条件での検索は不可</li>
+            <li>インデックスキーは1帳票に対して２アイテムまで</li>
+            </ul></li>
+            <li>表示された一覧から、今回の対象帳票を選択
+            <ul>
+            <li>少なくとも、1回目接種、2回目接種の2帳票は表示されている認識</li>
+            </ul></li>
+            </ul>
+            <ol start="4" type="1">
+            <li>問診票の内容をシステムに入力(or OCR?)</li>
+            </ol>
+            <ul>
+            <li>管理項目に対して、問診内容の記入
+            <ul>
+            <li>管理項目（問診内容）については、管理画面側の帳票詳細にのみ表示される
+            <ul>
+            <li>LIFF側での入力項目（ユーザー入力項目）には表示されない</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <h3 id="外部システム連携csvエクスポート">外部システム連携（CSVエクスポート）</h3>
+            <ol type="1">
+            <li>接種対象日の帳票を検索</li>
+            </ol>
+            <ul>
+            <li>「ホーム」タブをクリック</li>
+            <li>「日付」検索ボタンをクリック</li>
+            <li>「カレンダー予約日」に対象の日付範囲を入力
+            <ul>
+            <li>絞り込みは日付まで</li>
+            <li>時間での絞り込みは不可</li>
+            </ul></li>
+            </ul>
+            <ol start="2" type="1">
+            <li>対象帳票をCSVエクスポート</li>
+            </ol>
+            <ul>
+            <li>出力したい対象の帳票のチェックボックスをONにする
+            <ul>
+            <li>絞り込んだ後の全対象の場合は、「全て選択」をクリック</li>
+            </ul></li>
+            <li>「CSVエクスポート」をクリック S-JIS</li>
+            <li>エクセルでちゃんと見られる</li>
+            </ul>
+            <ol start="3" type="1">
+            <li>CSVフォーマットの編集(システム外)</li>
+            </ol>
+            <ul>
+            <li>ダウンロードした端末からエクセルやエディタでファイルを開く</li>
+            <li>CSVフォーマットを編集する</li>
+            </ul>
+            <ol start="4" type="1">
+            <li>外部システムインポート(システム外)</li>
+            </ol>
+            <ul>
+            <li>3 で編集したCSVを外部システムにインポートする or その情報をもとにCSVファイルを入力する
+            <ul>
+            <li>LSCでは、国が管理するシステムへの直接入力は考慮しておりません。</li>
+            <li>各自治体の予防接種台帳に一度登録いただき、そちらをLGWAN経由で国が管理するシステムとの連携をお願いします。
+            <ul>
+            <li>国が管理するシステムの詳細が決まり次第、そちらの対応も必要に応じて検討致します</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <h3 id="クーポンコードが再発行変更になった際">クーポンコードが再発行（変更）になった際</h3>
+            <ol type="1">
+            <li>再発行対象ユーザーを再発行前のクーポンコードで検索</li>
+            </ol>
+            <img src='./images/vaccine/HOME_IndexkeySearch.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「ホーム」タブをクリック</li>
+            <li>「インデックスキー」に指定した項目（宛名番号を想定）に、再発行前の接種券番号を入力</li>
+            <li>「検索」ボタンをクリック
+            <ul>
+            <li>単一検索のみ対応。AND条件での検索は不可</li>
+            <li>インデックスキーは1帳票に対して２アイテムまで</li>
+            </ul></li>
+            <li>対象の帳票をクリック</li>
+            </ul>
+            <ol start="2" type="1">
+            <li>対象帳票のクーポンコードを再発行後クーポンコードに修正</li>
+            </ol>
+            <ul>
+            <li>接種券番号を、再発行前の番号から、再発行後の番号に修正</li>
+            <li>「保存」ボタンをクリック</li>
+            </ul>
+            <h3 id="次回接種日のリマインド通知">次回接種日のリマインド通知</h3>
+            <ol type="1">
+            <li>次回接種をリマインドする対象者を接種予約日をキーに検索</li>
+            </ol>
+            <ul>
+            <li>「ホーム」タブをクリック</li>
+            <li>「日付」検索ボタンをクリック</li>
+            <li>「カレンダー予約日」に対象の日付範囲を入力
+            <ul>
+            <li>絞り込みは日付まで</li>
+            <li>時間での絞り込みは不可</li>
+            </ul>
+            <img src='./images/vaccine/HOME_SearchDate.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div></li>
+            </ul>
+            <ol start="2" type="1">
+            <li>対象者を選択</li>
+            </ol>
+            <ul>
+            <li>処理時間に関しては検証中
+            <ul>
+            <li>多少時間がかかっても問題はないが、エラーが出ることは避ける想定</li>
+            </ul></li>
+            <li>リマインドしたい対象者のチェックをONにする</li>
+            <li>「配信」ボタンをクリック</li>
+            </ul>
+            <img src='./images/vaccine/HOME_AnswerList.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>対象者に対してLINEの一斉配信を行う</li>
+            </ol>
+            <ul>
+            <li>以下を入力
+            <ul>
+            <li>タイトル：この配信の題名を入力
+            <ul>
+            <li>ユーザーにはこちらの入力内容は通知されません。（管理用）</li>
+            </ul></li>
+            <li>検索条件 or 選択条件の選択
+            <ul>
+            <li>検索条件をONの場合：「ホーム」画面で検索したユーザー全てが配信対象</li>
+            <li>選択をONの場合：2 でチェックをONにしたユーザーだけが配信対象</li>
+            </ul></li>
+            <li>メッセージ：ユーザーに配信したい内容を入力
+            <ul>
+            <li>配信対象の全てのユーザーに対して同じメッセージが送信される</li>
+            <li>テキストメッセージのみ対応</li>
+            </ul></li>
+            </ul></li>
+            <li>「確認画面へ」をクリック</li>
+            </ul>
+            <img src='./images/vaccine/HOME_CreateBulkDeliveryMsg.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「LINE送信」をクリック</li>
+            </ul>
+            <img src='./images/vaccine/HOME_ComfirmBulkDeliveryMsg.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>送信した内容は、各帳票の「管理メモ」に履歴として追記される</li>
+            <li>同一ユーザーの複数帳票が対象に入ってる場合は、1通しか配信しない
+            <ul>
+            <li>その際、管理メモに残るのは、updateが新しいものにのみ</li>
+            <li>テンプレートを設ける
+            <ul>
+            <li>複数人（家族で）予約した場合、リマインドが1通しかいかないので、違和感のないテンプレートを用意</li>
+            </ul></li>
+            </ul></li>
+            <li>送信されるユーザーは、1回でもLINEから予約を実施したユーザーのみ
+            <ul>
+            <li>電話予約の場合は、配信実施不可</li>
+            </ul></li>
+            <li>最大配信数要検討（大量の場合は何回かに分ける必要がありそう？）
+            <ul>
+            <li>ベンチマークの結果と照らし合わせる</li>
+            <li>時間はかかっても問題ないが、その場合非同期と完了ステータスは知りたい</li>
+            </ul></li>
+            </ul>
+            <img src='./images/vaccine/HOME_AnswerDetail.png' style='border:solid 2px lightgray' /> <br>
+            <div style="page-break-before:always">
+
+            </div>
             </div>
   </div>
 
   <footer>
-    Copyright (C) LINE Fukuoka Corp. All Rights Reserved. Version 1.3.0
+    Copyright (C) LINE Fukuoka Corp. All Rights Reserved. Version 1.4.0
   </footer>  
   <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
 
