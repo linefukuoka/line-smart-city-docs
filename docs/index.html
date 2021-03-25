@@ -109,10 +109,12 @@
         </ul></li>
         <li><a href="#カレンダー">カレンダー</a>
         <ul>
-        <li><a href="#トップ画面と初期設定">トップ画面と初期設定</a></li>
-        <li><a href="#空き枠数の変更">空き枠数の変更</a></li>
-        <li><a href="#予約帳票の作り方1">予約帳票の作り方1</a></li>
-        <li><a href="#予約帳票の作り方2">予約帳票の作り方2</a></li>
+        <li><a href="#設定カレンダー全般">設定－カレンダー全般 <!-- 目次サブメニュー --></a></li>
+        <li><a href="#設定ー分類カテゴリ">設定ー分類・カテゴリ<!-- 目次サブメニュー --></a></li>
+        <li><a href="#設定ー独立カレンダー設定">設定ー独立カレンダー設定<!-- 目次サブメニュー --></a></li>
+        <li><a href="#設定ートップ画面カレンダー登録">設定ートップ画面・カレンダー登録<!-- 目次サブメニュー --></a></li>
+        <li><a href="#設定ー枠数変更">設定ー枠数変更<!-- 目次サブメニュー --></a></li>
+        <li><a href="#設定ーカレンダー削除">設定ーカレンダー削除<!-- 目次サブメニュー --></a></li>
         </ul></li>
         <li><a href="#防災">防災</a>
         <ul>
@@ -1805,129 +1807,250 @@
 
             </div>
             <h2 id="カレンダー">カレンダー</h2>
-            <h3 id="トップ画面と初期設定">トップ画面と初期設定</h3>
-            <p>カレンダーの設定方法を説明します。</p>
+            <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <h3 id="設定カレンダー全般">設定－カレンダー全般 <!-- 目次サブメニュー --></h3>
+            <p>カレンダー全般について説明します。 ここでは複数のカレンダーを分類・管理するための名称の設定を行います。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>大分類、中分類、小分類で入力した値で「検索ボタン」を押すと検索し結果が一覧に表示されます。</li>
+            <li>メインメニュー「カレンダー」をクリックし、次に「カレンダー設定」をクリックします。</li>
             </ol>
-            <ul>
-            <li>システム設定のカレンダー設定で設定したカレンダー名、大分類名、中分類名、小分類名が表示されます。</li>
-            </ul>
-            <p><img src='./images/calendar/CALENDAR_01_top_1.png' style='border:solid 2px lightgray' /></p>
-            <br>
+            <p><img src='./images/calendar/CALENDAR_01_general_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
             </div>
+            <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>はじめての場合はカレンダーが登録されていないので、「一括登録」ボタンを押してカレンダーCSVデータをインポートします。</li>
+            <li>カレンダー名、大分類項目名、中分類項目名、小分類項目名を記入します。</li>
             </ol>
-            <p><img src='./images/calendar/CALENDAR_01_top_2.png' style='border:solid 2px lightgray' /></p>
-            <br>
+            <p><img src='./images/calendar/CALENDAR_01_general_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <ol start="3" type="1">
-            <li>「ファイルを選択」ボタンを押して、カンレダーCSVデータを選択し、「開く」ボタンを押すとカレンダーがインポートされます。</li>
+            <li>「保存」をクリックしカレンダー全般の設定を完了します。設定した名称はカレンダー機能のトップ画面に反映されます。</li>
             </ol>
-            <p><img src='./images/calendar/CALENDAR_01_top_3.png' style='border:solid 2px lightgray' /></p>
-            <br>
+            <p><img src='./images/calendar/CALENDAR_01_general_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTIwODE3MjkxNjUsLTIyMjY2NDI4MiwtMj
+            AwMjg3MTQ4NiwxNzE3NzgwNDE4LDI1NTA2MzYyNywzOTQzMDk2
+            NzAsMTAxNjQxMjY0MiwtNzE0NDEwODMsNTk1NDg2OTk2XX0=
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="設定ー分類カテゴリ">設定ー分類・カテゴリ<!-- 目次サブメニュー --></h3>
+            <p>カレンダー設定の「分類・カテゴリ」について説明します。 ここではカレンダーを分類項目のセットの登録を行います。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>カレンダー設定の「分類・カテゴリ」では大分類・中分類・小分類の項目のセットを作成します。</li>
+            </ol>
+            <ul>
+            <li>1件ずつ作成する場合は「新規追加」ボタンを押下し、「分類追加」子画面で登録を行います。(詳細は2参照)</li>
+            <li>登録済の分類項目を出力する場合は「CSV出力」ボタンを押下します。(詳細は3参照)</li>
+            <li>一括登録を行う場合はCSVファイルを用意し、「CSV一括登録」ボタンを押下しファイルを取り込みます。(詳細は4参照)</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_02_classification-category_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>分類項目のセットを1件ずつ作成する場合は「新規追加」ボタンから大分類・中分類・小分類に値を入力し「保存」ボタンを押下します。</li>
+            </ol>
+            <ul>
+            <li>カレンダーの登録を行うには大分類及び中分類の設定が必須となります。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_02_classification-category_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>追加済みの分類のセットを出力する場合には、「CSV出力」を押下します。下記の形式のファイルを出力します。<br />
+            <img src='./images/calendar/CALENDAR_02_classification-category_3.png' style='border:solid 2px lightgray' /></li>
+            </ol>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <ol start="4" type="1">
-            <li>カレンダーにインポートするCSVの形式は下記となります。</li>
+            <li>「CSV一括登録」を押すと自身のフォルダにあるCSVファイルを選択できますので、そちらから登録したいファイルを選択し、「選択」ボタンを押すと値が入力されます。</li>
             </ol>
             <ul>
-            <li>1行目1列目に”#”固定にします。</li>
-            <li>1行目2列目以降に連続した日付を設定します。</li>
-            <li>2列目2行目以降に連続した30分単位の時間帯を設定します。（8:30～16:30固定）</li>
-            <li>日付・時間帯毎に空き枠数（予約可能数）を設定します。 <img src='./images/calendar/CALENDAR_01_top_4.png' style='border:solid 2px lightgray' /></li>
+            <li>値をまとめて作成したい場合にはこちらを用います。</li>
             </ul>
+            <p><img src='./images/calendar/CALENDAR_02_classification-category_4.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbODI2OTk5OTQ0XX0=
+            eyJoaXN0b3J5IjpbLTE1MDc0MDA3MzksLTQ5OTA2Njg0NCwtMT
+            UzNzgyMTc2MCw4ODI1NDYyMjgsLTExOTE4NjAyMjEsLTEzMDYy
+            NzczMTQsLTIxNDY4MzM5MzZdfQ==
             -->
-            <h3 id="空き枠数の変更">空き枠数の変更</h3>
-            <p>カレンダーの空き枠数の変更方法を説明します。カレンダーデータをインポートしていない場合は「トップ画面」を参照ください。</p>
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="設定ー独立カレンダー設定">設定ー独立カレンダー設定<!-- 目次サブメニュー --></h3>
+            <p>独立カレンダー設定について説明します。 ここでは個別のカレンダーについて詳細設定を行います。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>大分類、中分類、小分類を選択して「検索ボタン」を押すとカレンダー一覧が表示されます。</li>
+            <li>「独立カレンダー設定」で表示されるドロップダウンで「分類・カテゴリ」機能で作成した分類のセットを選択します。</li>
             </ol>
             <ul>
-            <li>カレンダーには「予約数／空き枠数」が表示されます。</li>
+            <li>ドロップダウンを選択すると「基本設定」「予約の開始と終了時刻管理」が表示されます。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_03_custom_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>予約可能日の変更は「本日からの予約可能日」で行います。デフォルトで2日が設定されています。変更する場合は数値を変更し「保存」ボタンをクリックします。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_03_custom_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="3" type="1">
+            <li>カレンダーの開始時刻・終了時刻の表記を変更する場合はCSVファイルで取り込みを行います。クリップマークを押下し、ファイルを選択し、「インポート」ボタンを押下します。出力する場合は「出力」ボタンを押下するとCSVファイルが出力されます。（CSVファイルについては4参照）</li>
+            </ol>
+            <ul>
+            <li>ファイルを選択すると「インポート」ボタンがアクティブになります。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_03_custom_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>CSVファイルの形式は以下のようになります。</li>
+            </ol>
+            <ul>
+            <li>コマIDはカレンダーにおけるコマ（開始時刻・終了時刻のセット）の並び順の指定になります。コマIDを入れ替えてインポートするとカレンダーのコマの並び順が入れ替わります。</li>
+            <li>開始時刻・終了時刻は文字列（「午前」「午後」等）を設定することも可能です。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_03_custom_4.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbNTM3NTc1OTM5LDIwNzU3OTQ0MjQsLTIwNj
+            g5OTAyNDRdfQ==
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="設定ートップ画面カレンダー登録">設定ートップ画面・カレンダー登録<!-- 目次サブメニュー --></h3>
+            <p>カレンダーのトップ画面とカレンダーの登録方法について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「大分類」「中分類」「小分類」に値を入力して「検索ボタン」を押すと検索し、結果が一覧に表示されます。</li>
+            </ol>
+            <ul>
+            <li>分類名は「カレンダー設定」＞「カレンダー全般」で設定した名称が表示されます。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_04_top_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>カレンダー登録を行うには「一括登録」ボタンを押下します。 <img src='./images/calendar/CALENDAR_04_registration_1.png' style='border:solid 2px lightgray' /></li>
+            </ol>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>「ファイルを選択」ボタンを押下して、カレンダーデータのCSVファイルを選択し、「登録する」ボタンを押下するとカレンダーがインポートされます。</li>
+            </ol>
+            <ul>
+            <li>「ファイル選択」ボタンは「一括登録」ボタンを押下することで表示されます。</li>
+            <li>登録が成功した場合、「一括登録処理が完了しました」と表示され、カレンダーが反映されます。</li>
+            <li>登録が失敗した場合、エラー内容が表示されます。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_04_registration_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>カレンダーにインポートするCSVの形式は下記になります。</li>
+            </ol>
+            <ul>
+            <li>1列目にはデータのIDを設定します。</li>
+            <li>2列目には予約開始時間を設定します。</li>
+            <li>3列目には終了時間を設定します</li>
+            <li>1行目4列目以降の日付は連続した日付になります。</li>
+            <li>ID・日付・時間帯毎に空き枠数を設定します。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_04_registration_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTE5MDUxOTgyMzcsMzQwNDgzNDE2LC05MD
+            E0MDIzNzFdfQ==
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="設定ー枠数変更">設定ー枠数変更<!-- 目次サブメニュー --></h3>
+            <p>カレンダーの空き枠数の変更方法について説明します。 ※カレンダーデータをのインポートしていないが未済の場合は「トップ画面・カレンダー登録」を参照してください。<!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>大分類・中分類・小分類を選択して「検索」ボタンを押すとカレンダー一覧が表示されます。</li>
+            </ol>
+            <ul>
+            <li>カレンダーには「予約数/予約枠数」が表示されます。</li>
             <li>予約数は、LINEから予約された数が表示されます。</li>
-            <li>予約は3日目から予約可能となります。（例：本日が12/1の場合、12/1、12/2、12/3は予約できず12/4から予約可能となります）</li>
-            <li>予約変更機能は未実装のため、予約登録された日は、予約枠の変更はできません。</li>
             <li>過去の予約枠数の変更はできません。</li>
             <li>「次の週」ボタンを押すと次週のカレンダーが表示されます。</li>
             <li>「前の週」ボタンを押すと前の週のカレンダーが表示されます。</li>
             </ul>
-            <p><img src='./images/calendar/CALENDAR_02_update_1.png' style='border:solid 2px lightgray' /></p>
-            <br>
+            <p><img src='./images/calendar/CALENDAR_05_changeframe_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
             </div>
+            <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>「編集」ボタンを押すと、空き数の変更が可能です。空き枠数の変更後「保存」ボタンを押すと変更が保存されます。</li>
+            <li>「編集」ボタンを押すと、予約枠数の変更が可能です。空き枠数の変更後「保存」ボタンを押すと変更が保存されます。</li>
             </ol>
             <ul>
-            <li>予約空き数の最大は99までとなります。</li>
-            <li>週単位での保存のため、他の週を変更したい場合は、一度保存してから他の週へ移動してください。</li>
-            <li>大中小分類単位でカレンダーは管理されているため、他の分類に移動する場合は一度保存してから他の分類へ移動してください。</li>
+            <li>大分類・中分類・小分類の3つを合わせたセットを1つの単位でとしてカレンダーは管理されているため、いずれかの分類を変更する場合は、1度保存してから他の分類の変更を行なってください。</li>
+            <li>すでに予約が入っている箇所はその予約数以下に予約枠を変更することはできません。</li>
             </ul>
-            <p><img src='./images/calendar/CALENDAR_02_update_2.png' style='border:solid 2px lightgray' /></p>
+            <p><img src='./images/calendar/CALENDAR_05_changeframe_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTM4MTQ4MTQxXX0=
+            eyJoaXN0b3J5IjpbLTE3MjcxNTQ0MjEsLTE2MTY5ODk5MDUsLT
+            E0NTI0NTU5MTgsLTEzNjU5NTAyMjVdfQ==
             -->
-            <h3 id="予約帳票の作り方1">予約帳票の作り方1</h3>
-            <p>カレンダーの帳票作成までの流れを説明します。</p>
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="設定ーカレンダー削除">設定ーカレンダー削除<!-- 目次サブメニュー --></h3>
+            <p>カレンダーの削除方法について説明します。<!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>帳票作成時に下記の設定が必要となります。</li>
+            <li>削除したいカレンダーを表示させ、「削除」ボタンを押すと「カレンダーを削除してよろしいですか？」という確認ダイアログが表示されるので、ます。「はい」ボタンを押すと目的のカレンダーが削除されます。</li>
             </ol>
             <ul>
-            <li>追加型にします。</li>
-            <li>記述式に分類を設定します。こちらの分類単位で予約管理します。</li>
-            <li>記述式にカレンダーボタンを設定します。こちらのボタンを設定することによりカレンダー画面へ遷移します。</li>
+            <li>「カレンダーを削除してよろしいですか？」という確認ダイアログで「いいえ」ボタンを押すと「削除」ボタンを押す前の画面に戻ります。</li>
+            <li>「削除」ボタンはカレンダーの下に表示されます。</li>
             </ul>
-            <p><img src='./images/calendar/CALENDAR_03_info1_1.png' style='border:solid 2px lightgray' /></p>
-            <br>
+            <p><img src='./images/calendar/CALENDAR_06_delete_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
             </div>
-            <ol start="2" type="1">
-            <li>LINE側で帳票を開くと、分類を設定して、カレンダーボタン「予約日時指定に進む」が表示されます。</li>
-            </ol>
-            <p><img src='./images/calendar/CALENDAR_03_info1_2.png' style='border:solid 2px lightgray' /></p>
-            <ol start="3" type="1">
-            <li>カレンダーが表示され、管理画面で設定した予約できる日時が〇で表示されます。予約できない場合は✕で表示されます。予約したい日時を選択し「日付確定」ボタンを押します。</li>
-            </ol>
-            <p><img src='./images/calendar/CALENDAR_03_info1_3.png' style='border:solid 2px lightgray' /></p>
-            <ol start="4" type="1">
-            <li>確認画面が表示されますので、「はい」を選択すると次の画面へ遷移します。 キャンセルする場合は「いいえ」を押すとカレンダー画面へ戻ります。</li>
-            </ol>
-            <p><img src='./images/calendar/CALENDAR_03_info1_4.png' style='border:solid 2px lightgray' /> <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTExOTQ1MjM3MjgsMTE2MTg3OTY3MiwtMT
-            IzMzIwMjU5NiwtMzgxNDgxNDFdfQ==
-            --></p>
-            <h3 id="予約帳票の作り方2">予約帳票の作り方2</h3>
-            <p>カレンダーの帳票作成までの流れを説明します。</p>
-            <ol type="1">
-            <li>予約確認画面が表示されます。「予約確定」ボタンを押すと予約が確定されます。</li>
-            </ol>
-            <p><img src='./images/calendar/CALENDAR_03_info2_1.png' style='border:solid 2px lightgray' /></p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <ol start="2" type="1">
-            <li>予約完了画面が表示されますので、ウィンドウを閉じます。</li>
-            </ol>
-            <p><img src='./images/calendar/CALENDAR_03_info2_2.png' style='border:solid 2px lightgray' /></p>
+            <p><!-- 強制的に改ページ --></p>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTkwNDcxNDc0MSw4NDg2ODkzNjMsMTE2MT
-            g3OTY3MiwtMTIzMzIwMjU5NiwtMzgxNDgxNDFdfQ==
+            eyJoaXN0b3J5IjpbMTQ5NjU5MjU0MCwtNzEyODk3MzcsLTI1OT
+            IxNzUzNCw4NjM2MDQzMzFdfQ==
             -->
             <h2 id="防災">防災</h2>
             <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
