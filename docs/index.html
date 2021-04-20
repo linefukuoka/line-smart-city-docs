@@ -93,6 +93,9 @@
         <li><a href="#liffwebを開く">LIFF・webを開く<!-- 目次サブメニュー --></a></li>
         <li><a href="#帳票一覧を無効">帳票一覧を無効 <!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票">追加型帳票 <!-- 目次サブメニュー --></a></li>
+        <li><a href="#アイテムのオプション">アイテムのオプション <!-- 目次サブメニュー --></a></li>
+        <li><a href="#アイテム内の各スイッチ">アイテム内の各スイッチ <!-- 目次サブメニュー --></a></li>
+        <li><a href="#帳票登録編集時のチーム設定">帳票登録・編集時のチーム設定 <!-- 目次サブメニュー --></a></li>
         </ul></li>
         <li><a href="#シナリオ設定">シナリオ設定</a>
         <ul>
@@ -125,6 +128,7 @@
         <li><a href="#設定ー独立カレンダー設定">設定ー独立カレンダー設定<!-- 目次サブメニュー --></a></li>
         <li><a href="#設定-トップ画面と初期独立カレンダー設定">設定-トップ画面と初期独立カレンダー設定 <!-- 目次サブメニュー --></a></li>
         <li><a href="#設定ートップ画面カレンダー登録">設定ートップ画面・カレンダー登録<!-- 目次サブメニュー --></a></li>
+        <li><a href="#設定-カレンダーcsv出力">設定-カレンダーCSV出力 <!-- 目次サブメニュー --></a></li>
         <li><a href="#設定ー枠数変更">設定ー枠数変更<!-- 目次サブメニュー --></a></li>
         <li><a href="#設定ーカレンダー削除">設定ーカレンダー削除<!-- 目次サブメニュー --></a></li>
         </ul></li>
@@ -1391,6 +1395,260 @@
             MjU1Myw2NzM4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF
             19
             -->
+            <!-- 目次メインメニュー -->
+            <h3 id="アイテムのオプション">アイテムのオプション <!-- 目次サブメニュー --></h3>
+            <p>各アイテムのオプションについて説明します。 <!-- 最初に何の説明をするのか明記 --> 1. オプション【記述式】内の各オプション 各オプションでは必須項目である「タイトル」、オプションの説明に使用できる「説明」が設定されています。 また、「編集不可」、「管理項目」、「インデックスキー」、「照会キー」、「必須」の5つのトグルボタンが使用可能です。</p>
+            <ul>
+            <li>1行テキスト
+            <ul>
+            <li>入力されたテキストを1行で表示します。 ※【記述式】のデフォルトで設定されているオプションはこちらの「1行テキスト」になります。
+            <ul>
+            <li>「1行テキスト回答・デフォルト設定(任意)」ではテキストにデフォルトの文字を設定することが可能</li>
+            <li>「回答の検証を設定(任意)」では最小文字数と最大文字数の設定が可能 設定しなかった場合、最小文字数は0、最大文字数は300</li>
+            </ul></li>
+            </ul></li>
+            <li>Eメールアドレス
+            <ul>
+            <li>Eメールアドレスの入力に使用します。
+            <ul>
+            <li>「Eメールアドレス・デフォルト設定(任意)」ではテキストにデフォルトの文字を設定することが可能</li>
+            <li>正しいメールのみ入力できる</li>
+            </ul></li>
+            </ul></li>
+            <li>電話番号
+            <ul>
+            <li>電話番号の入力に使用します。
+            <ul>
+            <li>「電話番号・デフォルト設定(任意)」ではテキストにデフォルトの文字を設定することが可能</li>
+            <li>半角数字のみで15桁まで入力できる</li>
+            </ul></li>
+            </ul></li>
+            <li>数値
+            <ul>
+            <li>数字のみの入力に使用します。
+            <ul>
+            <li>「数値・デフォルト設定(任意)」ではテキストにデフォルトの文字を設定することが可能</li>
+            <li>「回答の検証を設定(任意)」では</li>
+            <li>半角数字のみ入力できる</li>
+            </ul></li>
+            </ul></li>
+            <li>郵便番号
+            <ul>
+            <li>郵便番号の入力に使用します。
+            <ul>
+            <li>「郵便番号・デフォルト(任意)」ではテキストにデフォルトの文字を設定することが可能</li>
+            <li>半角数字のみで7桁の入力が必要</li>
+            </ul></li>
+            </ul></li>
+            <li>住所
+            <ul>
+            <li>住所の入力に使用します。
+            <ul>
+            <li>「住所・デフォルト(任意)」ではテキストにデフォルトの文字を設定することが可能</li>
+            <li>最小文字数は0、最大文字数は300</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/survey/SURVEY_100_item-option_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>各アイテムのオプション 各オプションでは必須項目である「タイトル」、オプションの説明に使用できる「説明」が設定されています。</li>
+            </ol>
+            <ul>
+            <li>段落
+            <ul>
+            <li>段落を用いながらのテキスト入力が可能になります。 ※改行も1文字としてカウントされるので注意
+            <ul>
+            <li>「長文回答・デフォルト設定(任意)」では任意で、テキストにデフォルトの文字を設定することが可能</li>
+            <li>「回答の検証を設定(任意)」では任意で、最小文字数と最大文字数の設定が可能</li>
+            <li>ここでは「編集不可」、「管理項目」、「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            <li>ラジオボタン
+            <ul>
+            <li>複数選択肢がある内、1つのみ選択を行うことができます。
+            <ul>
+            <li>「選択肢を追加」で選択肢を増やすことが可能 また、各選択肢の名前の変更も可能</li>
+            <li>ここでは「編集不可」、「管理項目」、「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            <li>グループヘッダ
+            <ul>
+            <li>【ラジオグループヘッダ】の選択肢で使用します。
+            <ul>
+            <li>「タイトル」と「説明」のみが使用可能</li>
+            <li>ここで使用できるトグルボタンはなし</li>
+            </ul></li>
+            </ul></li>
+            <li>ラジオグループヘッダ
+            <ul>
+            <li>【ラジオボタン】の機能に付け加えて、選択肢に【グループヘッダ】を選択することができます。
+            <ul>
+            <li>「選択肢を追加」で選択肢を増やすことが可能 また、各選択肢の名前の変更も可能</li>
+            <li>各選択肢でグループヘッダを設定することが可能</li>
+            <li>ここでは「編集不可」、「管理項目」、「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            <li>チェックボックス
+            <ul>
+            <li>複数選択肢がある内、複数選択を行うことができます。
+            <ul>
+            <li>「選択肢を追加」で選択肢を増やすことが可能 また、各選択肢の名前の変更も可能</li>
+            <li>「回答の検証を設定(任意)」では任意で、選択する最小個数と選択する最大個数の設定が可能</li>
+            <li>ここでは「編集不可」、「管理項目」、「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            <li>プルダウンボタン
+            <ul>
+            <li>選択肢をプルダウンリストで表示し、プルダウンリストの中から値を選択することができます。
+            <ul>
+            <li>「選択肢を追加」で選択肢を増やすことが可能 また、各選択肢の名前の変更も可能</li>
+            <li>ここでは「編集不可」、「管理項目」、「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            <li>サジェスト
+            <ul>
+            <li>どこかに対してサジェスト機能を追加したい場合に使用します。
+            <ul>
+            <li>「</li>
+            <li>ここでは「管理項目」、「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            <li>日付選択
+            <ul>
+            <li>日付をカレンダーから選択することができます。 ※カレンダーの設定などは必要ありません。
+            <ul>
+            <li>ここでは「編集不可」、「管理項目」、「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            <li>生年月日
+            <ul>
+            <li>誕生日を生年、月、日ごとに選択することができます。 ※カレンダーの設定は必要ありません。
+            <ul>
+            <li>ここでは「編集不可」、「管理項目」、「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            <li>説明文
+            <ul>
+            <li>管理者側がユーザ側に対して説明文を表示する際に使用します。 ※説明文なので、ユーザからは編集ができません。
+            <ul>
+            <li>ここで使用できるトグルボタンはなし</li>
+            </ul></li>
+            </ul></li>
+            <li>カレンダーボタン
+            <ul>
+            <li>【分類】と組み合わせることで、カレンダーを用いた予約を行うことができる。 ※【分類】を作成していないと帳票の登録ができません。
+            <ul>
+            <li>ここで使用できるトグルボタンはなし</li>
+            </ul></li>
+            </ul></li>
+            <li>分類
+            <ul>
+            <li>【カレンダーボタン】と組み合わせることで、カレンダーを用いた予約を行うことができる。 ※【カレンダーボタン】を作成していないと帳票の登録ができません。
+            <ul>
+            <li>大分類固定のチェックボックスにチェックを入れることで、大分類を固定することが可能 大分類を固定しなかった場合、「編集不可」トグルボタンを使用することが可能</li>
+            <li>大分類・中分類・小分類それぞれにタイトルを設定することが可能</li>
+            <li>ここでは「照会キー」、「必須」トグルボタンが使用可能</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/survey/SURVEY_100_item-option_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMTA5NzE1OTM3OCwtMTI2MjE2ODE3OCwtMT
+            QxODk4OTEzMywxNTM3NzAwNiwtNDc3ODYyNjM4LC04NDc4Nzgw
+            MjEsMTQ0NTE5NzU4OSwxODg1Mzk3MTA5LC0xODkxMDIwNzk3LD
+            E5NjQzNTU5ODgsMTA2NDE0ODA4OSwtMTAwODg2MzAxNSw2NTc0
+            MDg3MDYsMTU1MjMxODUwNiwtOTYxMTc4MDUzLDEzODQ1MTU5Nj
+            MsLTMxMzk2MDU0LC0zNjczMTgyNDIsOTUyNTY0NTE0LC0xMDcy
+            NDU3MjExXX0=
+            -->
+            <!-- 目次メインメニュー -->
+            <h3 id="アイテム内の各スイッチ">アイテム内の各スイッチ <!-- 目次サブメニュー --></h3>
+            <p>アイテム内の各トグルスイッチについて説明します。 <!-- 最初に何の説明をするのか明記 --> 1. アイテム内の各トグルスイッチ</p>
+            <ul>
+            <li>編集不可
+            <ul>
+            <li>予約者による入力・変更の禁止を設定できます。
+            <ul>
+            <li>LIFFからの予約の際に項目としては表示されるが、入力・変更不可</li>
+            </ul></li>
+            </ul></li>
+            <li>管理項目
+            <ul>
+            <li>管理要素の指定(予約者へは非表示)ができます。
+            <ul>
+            <li>管理者(LSC)からは帳票内に項目として表示されるが、LIFFからの予約の際には表示されない</li>
+            </ul></li>
+            </ul></li>
+            <li>インデックスキー
+            <ul>
+            <li>検索対象の指定(検索速度・max2)ができます。
+            <ul>
+            <li>メインメニュー【ホーム】内の検索で指定が可能になる</li>
+            </ul></li>
+            </ul></li>
+            <li>照会キー
+            <ul>
+            <li>予約者照会時に照会項目として表示できます。
+            <ul>
+            <li>LIFFからの予約者照会時に照会項目として表示される</li>
+            </ul></li>
+            </ul></li>
+            <li>必須
+            <ul>
+            <li>選択・入力の必須項目に設定できます。
+            <ul>
+            <li>LIFFからの予約の際に選択・入力が必須になる</li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/survey/SURVEY_110_item-switch.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTUzNDMyNTgwMSwxNDMxMjI5NzUsLTIwMD
+            Q2ODg5NTgsLTIwODI3Njk1MSwtNTI1MTgxMjEsMTA1MTMyMTYz
+            NywtMzc2NTMwNTQ5LDczMDk5ODExNl19
+            -->
+            <!-- 目次メインメニュー -->
+            <h3 id="帳票登録編集時のチーム設定">帳票登録・編集時のチーム設定 <!-- 目次サブメニュー --></h3>
+            <p>帳票登録・編集時のチーム設定について説明します。 <!-- 最初に何の説明をするのか明記 --> 1. 「帳票登録」をクリックするとチーム選択画面が表示されます。 -</p>
+            <p><img src='./images/survey/SURVEY_120_team_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>プルダウンリストの中から帳票を閲覧できるチームを選択し、「閲覧設定」　＞　「帳票登録」をクリックすることで帳票登録ができます。</li>
+            </ol>
+            <ul>
+            <li>帳票を閲覧できるチームは複数選択可能です。</li>
+            <li>プルダウンに表示される「チーム」はメインメニュー【ユーザ設定】の「チーム」で作成したものになります。</li>
+            <li>チームを選択せずに「閲覧設定」　＞　「帳票登録」を行うと、全チーム閲覧可能になります。</li>
+            </ul>
+            <p><img src='./images/survey/SURVEY_120_team_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbOTkwMjAxNjk1LDEzMjI1MDk2NzQsLTY4Mz
+            I4NDkwMywxNjQxMDAyNzM0LC0xMDQ1ODE3MDEyLDczMDk5ODEx
+            Nl19
+            -->
             <h2 id="シナリオ設定">シナリオ設定</h2>
             <h3 id="top画面">TOP画面</h3>
             <p>メインメニュー「シナリオ設定」をクリックし、本番、ボックスのシナリオを設定します。 ※実際のシナリオや画面を作成するには、別ツール「LINE Bot Designer」で作成します。</p>
@@ -2473,7 +2731,7 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>予約可能日設定はプルダウンリストになっており、【なし】、【日時】、【カスタム】のいずれかを選択、内容を入力して「保存」をクリックします。こちらでは予約の制限や予約完了後のメッセージを設定できます。</li>
+            <li>予約可能日設定はプルダウンリストになっており、【なし】、【日時】、【カスタム】のいずれかを選択、内容を入力して「保存」をクリックします。こちらでは予約の制限や予約完了後のメッセージを設定できます。 <br> <!-- 改行 --> ※【カスタム】につきましては開発中の機能になります。現状最新で設定した範囲でしか予約ができない仕様となっておりますのでご注意ください。 <br> <!-- 改行 --></li>
             </ol>
             <ul>
             <li>【なし】では「同日予約での最大予約可能数」、「予約確定後の送信メッセージ」の設定を行えます。
@@ -2515,25 +2773,44 @@
 
             </div>
             <ol start="4" type="1">
+            <li>一度の予約で複数の枠を予約することが可能です。例えばグループで予約したい施設等がある場合はこちらでまとめて予約枠を設定することが可能となります。</li>
+            </ol>
+            <ul>
+            <li>「予約項目を追加」ボタンをクリックします。</li>
+            <li>予約項目名を入力します。</li>
+            <li>消費する枠数を入力します。</li>
+            <li>「ゴミ箱」のボタンで設定した予約項目の削除が可能です。</li>
+            <li>「保存」ボタンをクリックすると設定した内容が保存されます。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_03-1_custom_41.png' style='border:solid 2px lightgray' /> <!-- 画像 --> <br></p>
+            <ul>
+            <li>予約フォームで設定したカレンダー単位の分類の下に「予約項目」がプルダウンで表示され選択した枠数で予約可能となります。 <br></li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_03-1_custom_42.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="5" type="1">
             <li>CSVファイルの形式は以下のようになります。</li>
             </ol>
             <ul>
             <li>コマIDはカレンダーにおけるコマ（開始時刻・終了時刻のセット）の並び順の指定になります。コマIDを入れ替えてインポートするとカレンダーのコマの並び順が入れ替わります。</li>
             <li>開始時刻・終了時刻は文字列（「午前」「午後」等）を設定することも可能です。</li>
             </ul>
-            <p><img src='./images/calendar/CALENDAR_03-1_custom_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/calendar/CALENDAR_03-1_custom_5.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTQzMTk0Mzk1NSw3NDYwODg5NDYsLTg5OD
-            QzMzUxMSwtNjg3OTc1NzI4LC0xMjcyOTQ2ODEzLC0xNzIzMzQ4
-            OTY1LC0xNDI1MTM2MzA4LC0yMDI5OTEyODM2LDE5ODY0OTQ3Mz
-            ksMjAwNDM1Mjc1OCwtMTc0NDEyOTgyMSw1OTIxNDIwNTEsLTEw
-            MTk4Mzk3MDAsLTIxMjE1NTk0NTIsLTEyMjE4OTMxOTAsOTc3OT
-            A2MTE2LC03Mjk3MDU4OTYsLTcyMjM4OTU1NywtMTQwMTM0MjU2
-            MCwtNzUxNzkzMTQyXX0=
+            eyJoaXN0b3J5IjpbMTQ4NzY0NTM2MiwtMTY4MjI5MzYxLDU2Nj
+            E4Njk1OCwtMjkzNjQ5MTEsMTcyNDUzMTgwOSwtNDMxOTQzOTU1
+            LDc0NjA4ODk0NiwtODk4NDMzNTExLC02ODc5NzU3MjgsLTEyNz
+            I5NDY4MTMsLTE3MjMzNDg5NjUsLTE0MjUxMzYzMDgsLTIwMjk5
+            MTI4MzYsMTk4NjQ5NDczOSwyMDA0MzUyNzU4LC0xNzQ0MTI5OD
+            IxLDU5MjE0MjA1MSwtMTAxOTgzOTcwMCwtMjEyMTU1OTQ1Miwt
+            MTIyMTg5MzE5MF19
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="設定ートップ画面カレンダー登録">設定ートップ画面・カレンダー登録<!-- 目次サブメニュー --></h3>
@@ -2590,7 +2867,50 @@
             eyJoaXN0b3J5IjpbNjcxMTQ2NTAsLTE5MDUxOTgyMzcsMzQwND
             gzNDE2LC05MDE0MDIzNzFdfQ==
             -->
-            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <!-- 目次メインメニュー -->
+            <h3 id="設定-カレンダーcsv出力">設定-カレンダーCSV出力 <!-- 目次サブメニュー --></h3>
+            <p>登録しているカレンダーのCSV出力方法ついて説明します。 <!-- 最初に何の説明をするのか明記 --> <br> <!-- 改行 --></p>
+            <ol type="1">
+            <li>メインメニュー【カレンダー】のトップ画面でCSV出力したいカレンダーの大分類・中分類・小分類を選択し、「検索」ボタンをクリックし、カレンダーを表示させます。</li>
+            </ol>
+            <ul>
+            <li>選択した大分類・中分類・小分類にカレンダーが登録されていない場合は、カレンダーが表示されません。 <br> <!-- 改行 --> ※カレンダー登録に関しては【設定ートップ画面・カレンダー登録】を参照ください。 <br> <!-- 改行 --></li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_041_export_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「検索」ボタンの右にある「CSV出力」をクリック、カレンダーの期間「From」と「To」をそれぞれ入力し、「OK」をクリックすることでCSV出力ができます。</li>
+            </ol>
+            <ul>
+            <li>「From」と「To」では空き枠数が入っていない日付も指定できますが、実際に出力されるのは空き枠数が入っている箇所のみになります。 <br> <!-- 改行 --></li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_041_export_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="3" type="1">
+            <li>出力されたCSVの形式はカレンダー登録の際に使用するものと同じです。</li>
+            </ol>
+            <ul>
+            <li>「CSV出力」で <br> <!-- 改行 --></li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_041_export_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --> <!--stackedit_data:
+            eyJoaXN0b3J5IjpbNDUyNjg4ODMwLC0xNzM5ODI0OTYzLC0xND
+            c0MzQ5MDA2LC02NTc2MDY4MzAsLTI2MzY2MTUwOCwxNTkwNDAz
+            Njg4LC0xOTQ3MjEwMTA0LDY0MDUzNzE4MSwtNzMzMjMwOTYsLT
+            ExMDM3MzQyOSwtMTM2MjQ2ODU2Niw3MzA5OTgxMTZdfQ==
+            --> <!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
             <h3 id="設定ー枠数変更">設定ー枠数変更<!-- 目次サブメニュー --></h3>
             <p>カレンダーの空き枠数の変更方法について説明します。 ※カレンダーデータをのインポートしていないが未済の場合は「トップ画面・カレンダー登録」を参照してください。<!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
