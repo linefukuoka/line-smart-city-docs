@@ -59,14 +59,19 @@
         <li><a href="#検索基本">検索(基本)</a></li>
         <li><a href="#検索日付">検索(日付)</a></li>
         <li><a href="#入力情報修正">入力情報修正</a></li>
-        <li><a href="#csv出力">CSV出力</a></li>
+        <li><a href="#csv出力エクスポート">CSV出力エクスポート</a></li>
         <li><a href="#追加型帳票の一覧画面">追加型帳票の一覧画面</a></li>
+        <li><a href="#追加型帳票のcsvインポート">追加型帳票のCSVインポート<!-- 目次サブメニュー --></a></li>
+        <li><a href="#追加型帳票のcsvエクスポート">追加型帳票のCSVエクスポート<!-- 目次サブメニュー --></a></li>
+        <li><a href="#追加型帳票の配信">追加型帳票の配信<!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票の削除">追加型帳票の削除 <!-- 目次サブメニュー --></a></li>
+        <li><a href="#追加型帳票の通知情報">追加型帳票の通知情報<!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票のline送信">追加型帳票のLINE送信<!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票のステータス管理">追加型帳票のステータス管理<!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票の管理メモ">追加型帳票の管理メモ <!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票の印刷">追加型帳票の印刷 <!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票の新規追加と変更キャンセル">追加型帳票の新規追加と変更・キャンセル <!-- 目次サブメニュー --></a></li>
+        <li><a href="#全体件数取得">全体件数取得 <!-- 目次サブメニュー --></a></li>
         </ul></li>
         <li><a href="#セグメント配信">セグメント配信</a>
         <ul>
@@ -194,9 +199,10 @@
       <div class="span9 content">
             <h2 id="home">HOME</h2>
             <h3 id="検索基本">検索(基本)</h3>
-            <p>メインメニュー「HOME」から、アンケートや申請などの帳票を通じて登録されたユーザのデータを検索し内容を確認することができます。</p>
+            <p>アンケートや申請などの帳票を通じて登録されたユーザのデータを検索し内容を確認する方法を説明します。</p>
+            <p><br> <!-- 改行 --></p>
             <ol type="1">
-            <li>検索したい帳票をプルダウンから選択すると、対象となるデータの一覧が表示されます。</li>
+            <li>メインメニュー【ホーム】をクリックし、検索したい帳票をプルダウンリストから選択すると、対象となるデータの一覧が表示されます。</li>
             </ol>
             <p><img src='./images/home/HOME_search-base_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
@@ -212,7 +218,7 @@
 
             </div>
             <ol start="3" type="1">
-            <li>データの絞り込みを行う場合、絞り込みたい項目を選択。「この条件で検索」をクリックします。</li>
+            <li>データの絞り込みを行う場合、絞り込みたい項目を選択。「検索」をクリックします。</li>
             </ol>
             <p><img src='./images/home/HOME_search-base_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
@@ -228,13 +234,16 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMjA5NDY4NTc4NCwxNzc4NzQwMDM5LC0zMT
-            M3MTc4NzksLTcxMzU3MjE3MF19
+            eyJoaXN0b3J5IjpbLTc5NTU1MTYwLC0yMDY5NTA0ODU5LC0xMz
+            QyNDc4MTAsLTEwNTQ3NzI1NTYsLTEzNDI0NzgxMCwtNjA0ODcz
+            NTI5LDIwOTQ2ODU3ODQsMTc3ODc0MDAzOSwtMzEzNzE3ODc5LC
+            03MTM1NzIxNzBdfQ==
             -->
             <h3 id="検索日付">検索(日付)</h3>
-            <p>メインメニュー「HOME」から、アンケートや申請などの帳票を通じて登録されたユーザのデータを、登録・更新された期間をもとに抽出することができます。</p>
+            <p>アンケートや申請などの帳票を通じて登録されたユーザのデータを、登録・更新された期間をもとに抽出する方法を説明します。</p>
+            <p><br> <!-- 改行 --></p>
             <ol type="1">
-            <li>検索したい帳票をプルダウンから選択すると、対象となるデータの一覧が表示されます。</li>
+            <li>メインメニュー【ホーム】をクリックし、検索したい帳票をプルダウンから選択すると、対象となるデータの一覧が表示されます。</li>
             </ol>
             <p><img src='./images/home/HOME_search-date_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
@@ -250,7 +259,7 @@
 
             </div>
             <ol start="3" type="1">
-            <li>絞り込みたい開始日と終了日を指定し、「この条件で検索」をクリックします。</li>
+            <li>絞り込みたい開始日と終了日を指定し、「検索」をクリックします。</li>
             </ol>
             <p><img src='./images/home/HOME_search-date_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
@@ -266,11 +275,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTIzMjU3MzQyMSwxNzc4NzQwMDM5LC0zMT
-            M3MTc4NzksLTcxMzU3MjE3MF19
+            eyJoaXN0b3J5IjpbLTk4NDQ4MjA2MCwtMTI3NTAxMDM1NywtMj
+            ExMDA0NjA1MCwxMjMyNTczNDIxLDE3Nzg3NDAwMzksLTMxMzcx
+            Nzg3OSwtNzEzNTcyMTcwXX0=
             -->
             <h3 id="入力情報修正">入力情報修正</h3>
-            <p>アンケートや申請などの帳票を通じて登録されたユーザの、データ内容の修正やステータス（未対応・処理中・処理済み・完了）の設定・変更を行います。</p>
+            <p>アンケートや申請などの帳票を通じて登録されたユーザの、データ内容の修正やステータス（未対応・処理中・処理済み・完了）の設定・変更の方法を説明します。</p>
+            <p><br> <!-- 改行 --></p>
             <ol type="1">
             <li>修正したいデータを検索して表示します。対象となるデータが見つかったら、クリックします。</li>
             </ol>
@@ -304,13 +315,15 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTkwMzM3NTM1LDE3Nzg3NDAwMzksLTMxMz
-            cxNzg3OSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbMzE4NDIwODk2LC0yNTkwODk5ODEsMTkwMz
+            M3NTM1LDE3Nzg3NDAwMzksLTMxMzcxNzg3OSwtNzEzNTcyMTcw
+            XX0=
             -->
-            <h3 id="csv出力">CSV出力</h3>
-            <p>アンケートや申請などの帳票を通じて登録されたユーザのデータを、CSV形式のデータとしてエクスポート（出力）します。</p>
+            <h3 id="csv出力エクスポート">CSV出力エクスポート</h3>
+            <p>アンケートや申請などの帳票を通じて登録されたユーザのデータを、CSV形式のデータとしてエクスポート（出力）する方法を説明します。</p>
+            <p><br> <!-- 改行 --></p>
             <ol type="1">
-            <li>出力対象の帳票とデータを表示します。</li>
+            <li>メインメニュー【ホーム】をクリックし、出力対象の帳票とデータを表示します。</li>
             </ol>
             <p><img src='./images/home/HOME_csv_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
@@ -318,7 +331,7 @@
 
             </div>
             <ol start="2" type="1">
-            <li>出力する内容を絞り込む場合は「検索条件」や「日付」から抽出条件を指定し、「この条件で検索」をクリックしてデータを絞り込みます。</li>
+            <li>出力する内容を絞り込む場合は「検索条件」や「日付」から抽出条件を指定し、「この条件で検索」をクリックしてデータを絞り込みます。 <br> <!-- 改行 --> ※詳しくは【検索(基本)】、【検索(日付)】を参照ください</li>
             </ol>
             <p><img src='./images/home/HOME_csv_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
@@ -326,7 +339,7 @@
 
             </div>
             <ol start="3" type="1">
-            <li>表示されたデータの最下部にある「CSV出力」をクリックし、データをダウンロードします。</li>
+            <li>表示されたデータの最下部にある「CSV出力」をクリックし、データをエクスポートします。</li>
             </ol>
             <p><img src='./images/home/HOME_csv_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
@@ -334,47 +347,197 @@
 
             </div>
             <ol start="4" type="1">
-            <li>ダウンロードされたデータは、エクセルやテキストエディタなどのアプリケーションで閲覧や編集することができます。</li>
+            <li>エクスポートしたデータは、エクセルやテキストエディタなどのアプリケーションで閲覧や編集することができます。</li>
             </ol>
+            <ul>
+            <li>以下の画像はエクスポートしたCSVファイルになります。</li>
+            </ul>
             <p><img src='./images/home/HOME_csv_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMjA4MTUwMzIyMCwxNzc4NzQwMDM5LC0zMT
-            M3MTc4NzksLTcxMzU3MjE3MF19
+            eyJoaXN0b3J5IjpbMTg2OTIwODg2NSwxMzkyNDUwNTkzLC0xOD
+            I4NjYyOTQsNTI1MDk2ODcyLDIwODE1MDMyMjAsMTc3ODc0MDAz
+            OSwtMzEzNzE3ODc5LC03MTM1NzIxNzBdfQ==
             -->
             <h3 id="追加型帳票の一覧画面">追加型帳票の一覧画面</h3>
             <p>追加型帳票の一覧で追加された項目、機能を説明します。</p>
+            <p><br></p>
             <ol type="1">
             <li>追加型帳票をプルダウンから選択すると、対象となるデータの一覧が表示されます。</li>
             </ol>
             <ul>
-            <li>選択チェックボックス：削除、CSV出力をする対象データを選択します。</li>
-            <li>#：内部IDになります。LINEまたは管理画面から登録したデータには内部で自動採番されます。インポートしたデータには採番されず空白になります。（内部IDのため検索はできません）</li>
-            <li>LINE/外部：LINEまたは管理画面から登録された場合、「LINE」と表示され、インポートデータの場合、「外部」と表示されます。</li>
-            <li>全て解除ボタン：選択を全て解除します。</li>
-            <li>全て選択ボタン：表示しているデータ全てを選択します。</li>
-            <li>CSVエクスポート：選択したデータ全てをCSVエクスポートします。</li>
+            <li>選択チェックボックス：　削除、CSV出力をする対象データを選択します。各項目の行にあるチェックボックスにチェックを入れると表示されているデータ全てにチェックが入ります。</li>
+            <li>#：　内部IDになります。LINEまたは管理画面から登録したデータには内部で自動採番されます。インポートしたデータには採番されず空白になります。（内部IDのため検索はできません）</li>
+            <li>CSVエクスポート：　選択したデータ全てをCSVエクスポートします。　※詳しくは【追加型帳票のCSVエクスポート】を参照ください。</li>
+            <li>CSVインポート：　CSVファイルを選択し、選択したCSVファイルをインポートします。　※詳しくは【追加型帳票のCSVインポート】を参照ください。</li>
+            <li>配信：　選択した対象にLINE送信します。LINEで登録してlineuseridが対象となります。　※詳しくは【追加型帳票の配信】を参照ください。</li>
+            <li>全体件数を取得：　入っているデータの件数を取得することができます。　※詳しくは【全体件数取得】を参照ください</li>
+            <li>通知情報：インポートやエクスポート、配信の情報が表示されます。大量データの場合時間がかかるためこちらで完了したかを確認します。　※詳しくは【追加型帳票の通知情報】を参照ください。</li>
+            <li>設定アイコン：　表示件数や表示項目などの表示設定を行うことができます。　</li>
+            <li>LINE/外部：　LINEから登録された場合は「LINE」と表示され、管理画面から登録された場合は「WEB」と表示され、インポートデータの場合、「外部」と表示されます。</li>
             </ul>
-            <p><br></p>
-            <p>※下記は、バージョン1.5.0で追加予定の機能になります。</p>
-            <p><br></p>
-            <ul>
-            <li>配信：選択した対象にLINE送信します。LINEで登録してlineuseridが対象となります。管理画面やインポートデータはLINE送信できません。</li>
-            <li>通達情報：インポートや配信の状況が表示されます。大量データの場合時間がかかるためこちらで完了したかを確認します。</li>
-            </ul>
-            <p><img src='./images/home/HOME_041_add-list_1.md.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/home/HOME_add-list.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
-            <p><!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbNTQ2MDI1NjEsMTE5NTkxMjA2MCwxMzU4Mz
+            YxMzI1LC01OTA3MTQ3OTQsMTU1MDgzOTExNSwxMDk5OTcwMDEx
+            LDYxNTg5ODI4MSwtMTY4MDU0MzQwNV19
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票のcsvインポート">追加型帳票のCSVインポート<!-- 目次サブメニュー --></h3>
+            <p>追加型帳票のCSVインポート方法について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
+            <ol type="1">
+            <li>メインメニュー【ホーム】をクリックし、インポートさせたい帳票を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_import_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「CSVインポート」をクリックするとCSVインポート画面が開きます。</li>
+            </ol>
+            <p><img src='./images/home/HOME_import_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>クリップアイコンをクリックするとファイル選択画面が開くので、そちらでファイルを選択し「開く」をクリックします。</li>
+            </ol>
+            <p><img src='./images/home/HOME_import_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>選択したファイルが問題なければ「確認」ボタンが活性化するので、「確認」ボタンをクリックし、インポートが完了します。</li>
+            </ol>
+            <ul>
+            <li>インポートは予約情報の連携はしていないので、画像のように「分類または予約時間を新規追加や変更した場合は、カレンダーに反映されませんのでご注意ください」とファイル選択後に注意書が表示されます。</li>
+            <li>ファイルに新規でデータを追加し、インポートを行う場合は、「パーティションキー」、「作成日」、「更新日」空である必要があります。</li>
+            </ul>
+            <p><img src='./images/home/HOME_import_4.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbNzg2OTEwODU2LDcwODAxNzI3MCwxNzgxOT
+            I1NzMyLDM1MDAxMzg3LC0zOTc2NjcyMSwxMDAzMDc2MTY4LC0x
+            NDc3MDM5ODk5LC0xNDMyMzY2ODQwLC0xNjYwOTg2NTU4LC0zNT
+            IyNDE4NjAsNzMwOTk4MTE2XX0=
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票のcsvエクスポート">追加型帳票のCSVエクスポート<!-- 目次サブメニュー --></h3>
+            <p>追加型帳票のCSVエクスポート方法について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
+            <ol type="1">
+            <li>メインメニュー【ホーム】をクリックし、エクスポートしたい帳票を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_export_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>出力する内容を絞り込む場合は「検索条件」や「日付」から抽出条件を指定し、「この条件で検索」をクリックしてデータを絞り込みます。 <br> <!-- 改行 --> ※詳しくは【検索(基本)】、【検索(日付)】を参照ください</li>
+            </ol>
+            <p><img src='./images/home/HOME_export_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>エクスポートしたいデータのチェックボックスにチェックを入れ、表示されたデータの最下部にある「CSV出力」をクリックし、データをダウンロードします。 <br> ※チェックを入れないとデータがエクスポートされないので注意</li>
+            </ol>
+            <ul>
+            <li>「全体件数を取得」をクリックすると、表示されているデータのチェックボックスに一気にチェックが入ります。</li>
+            <li>「検索条件のCSV出力処理」をクリックすると、絞り込んだ条件のデータ全てをエクスポートすることが可能です。</li>
+            </ul>
+            <p><img src='./images/home/HOME_export_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>エクスポートしたデータは、エクセルやテキストエディタなどのアプリケーションで閲覧や編集することができます。</li>
+            </ol>
+            <ul>
+            <li>以下の画像はエクスポートしたCSVファイルになります。 <br> ※こちらはコロナワクチン接種のテンプレートを用いて作成した帳票であり、帳票ごとにCSVファイルの内容は変わるので注意が必要です。</li>
+            </ul>
+            <p><img src='./images/home/HOME_export_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTE1OTEwODU1MzIsLTU2OTgzNDMyNCwtNj
+            k4ODA4MDU2LDE4Mzc1NjQyNiw3MzA5OTgxMTZdfQ==
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票の配信">追加型帳票の配信<!-- 目次サブメニュー --></h3>
+            <p>追加型帳票の配信方法について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
+            <ol type="1">
+            <li>メインメニュー【ホーム】をクリックし、配信したいデータが入っている帳票を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_delivery_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>個別に配信を行いたい場合は、配信を行いたいデータのチェックボックスにチェックを入れ、表示されたデータの最下部にある「配信」をクリックします。</li>
+            </ol>
+            <p><img src='./images/home/HOME_delivery_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>作成画面では、タイトルを入力し、タイプは「選択」ボタンをクリック、メッセージを入力し、「確認画面へ」をクリックします。</li>
+            </ol>
+            <ul>
+            <li>個別ではなく全体に対して配信を行いたい場合には、タイプの「検索条件」をクリックしてください。</li>
+            <li>「リマインド通知」をクリックするとメッセージに以下の画像のようなテンプレートが入力されます。</li>
+            <li>こちらの3項目は全て必須項目になります。</li>
+            </ul>
+            <p><img src='./images/home/HOME_delivery_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>確認画面が表示され、内容に間違いがなければ「LINE送信」で送信を行い、内容の変更を行いたい場合は「戻る」で作成画面へ戻ることができます。</li>
+            </ol>
+            <p><img src='./images/home/HOME_delivery_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMTkyNTY2NjEwMywtMTk4OTU1NDc5MiwtMT
+            A3MDQwMjY3MCwtMjAzNTgzNzg2MywtMTIxNTU2Mzk2MCwtMzg4
+            MzMxMTYsLTIxNDMyMzgzNjksMTYxODA2NDY4Niw3MzA5OTgxMT
+            ZdfQ==
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の削除">追加型帳票の削除 <!-- 目次サブメニュー --></h3>
             <p>追加型帳票の削除の仕方について説明します。追加型帳票は、1つの帳票に対して何度も回答することが可能で回答内容が上書きされません。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
             <ol type="1">
-            <li>回答内容を把握したい追加型帳票を選択します。</li>
+            <li>メインメニュー【ホーム】をクリックし、回答内容を把握したい追加型帳票を選択します。</li>
             </ol>
             <p><img src='./images/home/HOME_delete_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -383,7 +546,7 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>削除したい帳票を選択し、「選択削除」をクリックします。</li>
+            <li>削除したいデータを選択し、「選択削除」をクリックします。</li>
             </ol>
             <p><img src='./images/home/HOME_delete_2.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -399,15 +562,47 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE2NzMyNjgwNTgsLTgwMDM1MTU3NCwtMT
-            E1ODA2ODIwNCwxMTIzNDU2NDY5LDY3MzgyMjY2MywtMTg3Mjg5
-            NjcwNSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbMjEzMzUzMTY2OSwtMTM2Mzg2NjIwMiwtND
+            cyNTcwMjA2LC0xNjczMjY4MDU4LC04MDAzNTE1NzQsLTExNTgw
+            NjgyMDQsMTEyMzQ1NjQ2OSw2NzM4MjI2NjMsLTE4NzI4OTY3MD
+            UsLTcxMzU3MjE3MF19
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="追加型帳票の通知情報">追加型帳票の通知情報<!-- 目次サブメニュー --></h3>
+            <p>追加型帳票の通知情報について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
+            <ol type="1">
+            <li>メインメニュー【ホーム】をクリックし、通知情報を確認したい帳票を選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_information_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「通知情報」をクリックすると通知情報画面が表示されます。</li>
+            </ol>
+            <ul>
+            <li>通知情報画面では、「CSVインポート」、「一括ユニキャスト配信」、「CSVエクスポート」の3つのタブがあります。</li>
+            <li>各タブでは最後に実行したユーザ名、実行した回数などが確認できます。</li>
+            </ul>
+            <p><img src='./images/home/HOME_information_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTE4NDA3MTA4MDgsOTE2MTY2MTQwLDkyMj
+            Q0MzEzLC0xMjQ5MTQyMTI4LC0xNDQwODUzNTkyLDc2NDUyMzc5
+            Niw3MzA5OTgxMTZdfQ==
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票のline送信">追加型帳票のLINE送信<!-- 目次サブメニュー --></h3>
             <p>追加型帳票のLINE送信の方法について説明します。<!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
             <ol type="1">
-            <li>「HOME」より管理したい追加型帳票を選択します。</li>
+            <li>メインメニュー【ホーム】をクリックし、LINE送信を行いたい追加型帳票のデータを選択します。</li>
             </ol>
             <p><img src='./images/home/HOME_LINEsend_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -426,21 +621,27 @@
             <ol start="3" type="1">
             <li>返信内容を入力し、「LINE送信」ボタンをクリックすると送信完了です。</li>
             </ol>
+            <ul>
+            <li>上の「OK」をクリックすると、「帳票回答はOKです。　ありがとうございます。」というテンプレートが入力されます。</li>
+            <li>上の「NG」をクリックすると、「帳票回答はNGです。　もう一度帳票を回答してください」というテンプレートが入力されます。</li>
+            </ul>
             <p><img src='./images/home/HOME_LINEsend_3.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTIxMzk2OTMyMTcsLTEwODI1ODg5NzksMT
-            A5MDgyMTMzNiw2NzM4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3
-            MjE3MF19
+            eyJoaXN0b3J5IjpbMTc4OTc4MzI4NiwxOTE5OTI1NzQ2LC05Mj
+            cxNDMzMCwtMTUyMjU0NDg2MSwtMjEzOTY5MzIxNywtMTA4MjU4
+            ODk3OSwxMDkwODIxMzM2LDY3MzgyMjY2MywtMTg3Mjg5NjcwNS
+            wtNzEzNTcyMTcwXX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票のステータス管理">追加型帳票のステータス管理<!-- 目次サブメニュー --></h3>
-            <p>追加型帳票のステータスの変更方法を説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p>追加型帳票のステータスについて説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
             <ol type="1">
-            <li>「HOME」よりステータスを変更したい帳票を選択します。</li>
+            <li>メインメニュー【ホーム】をクリックし、ステータスを変更したい追加型帳票のデータを選択します。</li>
             </ol>
             <p><img src='./images/home/HOME_status_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -449,21 +650,64 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>「NG」＞「保存」の順でクリックするとステータスがNGとなります。</li>
+            <li>変更したいステータスを選択し、「保存」をクリックするとステータスが変更します。</li>
             </ol>
             <p><img src='./images/home/HOME_status_2.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
+            <ol start="3" type="1">
+            <li>LIFFから予約の変更やキャンセルがあった場合</li>
+            </ol>
+            <ul>
+            <li>LIFFから予約の変更があった場合
+            <ul>
+            <li>元々入っていた予約データが「取り消し」ステータスになります。</li>
+            <li>ステータスは「未処理」で新しいレコードが追加されます。</li>
+            </ul></li>
+            <li>LIFFからキャンセルがあった場合
+            <ul>
+            <li>ステータスの変更はなく、対象レコードの予約日が削除されます。 <br> ※予約の変更を行ったデータは接種券番号「111111111111111111」で、予約のキャンセルを行ったデータは接種券番号「222222222222222222」になります。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/home/HOME_status_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>管理画面から予約の変更やキャンセルがあった場合</li>
+            </ol>
+            <ul>
+            <li>管理画面から予約の変更があった場合
+            <ul>
+            <li>対象帳票をそのまま編集するため、ステータスの変更はありません。</li>
+            </ul></li>
+            <li>管理画面から予約のキャンセルがあった場合
+            <ul>
+            <li>ステータスが「キャンセル」に変更</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/home/HOME_status_4.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNDg5NTIyMzk4LDY3MzgyMjY2MywtMTg3Mj
-            g5NjcwNSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbLTE0NzEwMjY1NTYsLTIxMTE3MDEwNzksNz
+            U0NDg2MDU3LDIxNDg2MTE5MSwtNTQwNzMxNTA4LDE4NTgxOTk0
+            NjEsMTE5ODE3NjczNSw1NTU1MTIyOTEsLTI3NzUyMDA1MiwtMT
+            I3NTQ5NDM1MywtNTI0NTg1MTIxLDQ4OTUyMjM5OCw2NzM4MjI2
+            NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF19
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の管理メモ">追加型帳票の管理メモ <!-- 目次サブメニュー --></h3>
             <p>追加型帳票の管理メモの機能について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
-            <p>1.「HOME」より管理メモを記入したい追加型帳票を選択します。</p>
+            <p><br></p>
+            <ol type="1">
+            <li>メインメニュー【ホーム】をクリックし、管理メモを記入したい追加型帳票のデータを選択します。</li>
+            </ol>
             <p><img src='./images/home/HOME_memo_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
@@ -471,7 +715,7 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>一番下までスクロールすると「管理者メモ」欄が出てくるので、記載し「保存」をクリックします。</li>
+            <li>「管理者メモ」欄にメモを記載し、「保存」をクリックします。</li>
             </ol>
             <p><img src='./images/home/HOME_memo_2.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -479,7 +723,7 @@
 
             </div>
             <ol start="3" type="1">
-            <li>もう1つの編集方法を説明します。 HOME画面より編集したい帳票の右欄の「管理者メモ」を選択します。</li>
+            <li>もう1つの編集方法を説明します。HOME画面より編集したい帳票の右欄の「管理者メモ」を選択します。</li>
             </ol>
             <p><img src='./images/home/HOME_memo_3.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -495,14 +739,17 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTk1ODk1MTkyNywtMTUxNzI3ODQxNSw2Nz
-            M4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF19
+            eyJoaXN0b3J5IjpbODk2MTg5MTQwLC0yMTI3NDQ3NDg2LC0xMj
+            I2NzY1MzQ2LDE3MTY1MDg1MDksMTk1ODk1MTkyNywtMTUxNzI3
+            ODQxNSw2NzM4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF
+            19
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の印刷">追加型帳票の印刷 <!-- 目次サブメニュー --></h3>
             <p>追加型帳票の印刷方法について説明します。<!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
             <ol type="1">
-            <li>「HOME」より印刷したい追加型帳票を選択します。</li>
+            <li>メインメニュー【ホーム】をクリックし、印刷したい追加型帳票のデータを選択します。</li>
             </ol>
             <p><img src='./images/home/HOME_print_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -511,7 +758,7 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>「印刷」ボタンを押すと印刷されます。</li>
+            <li>「印刷」をクリックすると印刷されます。</li>
             </ol>
             <p><img src='./images/home/HOME_print_2.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -519,19 +766,21 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTIwNjQ4MTIxNDcsMTk1MTM1NjAyNCw2Nz
-            M4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF19
+            eyJoaXN0b3J5IjpbLTE1NDU2NTIyMTksLTc1MTUzNjM0NywtMT
+            czOTk1MDA5MSwtMjA2NDgxMjE0NywxOTUxMzU2MDI0LDY3Mzgy
+            MjY2MywtMTg3Mjg5NjcwNSwtNzEzNTcyMTcwXX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の新規追加と変更キャンセル">追加型帳票の新規追加と変更・キャンセル <!-- 目次サブメニュー --></h3>
             <p>追加型帳票の新規追加と変更・キャンセルについて説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
             <ol type="1">
             <li>予約を新規作成するには、メインメニュー「ホーム」　＞　「新規追加」の順にクリックします。</li>
             </ol>
             <ul>
             <li>こちらは電話予約などでの利用を想定しています。</li>
             </ul>
-            <p><img src='./images/home/HOME_100_add-reserve_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/home/HOME_add-reserve_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -543,17 +792,17 @@
             <ul>
             <li>星のマークがついている箇所は入力必須項目となりますので、こちらの項目を入力せずに「保存」をクリックすると「保存」は実行されません。</li>
             </ul>
-            <p><img src='./images/home/HOME_100_add-reserve_2-1.png' style='border:solid 2px lightgray' /></p>
+            <p><img src='./images/home/HOME_add-reserve_2-1.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
-            <p><img src='./images/home/HOME_100_add-reserve_2-2.png' style='border:solid 2px lightgray' /></p>
+            <p><img src='./images/home/HOME_add-reserve_2-2.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
-            <p><img src='./images/home/HOME_100_add-reserve_2-3.png' style='border:solid 2px lightgray' /></p>
+            <p><img src='./images/home/HOME_add-reserve_2-3.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
@@ -561,11 +810,7 @@
             <ol start="3" type="1">
             <li>編集したい予約データをクリックすると【新規作成】の時と同様、管理画面が表示されるので、変更したい項目の内容を変更し、「保存」をクリックすることで予約の変更を行うことができます。</li>
             </ol>
-            <ul>
-            <li>編集を行う際には新規作成時にはなかったステータスや「LINEユーザーIDリセット」、「印刷」が新たに選択できます。</li>
-            <li>予約をキャンセルする際には、ステータスの「キャンセル」を選択し、「保存」をクリックすることで編集している予約データをキャンセル扱いにできます。また、一度ステータスを「キャンセル」にして保存してしまうとステータスの変更はできなくなるので注意が必要です。</li>
-            </ul>
-            <p><img src='./images/home/HOME_100_add-reserve_3.png' style='border:solid 2px lightgray' /></p>
+            <p><img src='./images/home/HOME_add-reserve_3.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
@@ -576,11 +821,44 @@
             <ul>
             <li>リセットが正常に完了すると「LINEユーザーIDリセットが完了しました」というダイアログが表示されます。</li>
             </ul>
-            <p><img src='./images/home/HOME_100_add-reserve_4.png' style='border:solid 2px lightgray' /></p>
+            <p><img src='./images/home/HOME_add-reserve_4.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMjAzOTE0ODA4OCw3MzY0Mzg2ODQsNDQ0MT
+            Y2MzJdfQ==
+            -->
+            <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
+            <h3 id="全体件数取得">全体件数取得 <!-- 目次サブメニュー --></h3>
+            <p>全体件数の取得方法について説明します。<!-- 最初に何の説明をするのか明記 --></p>
+            <p><br></p>
+            <ol type="1">
+            <li>データ一覧にある「全体件数を取得」をクリックします。</li>
+            </ol>
+            <p><img src='./images/home/HOME_get-number_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「全体件数を取得」をクリックすることで帳票に入っているデータの全体件数が「総件数」の箇所に表示されます。</li>
+            </ol>
+            <ul>
+            <li>データが大量にある場合、データ一覧にすぐには表示されないので、こちらのボタンを使用することで一覧に表示されるよりも早く全体件数を確認することができます。</li>
+            </ul>
+            <p><img src='./images/home/HOME_get-number_2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMTg0OTY3NDE0MCwtODQ1ODAyMDQxLC0xMj
+            U2NzA2NzE2LC03NDY0MjIxNDksMTgzOTQyMzM4NSwtMTU5MDMy
+            ODAwMSw3MzA5OTgxMTZdfQ==
+            -->
             <h2 id="セグメント配信">セグメント配信</h2>
             <h3 id="配信一覧の表示">配信一覧の表示</h3>
             <p>配信の表示切替を説明します。</p>
