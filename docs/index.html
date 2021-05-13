@@ -106,15 +106,11 @@
         <ul>
         <li><a href="#top画面">TOP画面</a></li>
         <li><a href="#編集ゴミ分別">編集(ゴミ分別) <!-- 目次サブメニュー --></a></li>
-        <li><a href="#編集ゴミ出し">編集(ゴミ出し) <!-- 目次サブメニュー --></a></li>
         <li><a href="#編集損傷報告">編集(損傷報告) <!-- 目次サブメニュー --></a></li>
-        <li><a href="#編集関連情報">編集(関連情報) <!-- 目次サブメニュー --></a></li>
-        <li><a href="#編集リンク集">編集(リンク集)<!-- 目次サブメニュー --></a></li>
-        <li><a href="#編集ハザードマップ">編集(ハザードマップ)<!-- 目次サブメニュー --></a></li>
-        <li><a href="#編集トークを利用する">編集(トークを利用する)<!-- 目次サブメニュー --></a></li>
-        <li><a href="#編集複合メッセージを追加">編集(複合メッセージを追加)<!-- 目次サブメニュー --></a></li>
         <li><a href="#編集防災">編集(防災)<!-- 目次サブメニュー --></a></li>
-        <li><a href="#シナリオの検索">シナリオの検索</a></li>
+        <li><a href="#編集防災検索">編集(防災検索)<!-- 目次サブメニュー --></a></li>
+        <li><a href="#編集複合メッセージを追加">編集(複合メッセージを追加)<!-- 目次サブメニュー --></a></li>
+        <li><a href="#シナリオ検索">シナリオ検索</a></li>
         <li><a href="#リッチメニューの作成と編集">リッチメニューの作成と編集</a></li>
         <li><a href="#あいまい検索">あいまい検索</a></li>
         </ul></li>
@@ -1930,7 +1926,7 @@
             -->
             <h2 id="シナリオ設定">シナリオ設定</h2>
             <h3 id="top画面">TOP画面</h3>
-            <p>メインメニュー「シナリオ設定」をクリックし、本番、ボックスのシナリオを設定します。 ※実際のシナリオや画面を作成するには、別ツール「LINE Bot Designer」で作成します。</p>
+            <p>メインメニュー「シナリオ設定」をクリックし、本番またはサンドボックスのシナリオ設定を行います。 ※実際にシナリオを作成するには【シナリオ作成(マインドマップ形式)】を参照ください。</p>
             <ol type="1">
             <li>本番環境のシナリオ設定箇所になります。</li>
             </ol>
@@ -1955,7 +1951,7 @@
             <li>有効にする：バージョン変更後、クリックすると選択したバージョンが有効になります。</li>
             <li>全体構成：クリックすると、シナリオ全体構成が表示されます。詳細は「3.」を参照ください。</li>
             <li>エクスポート(LBD形式)：クリックするとシナリオデータ(LBDファイル)をダウンロードします。</li>
-            <li>編集：クリックすると編集画面が開きます。詳細は別途、編集の章を参照ください。</li>
+            <li>編集：クリックすると編集画面が開きます。詳細は別途【編集】の章を参照ください。</li>
             <li>インポート：クリックするとインポート画面が表示されます。詳細は「4.」を参照ください。</li>
             <li>削除：選択されているシナリオデータを削除します。</li>
             </ul>
@@ -1979,10 +1975,10 @@
             <li>「インポート」をクリックするとインポート画面が表示されます。</li>
             </ol>
             <ul>
-            <li>クリップボタン：でインポートしたいシナリオデータ(LBDファイル)を選択します。</li>
+            <li>クリップボタン：インポートしたいシナリオデータ(LBDファイル)を選択します。</li>
             <li>シナリオ：選択したシナリオデータのシナリオ名が表示されます。</li>
             <li>バージョン：選択したシナリオのバージョン情報が表示されます。</li>
-            <li>有効にする：有効にする場合はチェックを付けます。</li>
+            <li>有効にする：インポートするファイルをそのまま有効にしたい場合はチェックを付けます。</li>
             <li>OKボタン：シナリオデータがインポートされます。</li>
             <li>キャンセルボタン：インポート処理をキャンセルして閉じます。</li>
             </ul>
@@ -1992,20 +1988,27 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE0MTM1MzEwMDEsNjkyNzYyMTE0LDE1OD
-            cyNzQxMDIsNTg2MTI3NzgwLC00NjYyOTI2MjIsMTQ5MjUwNzc3
-            MSw2ODI1NzM4NDksMTcwNzY4MzEwNiwtNjM1MjAyMTM2LDIxMD
-            g4ODk4NTksMjAxODk1NTM0NiwxOTEwMjY3OTQ5LC0xNDI1MTA0
-            MDQyLDE4ODI0MDYwOTIsLTE1MTY4ODU2MzAsNzM3NzE3MzE4LD
-            E1NDc3OTE2Miw3NjA0NTcwNiwxMzQyNTc2MzM3LDIwODM5MTI0
-            MDldfQ==
+            eyJoaXN0b3J5IjpbLTQyOTUyNjI1NywtMjAxNTgyNTA4OSwtMT
+            Q2NjQyOTMwOCwyMDQyNzIzNzc0LDYxMDU5NTQ5OSwtMTU5NDYw
+            MjIxNCwtNDE3MzIyMzMzLC0xNDEzNTMxMDAxLDY5Mjc2MjExNC
+            wxNTg3Mjc0MTAyLDU4NjEyNzc4MCwtNDY2MjkyNjIyLDE0OTI1
+            MDc3NzEsNjgyNTczODQ5LDE3MDc2ODMxMDYsLTYzNTIwMjEzNi
+            wyMTA4ODg5ODU5LDIwMTg5NTUzNDYsMTkxMDI2Nzk0OSwtMTQy
+            NTEwNDA0Ml19
             -->
             <!-- 目次メインメニュー -->
             <h3 id="編集ゴミ分別">編集(ゴミ分別) <!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、ゴミ分別の編集について記載します。 ゴミ分別は基本CSVデータで管理をしてインポートにより本システムへ投入します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p>「シナリオ設定」のTOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、ゴミ分別トークの作成方法について記載します。 ゴミ分別は基本CSVデータで管理をしてインポートにより本システムへ投入します。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>「トーク名」のプルダウンから「ゴミ分別」を選択します。</li>
+            <li>「＋ テンプレートを利用」をクリックし、ゴミ分別の「作成」をクリックします。</li>
             </ol>
+            <ul>
+            <li>「作成」完了後、もう一度「＋ テンプレートを利用」をクリックすると「作成」が「更新」に変更され、「削除」が活性化します。
+            <ul>
+            <li>「更新」は、ゴミ分別トークのテンプレートを更新することができます。</li>
+            <li>「削除」は、作成したゴミ分別トークを削除することができます。</li>
+            </ul></li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_update-separation_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <p><br></p>
@@ -2014,7 +2017,7 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>「クリップマーク」をクリックし、CSVインポートデータを指定して、「OK」をクリックしてデータをインポートします。 「キャンセル」をクリックすると処理は中断して画面が閉じます。</li>
+            <li>手順書に従い、テンプレートをダウンロード　＞　ダウンロードしたテンプレートにゴミ情報を記載　＞　記載したファイルをアップロードし、登録をクリックすると、登録完了となります。</li>
             </ol>
             <p><img src='./images/scenario/SCENARIO_update-separation_2.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -2022,421 +2025,324 @@
 
             </div>
             <ol start="3" type="1">
-            <li>「属性編集」をクリックすると編集することができます。 編集することは可能ですが、内部ID（メッセージID）で管理しているため、実際はCSVデータで管理することをお勧めします。 ※CSVデータで管理する場合はこちらの編集は不要です。</li>
-            </ol>
-            <p><img src='./images/scenario/SCENARIO_top_3.png' style='border:solid 2px lightgray' /></p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTQ0Mzc5MDgyNiw4MDA1MTU4MCwtMTM4Mj
-            g0NTUyNSwxNjY5MzM2NTgzLDE2NjgzMzQzMDUsNTg2MTI3Nzgw
-            LC00NjYyOTI2MjIsMTQ5MjUwNzc3MSw2ODI1NzM4NDksMTcwNz
-            Y4MzEwNiwtNjM1MjAyMTM2LDIxMDg4ODk4NTksMjAxODk1NTM0
-            NiwxOTEwMjY3OTQ5LC0xNDI1MTA0MDQyLDE4ODI0MDYwOTIsLT
-            E1MTY4ODU2MzAsNzM3NzE3MzE4LDE1NDc3OTE2Miw3NjA0NTcw
-            Nl19
-            -->
-            <!-- 目次メインメニュー -->
-            <h3 id="編集ゴミ出し">編集(ゴミ出し) <!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、ゴミ出しの編集について記載します。 ゴミ出しは基本LINE Bot Designer(LBD形式)で作成します。 <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>「トーク名」のプルダウンから「ゴミ出し」を選択します。</li>
-            </ol>
-            <p><img src='./images/scenario/SCENARIO_update-removal_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <p><br> <!-- 改行 --></p>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <p><!-- 強制的に改ページ --></p>
-            <ol start="2" type="1">
-            <li>「属性編集」をクリックと編集することができます。「保存」をクリックすると設定が保存されます。「キャンセル」をクリックすると処理は中断して閉じます。 各設定項目について、下記に記載します。</li>
+            <li>作成したゴミ分別トークを編集したい場合は、「トーク名」プルダウンリストからゴミ分別を選択し、「CSVエクスポート」でダウンロードしたCSVファイルに変更を加え、「CSVインポート」で変更を加えたCSVファイルを登録することで変更することができます。</li>
             </ol>
             <ul>
-            <li>メッセージID：各メッセージ単位の内部IDです。</li>
-            <li>プレビュー：設定した内容がプレビューで表示されます。</li>
-            <li>名前：メッセージ名を設定します。</li>
-            <li>画像タイプ：画像あり/なしを設定します。</li>
-            <li>タイトル：タイトル名を設定します。</li>
-            <li>テキスト：本文を設定します。</li>
-            <li>アクション数：アクションの数を設定します。</li>
-            <li>アクション１，２、、：アクション数で決めた分アクション設定が可能です。</li>
-            <li>タイプ：メッセージアクション、URIアクション、ポストバックアクション、日時ピッカーアクションを選択します。</li>
-            <li>メッセージアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>メッセージアクション(テキスト)：次のアクションのテキスト名を設定します。</li>
-            <li>URIアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>URIアクション(URL)：選択したときの遷移先のURLを設定します。</li>
-            <li>ポストバックアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>ポストバックアクション(テキスト)：LINEで回答するテキスト名を設定します。</li>
-            <li>ポストバックアクション(データ)：次のアクションするデータを設定します。</li>
-            <li>日時ピッカーアクション：現バージョンでは利用できない機能となります。</li>
+            <li>また、「＋ テンプレートを利用」　＞　ゴミ分別の「更新」　＞　インポートしたいCSVファイルを選択　＞　「登録」でゴミ分別トークの編集を行うこともできます。
+            <ul>
+            <li>こちらの場合は、途中でエクスポートを行う箇所がないため、先に「トーク名」でゴミ分別を選択し、「CSVエクスポート」を用いてCSVファイルをエクスポートしておかなければならないため、注意が必要です。</li>
+            </ul></li>
             </ul>
-            <p><img src='./images/scenario/SCENARIO_update-removal_2.png' style='border:solid 2px lightgray' /></p>
+            <p><img src='./images/scenario/SCENARIO_update-separation_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>トーク一覧の属性編集からも編集を行うことは可能ですが、内部ID(メッセージID)で管理しているため、CSVデータで管理することをお勧めします。</li>
+            </ol>
+            <p><img src='./images/scenario/SCENARIO_update-separation_4.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTc1Nzc5NzY2OSwtMTE0NTY3MTc0MywtNz
-            A2NTkyMTA1LDczNTExODg3LC0xNzc5MDUyNzc3LDgwMDUxNTgw
-            LC0xMzgyODQ1NTI1LDE2NjkzMzY1ODMsMTY2ODMzNDMwNSw1OD
-            YxMjc3ODAsLTQ2NjI5MjYyMiwxNDkyNTA3NzcxLDY4MjU3Mzg0
-            OSwxNzA3NjgzMTA2LC02MzUyMDIxMzYsMjEwODg4OTg1OSwyMD
-            E4OTU1MzQ2LDE5MTAyNjc5NDksLTE0MjUxMDQwNDIsMTg4MjQw
-            NjA5Ml19
+            eyJoaXN0b3J5IjpbMTAzMjM4Mjk2OCwtMTY0NzEwMjYxLC0yND
+            k2NTkxOTMsMTg0MTYzMDc0NywtMTEyNDUyMTU4MywzMTIwOTQ1
+            MDMsLTEwNjc3NDQ3NzcsMTExMjIyMTQ1NiwtMTkxNTc5MjM5OS
+            wxMDgwMDg2OTIyLDE2MTEwMzUwMjksLTE0MDcyMzc2NTIsMTgx
+            NDE1OTE5LC0xNzQwMzc3ODQ1LDEzNjcxMzEzNzYsMTQ0Mzc5MD
+            gyNiw4MDA1MTU4MCwtMTM4Mjg0NTUyNSwxNjY5MzM2NTgzLDE2
+            NjgzMzQzMDVdfQ==
             -->
             <!-- 目次メインメニュー -->
             <h3 id="編集損傷報告">編集(損傷報告) <!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、損傷報告の編集について記載します。 損傷報告のシナリオは固定テンプレートのためシナリオを変更することはできません。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p>「シナリオ設定」のTOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、損傷報告の作成方法について記載します。 損傷報告のシナリオは固定テンプレートのため、テキストなどの文字は変更できますが、シナリオそのものを変更することはできません。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>「トーク名」のプルダウンから「損傷報告」を選択します。</li>
+            <li>「＋ テンプレートを利用」をクリックし、損傷報告の「作成」をクリックします。</li>
             </ol>
+            <ul>
+            <li>「作成」完了後、もう一度「＋ テンプレートを利用」をクリックすると「作成」が「更新」に変更され、「無効にする」、「削除」が活性化します。
+            <ul>
+            <li>「更新」は、損傷報告トークのテンプレートを更新することができます。</li>
+            <li>「無効にする」は、LINEからの損傷報告を受け付けないように設定することができます。
+            <ul>
+            <li>「無効にする」完了後、「無効にする」が「有効にする」に変更され、「有効にする」をクリックすることで、LINEからの損傷報告を再度受け付けるように設定できます。</li>
+            </ul></li>
+            <li>「削除」は、作成した損傷報告トークを削除することができます。</li>
+            </ul></li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_update-damage-report_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
-            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>「属性編集」をクリックすると編集することができます。 タイトル、テキスト、ラベルのみ変更してください。</li>
+            <li>「属性編集」をクリックすると編集することができます。名前、サムネイル画像、タイトル、テキストのみ変更してください。</li>
             </ol>
+            <ul>
+            <li>その他の表示されている各項目についてはマインドマップのプロパティと同じです。詳しくは【シナリオ設定(マインドマップ形式)】を参照ください。</li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_update-damage-report_2.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE3MTI0NDkxOTMsLTE2OTEwNzUyNDEsLT
-            EwMzA4NzczOTUsODAwNTE1ODAsLTEzODI4NDU1MjUsMTY2OTMz
-            NjU4MywxNjY4MzM0MzA1LDU4NjEyNzc4MCwtNDY2MjkyNjIyLD
-            E0OTI1MDc3NzEsNjgyNTczODQ5LDE3MDc2ODMxMDYsLTYzNTIw
-            MjEzNiwyMTA4ODg5ODU5LDIwMTg5NTUzNDYsMTkxMDI2Nzk0OS
-            wtMTQyNTEwNDA0MiwxODgyNDA2MDkyLC0xNTE2ODg1NjMwLDcz
-            NzcxNzMxOF19
-            -->
-            <!-- 目次メインメニュー -->
-            <h3 id="編集関連情報">編集(関連情報) <!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、関連情報の編集について記載します。 関連情報は基本LINE Bot Designer(LBD形式)で作成します。 <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>「トーク名」のプルダウンから「関連情報」を選択します。</li>
-            </ol>
-            <p><img src='./images/scenario/SCENARIO_update-information_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <p><br> <!-- 改行 --></p>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <p><!-- 強制的に改ページ --></p>
-            <ol start="2" type="1">
-            <li>「属性編集」をクリックと編集することができます。「保存」をクリックすると設定が保存されます。 「キャンセル」をクリックすると処理は中断して閉じます。 各設定項目について、下記に記載します。</li>
+            <ol start="3" type="1">
+            <li>「トーク名」から損傷報告を選択すると、「郵便番号CSVインポート」が表示されます。</li>
             </ol>
             <ul>
-            <li>メッセージID：各メッセージ単位の内部IDです。</li>
-            <li>プレビュー：設定した内容がプレビューで表示されます。</li>
-            <li>名前：メッセージ名を設定します。</li>
-            <li>タイトル：タイトル名を設定します。</li>
-            <li>テキスト：本文を設定します。</li>
-            <li>列の数：カルーセルの数を指定します。</li>
-            <li>アクション数：アクションの数を設定します。</li>
-            <li>サムネイルの画像を使用する：「はい」を選択すると各カラム毎にサムネイル画像を付けます。画像を使用する場合は、全て画像を指定する必要があります。</li>
-            <li>アクション１，２、、：アクション数で決めた分アクション設定が可能です。</li>
-            <li>タイプ：メッセージアクション、URIアクション、ポストバックアクション、日時ピッカーアクションを選択します。</li>
-            <li>メッセージアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>メッセージアクション(テキスト)：次のアクションのテキスト名を設定します。</li>
-            <li>URIアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>URIアクション(URL)：選択したときの遷移先のURLを設定します。</li>
-            <li>ポストバックアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>ポストバックアクション(テキスト)：LINEで回答するテキスト名を設定します。</li>
-            <li>ポストバックアクション(データ)：次のアクションするデータを設定します。</li>
-            <li>日時ピッカーアクション：現バージョンでは利用できない機能となります。</li>
-            </ul>
-            <p><img src='./images/scenario/SCENARIO_update-information_2.png' style='border:solid 2px lightgray' /></p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTcyNzM0Nzk3OCwxNDE4ODMyNyw4MDA1MT
-            U4MCwtMTM4Mjg0NTUyNSwxNjY5MzM2NTgzLDE2NjgzMzQzMDUs
-            NTg2MTI3NzgwLC00NjYyOTI2MjIsMTQ5MjUwNzc3MSw2ODI1Nz
-            M4NDksMTcwNzY4MzEwNiwtNjM1MjAyMTM2LDIxMDg4ODk4NTks
-            MjAxODk1NTM0NiwxOTEwMjY3OTQ5LC0xNDI1MTA0MDQyLDE4OD
-            I0MDYwOTIsLTE1MTY4ODU2MzAsNzM3NzE3MzE4LDE1NDc3OTE2
-            Ml19
-            -->
-            <!-- 目次メインメニュー -->
-            <h3 id="編集リンク集">編集(リンク集)<!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、リンク集の編集について記載します。 リンク集は基本LINE Bot Designer(LBD形式)で作成します。 <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>「トーク名」のプルダウンから「リンク集」を選択します。</li>
-            </ol>
-            <p><img src='./images/scenario/SCENARIO_update-links_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <p><br> <!-- 改行 --></p>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <p><!-- 強制的に改ページ --></p>
-            <ol start="2" type="1">
-            <li>「属性編集」をクリックと編集することができます。「保存」をクリックすると設定が保存されます。 「キャンセル」をクリックすると処理は中断して閉じます。 各設定項目について、下記に記載します。</li>
-            </ol>
+            <li>郵便番号CSVインポート：　損傷報告の際に位置情報を知らせる箇所があるため、こちらでインポートした郵便番号データと一致する場所であれば報告を行うことができるようになります。
             <ul>
-            <li>メッセージID：各メッセージ単位の内部IDです。</li>
-            <li>名前：メッセージ名を設定します。</li>
-            <li>プレビュー：設定した内容がプレビューで表示されます。</li>
-            <li>列の数：カルーセルの数を指定します。</li>
-            <li>アクション数：アクションの数を設定します。</li>
-            <li>サムネイルの画像を使用する：「はい」を選択すると各カラム毎にサムネイル画像を付けます。画像を使用する場合は、全て画像を指定する必要があります。</li>
-            <li>タイトルを使用する：「はい」を選択すると、タイトルの設定が可能になります。</li>
-            <li>カラム１，２、、：列の数で決めた分のカルーセルの設定が可能になります。</li>
-            <li>アクション１，２、、：アクション数で決めた分アクション設定が可能になります。</li>
-            <li>タイトル：タイトル名を設定します。</li>
-            <li>テキスト：本文を設定します。</li>
-            <li>タイプ：メッセージアクション、URIアクション、ポストバックアクション、日時ピッカーアクションを選択します。</li>
-            <li>メッセージアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>メッセージアクション(テキスト)：次のアクションのテキスト名を設定します。</li>
-            <li>URIアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>URIアクション(URL)：選択したときの遷移先のURLを設定します。</li>
-            <li>ポストバックアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>ポストバックアクション(テキスト)：LINEで回答するテキスト名を設定します。</li>
-            <li>ポストバックアクション(データ)：次のアクションするデータを設定します。</li>
-            <li>日時ピッカーアクション：現バージョンでは利用できない機能となります。</li>
-            </ul>
-            <p><img src='./images/scenario/SCENARIO_update-links_2.png' style='border:solid 2px lightgray' /></p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTcxMjgyNzI4OSwtNzQ5NjQzNjg3LDEyND
-            Y4Njc1NTUsMTUxNzU5MjExNiwxNDE4ODMyNyw4MDA1MTU4MCwt
-            MTM4Mjg0NTUyNSwxNjY5MzM2NTgzLDE2NjgzMzQzMDUsNTg2MT
-            I3NzgwLC00NjYyOTI2MjIsMTQ5MjUwNzc3MSw2ODI1NzM4NDks
-            MTcwNzY4MzEwNiwtNjM1MjAyMTM2LDIxMDg4ODk4NTksMjAxOD
-            k1NTM0NiwxOTEwMjY3OTQ5LC0xNDI1MTA0MDQyLDE4ODI0MDYw
-            OTJdfQ==
-            -->
-            <!-- 目次メインメニュー -->
-            <h3 id="編集ハザードマップ">編集(ハザードマップ)<!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、リンク集の編集について記載します。 ハザードマップは基本LINE Bot Designer(LBD形式)で作成します。 <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>「トーク名」のプルダウンから「ハザードマップ」を選択します。</li>
-            </ol>
-            <p><img src='./images/scenario/SCENARIO_update-hazardmap_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <p><br> <!-- 改行 --></p>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <p><!-- 強制的に改ページ --></p>
-            <ol start="2" type="1">
-            <li>「属性編集」をクリックと編集することができます。「保存」をクリックすると設定が保存されます。 「キャンセル」をクリックすると処理は中断して閉じます。 各設定項目について、下記に記載します。</li>
-            </ol>
+            <li><a href="./images/scenario/sample-postalcode.csv">sample-postalcode.csv</a>の内容を参考にインポート用のCSVを作成してください。
             <ul>
-            <li>メッセージID：各メッセージ単位の内部IDです。</li>
-            <li>名前：メッセージ名を設定します。</li>
-            <li>プレビュー：設定した内容がプレビューで表示されます。</li>
-            <li>列の数：カルーセルの数を指定します。</li>
-            <li>アクション数：アクションの数を設定します。</li>
-            <li>サムネイルの画像を使用する：「はい」を選択すると各カラム毎にサムネイル画像を付けます。画像を使用する場合は、全て画像を指定する必要があります。</li>
-            <li>タイトルを使用する：「はい」を選択すると、タイトルの設定が可能になります。</li>
-            <li>カラム１，２、、：列の数で決めた分のカルーセルの設定が可能になります。</li>
-            <li>アクション１，２、、：アクション数で決めた分アクション設定が可能になります。</li>
-            <li>タイトル：タイトル名を設定します。</li>
-            <li>テキスト：本文を設定します。</li>
-            <li>タイプ：メッセージアクション、URIアクション、ポストバックアクション、日時ピッカーアクションを選択します。</li>
-            <li>メッセージアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>メッセージアクション(テキスト)：次のアクションのテキスト名を設定します。</li>
-            <li>URIアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>URIアクション(URL)：選択したときの遷移先のURLを設定します。</li>
-            <li>ポストバックアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>ポストバックアクション(テキスト)：LINEで回答するテキスト名を設定します。</li>
-            <li>ポストバックアクション(データ)：次のアクションするデータを設定します。</li>
-            <li>日時ピッカーアクション：現バージョンでは利用できない機能となります。</li>
-            </ul>
-            <p><img src='./images/scenario/SCENARIO_update-hazardmap_2.png' style='border:solid 2px lightgray' /></p>
-            <br>
-            <div style="page-break-before:always">
-
-            </div>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTEyMTQzODkyOTEsNDI1OTE5OTQwLDU2MT
-            g4OTE2NywtNzQ5NjQzNjg3LDEyNDY4Njc1NTUsMTUxNzU5MjEx
-            NiwxNDE4ODMyNyw4MDA1MTU4MCwtMTM4Mjg0NTUyNSwxNjY5Mz
-            M2NTgzLDE2NjgzMzQzMDUsNTg2MTI3NzgwLC00NjYyOTI2MjIs
-            MTQ5MjUwNzc3MSw2ODI1NzM4NDksMTcwNzY4MzEwNiwtNjM1Mj
-            AyMTM2LDIxMDg4ODk4NTksMjAxODk1NTM0NiwxOTEwMjY3OTQ5
-            XX0=
-            -->
-            <!-- 目次メインメニュー -->
-            <h3 id="編集トークを利用する">編集(トークを利用する)<!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、特別なシナリオトークの利用方法について記載します。 特別なシナリオには損傷報告、ゴミ分別があり基本的なシナリオは決まっています。 <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>「トークを利用する」をクリックすると、特別なシナリオトークの利用画面が表示されます。有効になっているシナリオにはチェックマークが付きます。</li>
-            </ol>
-            <ul>
-            <li>損傷報告
-            <ul>
-            <li>作成：クリックすると損傷報告シナリオが作成されます。</li>
-            <li>無効にする：クリックすると損傷報告シナリオが無効になります。</li>
-            <li>削除：クリックすると損傷報告シナリオが削除されます。</li>
+            <li>サンプルCSVに記載されている郵便番号は削除し、1行1列目から記載してください。</li>
             </ul></li>
-            <li>ゴミ分別
-            <ul>
-            <li>作成：クリックするとゴミ分別シナリオが作成されます。</li>
-            <li>削除：クリックするとゴミ分別シナリオが削除されます。</li>
             </ul></li>
-            <li>キャンセル：クリックすると特別なシナリオトークの利用画面が閉じます。</li>
             </ul>
-            <p><img src='./images/scenario/SCENARIO_update-talk_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/scenario/SCENARIO_update-damage-report_3.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>「トーク名」から損傷報告を選択すると、「郵便番号リスト」が表示されます。</li>
+            </ol>
+            <ul>
+            <li>郵便番号リスト：　「郵便番号CSVインポート」でインポートした郵便番号のリスト、削除、CSV出力を行うことができます。
+            <ul>
+            <li>削除：　登録した郵便番号を削除することができます。</li>
+            <li>CSV出力：　「.3」のCSVと同じ形式でCSV出力されます。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/scenario/SCENARIO_update-damage-report_4.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbODcxOTg0Njg5LDIwODI1NjE4MTYsMTI4Mj
+            cyNzQ0NiwxMjgyNzI3NDQ2LC0xNzI1ODIzODgwLDIxNzI2Mjcz
+            OSwtNzQ1MTUyMjM4LC0yMDUwNjg3OTUxLDk2NDAxMzk2NywtMj
+            A1MDY4Nzk1MSwtMjExMDU0NjcxMCwtMjExMDU0NjcxMCwxNjc0
+            OTc4NjY1LDE0MTA1Nzg2MjYsLTEwMjY1MjYwOCwtODE1NDA5ND
+            c4LC0yMTA0NjQ4MzczLDE3Mjk1ODE3MjksMTU1MDYzNTQyMywx
+            Mjg1MTg5OTA0XX0=
+            -->
+            <!-- 目次メインメニュー -->
+            <h3 id="編集防災">編集(防災)<!-- 目次サブメニュー --></h3>
+            <p>「シナリオ設定」のTOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、防災の作成方法について記載します。 防災のシナリオは固定テンプレートのため、テキストなどの文字は変更できますが、シナリオそのものを変更することはできません。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「＋ テンプレートを利用」をクリックし、防災の「作成」をクリックします。</li>
+            </ol>
+            <ul>
+            <li>「作成」完了後、もう一度「＋ テンプレートを利用」をクリックすると「作成」が「更新」に変更され、「削除」が活性化します。
+            <ul>
+            <li>「更新」は、防災トークのテンプレートを更新することができます。</li>
+            <li>「削除」は、作成した防災トークを削除することができます。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/scenario/SCENARIO_update-bosai_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
-            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="2" type="1">
+            <li>「属性編集」をクリックすると編集することができます。 サムネイル画像、タイトル、テキストのみ変更してください。</li>
+            </ol>
+            <ul>
+            <li>その他の表示されている各項目についてはマインドマップのプロパティと同じです。詳しくは【シナリオ設定(マインドマップ形式)】を参照ください。</li>
+            </ul>
+            <p><img src='./images/scenario/SCENARIO_update-bosai_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
             </div>
             <p><!-- 強制的に改ページ --> <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTEwNTE4Nzk5ODYsMzgyNTQxMjU4LDEyNj
-            I2OTUxMDgsLTYwOTA2MTY3NSw0MjU5MTk5NDAsNTYxODg5MTY3
-            LC03NDk2NDM2ODcsMTI0Njg2NzU1NSwxNTE3NTkyMTE2LDE0MT
-            g4MzI3LDgwMDUxNTgwLC0xMzgyODQ1NTI1LDE2NjkzMzY1ODMs
-            MTY2ODMzNDMwNSw1ODYxMjc3ODAsLTQ2NjI5MjYyMiwxNDkyNT
-            A3NzcxLDY4MjU3Mzg0OSwxNzA3NjgzMTA2LC02MzUyMDIxMzZd
-            fQ==
-            --> <!-- 目次メインメニュー --></p>
-            <h3 id="編集複合メッセージを追加">編集(複合メッセージを追加)<!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、複合メッセージを追加の利用方法について記載します。 各トーク名にあるデータを複合して表示することができます。 <!-- 最初に何の説明をするのか明記 --></p>
-            <ol type="1">
-            <li>「複合メッセージを追加」をクリックすると、複合メッセージ画面が表示されます。 メッセージは最大5つまで選択することが可能です。</li>
-            </ol>
-            <ul>
-            <li>名前：複合メッセージ名を入力します。</li>
-            <li>トーク名：プルダウンから選択するトーク名でメッセージを絞り込んで表示します。</li>
-            <li>各メッセージ：メッセージ一覧が表示されます。これから利用するメッセージを選択します。（最大5つまで選択可能）</li>
-            <li>追加：クリックすると設定した複合メッセージが追加されます。</li>
-            <li>キャンセル：処理を中断して、複合メッセージ画面が閉じます。</li>
-            </ul>
-            <p><img src='./images/scenario/SCENARIO_update-composite_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --> <br></p>
-            <div style="page-break-before:always">
-
-            </div>
-            <p><br></p>
-            <!--stackedit_data:
-            eyJoaXN0b3J5IjpbODM2MjM4NzM1LC0yMDA2ODE1OTc5LC0xMD
-            UxNDQzMDAyLDEyNjI2OTUxMDgsLTYwOTA2MTY3NSw0MjU5MTk5
-            NDAsNTYxODg5MTY3LC03NDk2NDM2ODcsMTI0Njg2NzU1NSwxNT
+            eyJoaXN0b3J5IjpbLTE4ODMzMDc1NjQsMTU3NTY0NzkyNSwtMj
+            AzMjUwNjI4MCwxNDk0OTg3MCwtNzYzOTQ1MjU1LC03NzQxMzgw
+            MCwxNzEyODI3Mjg5LC03NDk2NDM2ODcsMTI0Njg2NzU1NSwxNT
             E3NTkyMTE2LDE0MTg4MzI3LDgwMDUxNTgwLC0xMzgyODQ1NTI1
             LDE2NjkzMzY1ODMsMTY2ODMzNDMwNSw1ODYxMjc3ODAsLTQ2Nj
             I5MjYyMiwxNDkyNTA3NzcxLDY4MjU3Mzg0OSwxNzA3NjgzMTA2
             XX0=
-            -->
-            <!-- 目次メインメニュー -->
-            <h3 id="編集防災">編集(防災)<!-- 目次サブメニュー --></h3>
-            <p>TOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、リンク集の編集について記載します。 リンク集は基本LINE Bot Designer(LBD形式)で作成します。 <!-- 最初に何の説明をするのか明記 --></p>
+            --> <!-- 目次メインメニュー --></p>
+            <h3 id="編集防災検索">編集(防災検索)<!-- 目次サブメニュー --></h3>
+            <p>「シナリオ設定」のTOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、防災検索の作成方法について記載します。 防災検索のシナリオは固定テンプレートのため、テキストなどの文字は変更できますが、シナリオそのものを変更することはできません。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>「トーク名」のプルダウンから「防災」を選択します。</li>
+            <li>「＋ テンプレートを利用」をクリックし、防災検索の「作成」をクリックします。</li>
             </ol>
-            <p><img src='./images/scenario/SCENARIO_update-bosai_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <ul>
+            <li>「作成」完了後、もう一度「＋ テンプレートを利用」をクリックすると「作成」が「更新」に変更され、「削除」が活性化します。
+            <ul>
+            <li>「更新」は、防災検索トークのテンプレートを更新することができます。</li>
+            <li>「削除」は、作成した防災検索トークを削除することができます。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/scenario/SCENARIO_update-bosaisearch_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
-            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>「属性編集」をクリックと編集することができます。「保存」をクリックすると設定が保存されます。 「キャンセル」をクリックすると処理は中断して閉じます。 各設定項目について、下記に記載します。</li>
+            <li>「属性編集」をクリックすると編集することができます。 名前、テキストのみ編集してください。</li>
             </ol>
             <ul>
-            <li>メッセージID：各メッセージ単位の内部IDです。</li>
-            <li>名前：メッセージ名を設定します。</li>
-            <li>プレビュー：設定した内容がプレビューで表示されます。</li>
-            <li>アクション数：アクションの数を設定します。</li>
-            <li>アクション１，２、、：アクション数で決めた分アクション設定が可能になります。</li>
-            <li>タイトル：タイトル名を設定します。</li>
-            <li>テキスト：本文を設定します。</li>
-            <li>タイプ：「防災」では変更・設定はできません。</li>
-            <li>メッセージアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>メッセージアクション(テキスト)：次のアクションのテキスト名を設定します。</li>
-            <li>URIアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>URIアクション(URL)：選択したときの遷移先のURLを設定します。</li>
-            <li>ポストバックアクション(ラベル)：LINEで表示するラベル名を設定します。</li>
-            <li>ポストバックアクション(テキスト)：LINEで回答するテキスト名を設定します。</li>
-            <li>ポストバックアクション(データ)：次のアクションするデータを設定します。</li>
+            <li>その他の表示されている各項目についてはマインドマップのプロパティと同じです。詳しくは【シナリオ設定(マインドマップ形式)】を参照ください。</li>
             </ul>
-            <p><img src='./images/scenario/SCENARIO_update-bosai_2.png' style='border:solid 2px lightgray' /></p>
-            <br>
+            <p><img src='./images/scenario/SCENARIO_update-bosaisearch_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --> <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTUzODA5ODE3MywtNzE1MTI0MDk0LC0zMD
+            kyMDM0OSwtNjY1MjM0NTg5LC0xNDgwMzQwMTA4LDczMDk5ODEx
+            Nl19
+            --> <!-- 目次メインメニュー --></p>
+            <h3 id="編集複合メッセージを追加">編集(複合メッセージを追加)<!-- 目次サブメニュー --></h3>
+            <p>「シナリオ設定」のTOP画面から「編集」をクリックすると編集画面が表示されます。 ここでは、複合メッセージを追加の利用方法について記載します。 複合メッセージは、各トーク名にあるデータを複合して表示することができます。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>「複合メッセージを追加」をクリックすると、複合メッセージ画面が表示されます。 メッセージは最大5つまで選択することが可能です。</li>
+            </ol>
+            <ul>
+            <li>名前：複合メッセージ名を入力します。
+            <ul>
+            <li>こちらは必須項目になります。</li>
+            </ul></li>
+            <li>トーク名：プルダウンから選択するトーク名でメッセージを絞り込んで表示します。</li>
+            <li>各メッセージ：メッセージ一覧が表示されます。これから利用するメッセージを選択します。（最大5つまで選択可能）
+            <ul>
+            <li>最低1つはチェックを入れることが必須となります。</li>
+            </ul></li>
+            <li>追加：必須項目が入力された状態でクリックすると、設定した複合メッセージが追加されます。</li>
+            <li>キャンセル：処理を中断して、複合メッセージ画面が閉じます。</li>
+            </ul>
+            <p><img src='./images/scenario/SCENARIO_update-composite_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTQ5NDk4NzAsLTc2Mzk0NTI1NSwtNzc0MT
-            M4MDAsMTcxMjgyNzI4OSwtNzQ5NjQzNjg3LDEyNDY4Njc1NTUs
-            MTUxNzU5MjExNiwxNDE4ODMyNyw4MDA1MTU4MCwtMTM4Mjg0NT
-            UyNSwxNjY5MzM2NTgzLDE2NjgzMzQzMDUsNTg2MTI3NzgwLC00
-            NjYyOTI2MjIsMTQ5MjUwNzc3MSw2ODI1NzM4NDksMTcwNzY4Mz
-            EwNiwtNjM1MjAyMTM2LDIxMDg4ODk4NTksMjAxODk1NTM0Nl19
-
+            eyJoaXN0b3J5IjpbLTE1MDYwNTIyNTQsLTE0ODAzNDAxMDgsLT
+            EzMTIzMTI1NzcsLTg0MzY2MzI5NCw4MzYyMzg3MzUsLTIwMDY4
+            MTU5NzksLTEwNTE0NDMwMDIsMTI2MjY5NTEwOCwtNjA5MDYxNj
+            c1LDQyNTkxOTk0MCw1NjE4ODkxNjcsLTc0OTY0MzY4NywxMjQ2
+            ODY3NTU1LDE1MTc1OTIxMTYsMTQxODgzMjcsODAwNTE1ODAsLT
+            EzODI4NDU1MjUsMTY2OTMzNjU4MywxNjY4MzM0MzA1LDU4NjEy
+            Nzc4MF19
             -->
-            <h3 id="シナリオの検索">シナリオの検索</h3>
-            <p>シナリオ編集画面で、検索機能を搭載しました。</p>
+            <h3 id="シナリオ検索">シナリオ検索</h3>
+            <p>シナリオ編集画面で検索を用いることで、トーク一覧の絞り込みを行うことができます。</p>
             <ol type="1">
-            <li>編集画面の「内容検索を入力」を書かれた部分に検索したい言葉を入力し、「検索」ボタンを押下します。</li>
+            <li>編集画面の「内容検索入力」と記載されている箇所に検索したい文字を入力し、「検索」をクリックします。</li>
             </ol>
+            <ul>
+            <li>検索内容を取り消したい場合は「クリア」をクリックします。</li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_search_1.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <ol start="2" type="1">
-            <li>文字を投入すると検索します。</li>
+            <li>文字を入力し、「検索」をクリックすると絞り込みを行うことができます。</li>
             </ol>
+            <ul>
+            <li>各トークのプロパティにある「名前」「タイトル」「テキスト」、各アクションの「ラベル」に記載されている文字で絞り込みを行なっております。</li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_search_2.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
-            <p><br></p>
-            <div style="page-break-before:always">
-
-            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTE4Nzg0MDI1NywxNDQ2MzEzNTk5LC0xOD
+            c4NDAyNTcsMTcwMDA2NTE2NSw1OTM0Njk3NzEsLTY3NjQ0Mjgw
+            NF19
+            -->
             <h3 id="リッチメニューの作成と編集">リッチメニューの作成と編集</h3>
-            <p>シナリオ編集画面からリッチメニューの作成、修正、削除が行えるようになりました。</p>
+            <p>「リッチメニュー」タブからリッチメニューの作成、修正、削除を行うことができます。</p>
             <ol type="1">
-            <li>編集画面の「内容検索を入力」を書かれた部分に検索したい言葉を入力し、「検索」ボタンを押下します。</li>
+            <li>メインメニュー「シナリオ設定」をクリックし、「リッチメニュー」タブをクリックします。リッチメニューを作成するときは「リッチメニュー作成」をクリックします。</li>
             </ol>
+            <ul>
+            <li>リッチメニューも「本番」、「サンドボックス」の2つがあり、作成、修正、削除の方法は同じです。</li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_rich-menu_1.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <ol start="2" type="1">
-            <li>作成をするときは「リッチメニュー作成」を押下します。</li>
+            <li>表示されている各項目を入力し、「保存」をクリックします。</li>
             </ol>
+            <ul>
+            <li>タイトル：　作成するリッチメニューのタイトルを入力します。</li>
+            <li>テンプレートタイプ：　大と小がありどちらで表示するかを選択できます。
+            <ul>
+            <li>大：　大きめの画像を使用する際に選択していただくとキレイに表示されます。</li>
+            <li>小：　小さめの画像を使用する際に選択していただくとキレイに表示されます。</li>
+            </ul></li>
+            <li>リッチメニューの画像：　リッチメニューに使用したい画像をアップロードすることができます。</li>
+            <li>デフォルトでメニューを表示：　LINEでチャットを開くときに最初からリッチメニューを表示するかどうかを選択できます。</li>
+            <li>トークルームのタイトルバー名：　LINEのチャットでリッチメニューを表示したり非表示にしたりできるバーの名前を設定できます。</li>
+            <li>プレビュー：　アップロードした画像が表示されるので、その画像上でドラッグ&amp;ドロップを行いボタンのアクション範囲を設定することができます。</li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_rich-menu_2.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <ol start="3" type="1">
-            <li>項目を入力し、「保存」を押下します。</li>
+            <li>プレビューでアクション範囲を指定すると、指定した数アクションが生成されます。</li>
             </ol>
+            <ul>
+            <li>タイプ：　「テキスト」「リンク」「ポストバック」の三つがあり、目的に応じて使い分けます。
+            <ul>
+            <li>テキスト：　LINEにてアクション範囲がタップされた際に、テキスト入力欄に記載した文字を出力します。</li>
+            <li>リンク：　LINEにてアクション範囲がタップされた際に、リンク入力欄に記載したリンク先に遷移させます。帳票のLIFFURLを記載することで予約帳票へ案内することもできます。
+            <ul>
+            <li>リンク入力欄でURL形式以外を入力するとエラーが表示されます。</li>
+            </ul></li>
+            <li>ポストバック：　シナリオ設定で有効にしているバージョンのトーク内にあるメッセージIDを「データ」に入力することで、テキスト入力欄に記載した文字でLINEにてアクション範囲がタップされた際に、シナリオを開始することができます。</li>
+            </ul></li>
+            <li>削除：　記載されているアクションを削除することができます。　※確認ダイアログは表示されずに削除が実行されるので注意が必要です。</li>
+            <li>編集：　「編集」をクリックすると、指定したアクション範囲をx,y,横,縦それぞれに対して数字で設定することができます。</li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_rich-menu_3.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <ol start="4" type="1">
-            <li>登録すると一覧に表示されます。画面左上の数字は、登録されているリッチメニュー数です。右上部の「検索」に文字を入力すると、リッチメニューのタイトルの中からマッチするものを表示します。画像の左のアイコンを押下すると3の画面が開き、修正できます。各アイコンを押下すると色がつき、それぞれ「通常モード」「災害時モード」に切り替えることができます。また、ごみ箱アイコンを押下すると作成したメニューを削除します。</li>
+            <li>登録すると一覧に表示されます。画面左上の数字は、登録されているリッチメニュー数です。右上部の「検索」に文字を入力すると、リッチメニューのタイトルの中からマッチするものを表示します。以下、各メニューアイコンをクリックした際の挙動になります。</li>
             </ol>
+            <ul>
+            <li>「編集」アイコン：「.3」の画面が開き、修正を行うことができます。</li>
+            <li>「通常モードに設定」：通常モードのリッチメニューに設定することができます。</li>
+            <li>「災害時モードに設定」：災害時モードのリッチメニューに設定することができます。</li>
+            <li>削除：　リッチメニューを削除することができます。</li>
+            </ul>
             <p><img src='./images/scenario/SCENARIO_rich-menu_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMTU3NzE4NTkzLDE1ODQzNzg3MjgsLTg5Mj
+            g5NTk3LDEwMTQwNTQxMTksMTc3MDcwMTgyOCwtMjEwODk2ODky
+            MCwyMTQ3MzgwNTE1LDEwNzg2MDAwNzEsLTg3NzIxMTkyMCwtMz
+            Y3ODc3NzkxLDE1ODk0Mzk0MzAsLTY5ODY1NzU0NSwxOTA4NTQz
+            NTg1LC0xNzcwNTQ5ODMzLC0xMzM2ODMwNjcyLC00MTU0OTA2Nj
+            csLTQyMDY4NjI0MywtMTM5NDg1NjY1OCwxMDA4NDM4OTQ3LDE1
+            NjAxOTUzMTJdfQ==
+            -->
             <h3 id="あいまい検索">あいまい検索</h3>
-            <p>ごみ検索のあいまい検索を搭載しました。</p>
+            <p>ゴミ検索のあいまい検索を搭載しました。</p>
             <ol type="1">
             <li>トークルームより、検索したい言葉を入力します。</li>
             </ol>
@@ -2465,6 +2371,9 @@
             <div style="page-break-before:always">
 
             </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTE2NTQzMjQ2MjFdfQ==
+            -->
             <h2 id="シナリオ作成マインドマップ形式">シナリオ作成(マインドマップ形式)</h2>
             <h3 id="新規トーク作成">新規トーク作成 <!-- 目次サブメニュー --></h3>
             <p>新規トーク作成方法について説明します。<!-- 最初に何の説明をするのか明記 --></p>
