@@ -170,7 +170,7 @@
         </ul></li>
         <li><a href="#ワクチン運用例">ワクチン運用例</a>
         <ul>
-        <li><a href="#前提-1.7.0時点">前提　1.7.0時点</a></li>
+        <li><a href="#前提-1.7.1時点">前提　1.7.1時点</a></li>
         <li><a href="#事前準備システム管理者">事前準備(システム管理者)</a></li>
         <li><a href="#liffでの予約変更キャンセルユーザー">LIFFでの予約変更・キャンセル(ユーザー)</a></li>
         <li><a href="#電話受付の際の管理画面からの登録変更キャンセルシステム管理者">電話受付の際の管理画面からの登録・変更・キャンセル(システム管理者)</a></li>
@@ -369,7 +369,7 @@
             <li>#：　内部IDになります。LINEまたは管理画面から登録したデータには内部で自動採番されます。インポートしたデータには採番されず空白になります。（内部IDのため検索はできません）</li>
             <li>CSVエクスポート：　選択したデータ全てをCSVエクスポートします。　※詳しくは【追加型帳票のCSVエクスポート】を参照ください。</li>
             <li>CSVインポート：　CSVファイルを選択し、選択したCSVファイルをインポートします。　※詳しくは【追加型帳票のCSVインポート】を参照ください。</li>
-            <li>配信：　選択した対象にLINE送信します。LINEで登録してlineuseridが対象となります。　※詳しくは【追加型帳票の配信】を参照ください。</li>
+            <li>配信：　選択した対象にLINE送信します。LINEで登録したデータに紐づけらているlineuseridが対象となります。　※詳しくは【追加型帳票の配信】を参照ください。</li>
             <li>全体件数を取得：　入っているデータの件数を取得することができます。　※詳しくは【全体件数取得】を参照ください</li>
             <li>通知情報：インポートやエクスポート、配信の情報が表示されます。大量データの場合時間がかかるためこちらで完了したかを確認します。　※詳しくは【追加型帳票の通知情報】を参照ください。</li>
             <li>設定アイコン：　表示件数や表示項目などの表示設定を行うことができます。　</li>
@@ -381,10 +381,10 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTYxNjA3NDk5OSwtNjExNDI5MDA2LDU0Nj
-            AyNTYxLDExOTU5MTIwNjAsMTM1ODM2MTMyNSwtNTkwNzE0Nzk0
-            LDE1NTA4MzkxMTUsMTA5OTk3MDAxMSw2MTU4OTgyODEsLTE2OD
-            A1NDM0MDVdfQ==
+            eyJoaXN0b3J5IjpbMTAyMjM3OTMzOSwxNjE2MDc0OTk5LC02MT
+            E0MjkwMDYsNTQ2MDI1NjEsMTE5NTkxMjA2MCwxMzU4MzYxMzI1
+            LC01OTA3MTQ3OTQsMTU1MDgzOTExNSwxMDk5OTcwMDExLDYxNT
+            g5ODI4MSwtMTY4MDU0MzQwNV19
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票のcsvインポート">追加型帳票のCSVインポート<!-- 目次サブメニュー --></h3>
@@ -420,7 +420,7 @@
             </ol>
             <ul>
             <li>インポートは予約情報の連携はしていないので、画像のように「分類または予約時間を新規追加や変更した場合は、カレンダーに反映されませんのでご注意ください」とファイル選択後に注意書が表示されます。</li>
-            <li>ファイルに新規でデータを追加し、インポートを行う場合は、「パーティションキー」、「作成日」、「更新日」空である必要があります。</li>
+            <li>ファイルに新規でデータを追加し、インポートを行う場合は、「パーティションキー」、「作成日」、「更新日」の列が空である必要があります</li>
             </ul>
             <p><img src='./images/home/HOME_import_4.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -428,10 +428,10 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNzg2OTEwODU2LDcwODAxNzI3MCwxNzgxOT
-            I1NzMyLDM1MDAxMzg3LC0zOTc2NjcyMSwxMDAzMDc2MTY4LC0x
-            NDc3MDM5ODk5LC0xNDMyMzY2ODQwLC0xNjYwOTg2NTU4LC0zNT
-            IyNDE4NjAsNzMwOTk4MTE2XX0=
+            eyJoaXN0b3J5IjpbLTEwNzU1NjYyMTEsNzg2OTEwODU2LDcwOD
+            AxNzI3MCwxNzgxOTI1NzMyLDM1MDAxMzg3LC0zOTc2NjcyMSwx
+            MDAzMDc2MTY4LC0xNDc3MDM5ODk5LC0xNDMyMzY2ODQwLC0xNj
+            YwOTg2NTU4LC0zNTIyNDE4NjAsNzMwOTk4MTE2XX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票のcsvエクスポート">追加型帳票のCSVエクスポート<!-- 目次サブメニュー --></h3>
@@ -458,8 +458,11 @@
             <li>エクスポートしたいデータのチェックボックスにチェックを入れ、表示されたデータの最下部にある「CSV出力」をクリックし、データをダウンロードします。 <br> ※チェックを入れないとデータがエクスポートされないので注意</li>
             </ol>
             <ul>
-            <li>「全体件数を取得」をクリックすると、表示されているデータのチェックボックスに一気にチェックが入ります。</li>
-            <li>「検索条件のCSV出力処理」をクリックすると、絞り込んだ条件のデータ全てをエクスポートすることが可能です。</li>
+            <li>下記の画像上の「状態」「宛名番号」等の項目の左にあるチェックボックスにチェックを入れると、表示されているデータのチェックボックスに一気にチェックが入ります。</li>
+            <li>「検索条件のCSV出力処理」をクリックし、「通知情報」の「CSVエクスポート」タブからダウンロードボタンを押下することでファイルを保存することが可能です。
+            <ul>
+            <li>「検索条件のCSV出力処理」完了後、snackbarに通知情報を確認する旨のメッセージが表示されます。</li>
+            </ul></li>
             </ul>
             <p><img src='./images/home/HOME_export_3.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -478,8 +481,9 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE1OTEwODU1MzIsLTU2OTgzNDMyNCwtNj
-            k4ODA4MDU2LDE4Mzc1NjQyNiw3MzA5OTgxMTZdfQ==
+            eyJoaXN0b3J5IjpbMTMxNzIwMTI3NiwtNzY0Mzc5OTkxLDIwMz
+            MzNjY3MDMsLTE1OTEwODU1MzIsLTU2OTgzNDMyNCwtNjk4ODA4
+            MDU2LDE4Mzc1NjQyNiw3MzA5OTgxMTZdfQ==
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の配信">追加型帳票の配信<!-- 目次サブメニュー --></h3>
@@ -647,7 +651,7 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>変更したいステータスを選択し、「保存」をクリックするとステータスが変更します。</li>
+            <li>変更したいステータスを選択し、「保存」をクリックするとステータスが変更されます。</li>
             </ol>
             <p><img src='./images/home/HOME_status_2.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -683,7 +687,7 @@
             </ul></li>
             <li>管理画面から予約のキャンセルがあった場合
             <ul>
-            <li>ステータスが「キャンセル」に変更</li>
+            <li>ステータスが「キャンセル」に変更されます。</li>
             </ul></li>
             </ul>
             <p><img src='./images/home/HOME_status_4.png' style='border:solid 2px lightgray' /></p>
@@ -692,11 +696,12 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE0NzEwMjY1NTYsLTIxMTE3MDEwNzksNz
-            U0NDg2MDU3LDIxNDg2MTE5MSwtNTQwNzMxNTA4LDE4NTgxOTk0
-            NjEsMTE5ODE3NjczNSw1NTU1MTIyOTEsLTI3NzUyMDA1MiwtMT
-            I3NTQ5NDM1MywtNTI0NTg1MTIxLDQ4OTUyMjM5OCw2NzM4MjI2
-            NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF19
+            eyJoaXN0b3J5IjpbLTIwMDYyMTAyOTIsLTE0NzEwMjY1NTYsLT
+            IxMTE3MDEwNzksNzU0NDg2MDU3LDIxNDg2MTE5MSwtNTQwNzMx
+            NTA4LDE4NTgxOTk0NjEsMTE5ODE3NjczNSw1NTU1MTIyOTEsLT
+            I3NzUyMDA1MiwtMTI3NTQ5NDM1MywtNTI0NTg1MTIxLDQ4OTUy
+            MjM5OCw2NzM4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF
+            19
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の管理メモ">追加型帳票の管理メモ <!-- 目次サブメニュー --></h3>
@@ -755,7 +760,7 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>「印刷」をクリックすると印刷されます。</li>
+            <li>「印刷」をクリックすると印刷確認ダイアログが表示され、そちらから印刷を行います。</li>
             </ol>
             <p><img src='./images/home/HOME_print_2.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -763,9 +768,10 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE1NDU2NTIyMTksLTc1MTUzNjM0NywtMT
-            czOTk1MDA5MSwtMjA2NDgxMjE0NywxOTUxMzU2MDI0LDY3Mzgy
-            MjY2MywtMTg3Mjg5NjcwNSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbLTU2NTYxNjU1NiwtMTU0NTY1MjIxOSwtNz
+            UxNTM2MzQ3LC0xNzM5OTUwMDkxLC0yMDY0ODEyMTQ3LDE5NTEz
+            NTYwMjQsNjczODIyNjYzLC0xODcyODk2NzA1LC03MTM1NzIxNz
+            BdfQ==
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の新規追加と変更キャンセル">追加型帳票の新規追加と変更・キャンセル <!-- 目次サブメニュー --></h3>
@@ -804,6 +810,11 @@
             <div style="page-break-before:always">
 
             </div>
+            <p><img src='./images/home/HOME_add-reserve_2-4.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
             <ol start="3" type="1">
             <li>編集したい予約データをクリックすると【新規作成】の時と同様、管理画面が表示されるので、変更したい項目の内容を変更し、「保存」をクリックすることで予約の変更を行うことができます。</li>
             </ol>
@@ -824,8 +835,8 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMjAzOTE0ODA4OCw3MzY0Mzg2ODQsNDQ0MT
-            Y2MzJdfQ==
+            eyJoaXN0b3J5IjpbNDQ4MjUzNzksMjAzOTE0ODA4OCw3MzY0Mz
+            g2ODQsNDQ0MTY2MzJdfQ==
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="全体件数取得">全体件数取得 <!-- 目次サブメニュー --></h3>
@@ -884,7 +895,7 @@
             </ol>
             <ul>
             <li>配信名をプルダウンメニューで選択できます。</li>
-            <li>配信者をプルダウメニューで選択できます。</li>
+            <li>配信者をプルダウンメニューで選択できます。</li>
             <li>配信期間を設定できます。</li>
             <li>配信種別を選択できます。 <img src='./images/distribution/DISTRIBUTION_list_3.png' style='border:solid 2px lightgray' /></li>
             </ul>
@@ -904,14 +915,14 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTY1MDA4NjAxNCwxNzM4NTQ5OTI2LC0zOD
-            g2MDY0MjAsLTM1MjI0NDA2NiwtMTE4MjEzOTgyLDE3NTk1Nzk4
-            MjgsMjAxMDczNzg0NSwyMzAzMTU3NDFdfQ==
+            eyJoaXN0b3J5IjpbMTIxMjcxNDY2OSwxNjUwMDg2MDE0LDE3Mz
+            g1NDk5MjYsLTM4ODYwNjQyMCwtMzUyMjQ0MDY2LC0xMTgyMTM5
+            ODIsMTc1OTU3OTgyOCwyMDEwNzM3ODQ1LDIzMDMxNTc0MV19
             -->
             <h3 id="今すぐ配信">今すぐ配信</h3>
             <p>手動で直ちに配信する方法を説明します。</p>
             <ol type="1">
-            <li>メニュー「セグメント配信」をクリックしてください。</li>
+            <li>メニュー「セグメント配信」をクリックします。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-now_1.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -919,7 +930,7 @@
 
             </div>
             <ol start="2" type="1">
-            <li>メニュー「配信一覧」＞「新規作成」の順でクリックしてください。</li>
+            <li>メニュー「配信一覧」＞「新規作成」の順でクリックします。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-now_2.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -927,13 +938,13 @@
 
             </div>
             <ol start="3" type="1">
-            <li><p>配信名、配信先、配信日時、配信内容を記入・選択してください。</p>
-            <ul>
-            <li>配信先で「絞り込み」を選択した場合は帳票を選択し、配信対象を絞り込んでください。</li>
-            <li>配信日時で「今すぐ配信」を選択してください。</li>
-            <li>右下のプレビューボタンをクリックすることで送信プレビューを確認できます。</li>
-            </ul></li>
+            <li>配信名、配信先、配信日時、配信内容を記入・選択します。</li>
             </ol>
+            <ul>
+            <li>配信先で「絞り込み」を選択した場合は帳票を選択し、配信対象を絞り込むことができます。</li>
+            <li>配信日時で「今すぐ配信」を選択します。</li>
+            <li>右下のプレビューボタンをクリックすることで送信プレビューを確認できます。</li>
+            </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-now_3.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
@@ -948,15 +959,15 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE2NDEwMTYxNTIsMTUzNDgzNzgyOCwtNT
-            IwMTkyMzk4LC0xNDcwOTgwMTI4LDI3NTY4MTU0MSwtMTE4NTI4
-            NzY2MCw0MzczMDQxOTUsLTMwMTI0MjM4NSwtNzU0MTYwODM2XX
-            0=
+            eyJoaXN0b3J5IjpbLTg4MzE3MDI3MiwxMjI5MjA5OTIsNzQ4MT
+            IxMzMwLC0xNjQxMDE2MTUyLDE1MzQ4Mzc4MjgsLTUyMDE5MjM5
+            OCwtMTQ3MDk4MDEyOCwyNzU2ODE1NDEsLTExODUyODc2NjAsND
+            M3MzA0MTk1LC0zMDEyNDIzODUsLTc1NDE2MDgzNl19
             -->
             <h3 id="回のみ配信">1回のみ配信</h3>
             <p>手動で1回のみ配信する方法を説明します。</p>
             <ol type="1">
-            <li>メニュー「セグメント配信」をクリックしてください。</li>
+            <li>メニュー「セグメント配信」をクリックしてくださいします。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-onetime_1.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -964,7 +975,7 @@
 
             </div>
             <ol start="2" type="1">
-            <li>メニュー「配信一覧」＞「新規作成」の順でクリックしてください。</li>
+            <li>メニュー「配信一覧」＞「新規作成」の順でクリックしてくださいます。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-onetime_2.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -972,11 +983,11 @@
 
             </div>
             <ol start="3" type="1">
-            <li>配信名、配信先、配信日時、配信内容を記入・選択してください。</li>
+            <li>配信名、配信先、配信日時、配信内容を記入・選択してくださいます。</li>
             </ol>
             <ul>
-            <li>配信先で「絞り込み」を選択した場合は帳票を選択し、配信対象を絞り込んでください。</li>
-            <li>配信日時で「一回のみ配信」を選択し、「起点日時」を設定してください。</li>
+            <li>配信先で「絞り込み」を選択した場合は帳票を選択し、配信対象を絞り込んでくださいむことができます。</li>
+            <li>配信日時で「一回のみ配信」を選択し、「起点日時」を設定してくださいます。</li>
             <li>右下のプレビューボタンをクリックすることで送信プレビューを確認できます。</li>
             </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-onetime_3.png' style='border:solid 2px lightgray' /></p>
@@ -985,7 +996,7 @@
 
             </div>
             <ol start="4" type="1">
-            <li>画面下部の「配信」をクリックすることにり配信設定されます。</li>
+            <li>画面下部の「配信」をクリックすることより配信設定されます。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-onetime_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -993,10 +1004,11 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNTMwMzA4ODg5LDgxODI3MzA3Nyw3NzI1MT
-            I1NDEsLTE4MTM0MDMxODQsLTUyMDE5MjM5OCwtMTQ3MDk4MDEy
-            OCwyNzU2ODE1NDEsLTExODUyODc2NjAsNDM3MzA0MTk1LC0zMD
-            EyNDIzODUsLTc1NDE2MDgzNl19
+            eyJoaXN0b3J5IjpbLTEyOTU4NTE3NzUsLTY3OTk2Nzc3Miw1Mz
+            AzMDg4ODksODE4MjczMDc3LDc3MjUxMjU0MSwtMTgxMzQwMzE4
+            NCwtNTIwMTkyMzk4LC0xNDcwOTgwMTI4LDI3NTY4MTU0MSwtMT
+            E4NTI4NzY2MCw0MzczMDQxOTUsLTMwMTI0MjM4NSwtNzU0MTYw
+            ODM2XX0=
             -->
             <h3 id="繰り返し配信">繰り返し配信</h3>
             <p>繰り返し配信する方法を説明します。</p>
@@ -1036,7 +1048,7 @@
 
             </div>
             <ol start="4" type="1">
-            <li>本文を入力し「配信」ボタンで繰り返し配信条件設定を行い定されます。 ※同内容の二種類の帳票及び同帳票に、同配信先・同件名・同日時で二つ配信設定をすると配信されるのは一回のみになります。</li>
+            <li>本文を入力し「配信」ボタンで繰り返し配信条件設定を行い定され行うことができます。 ※同内容の二種類の帳票及び同帳票に、同配信先・同件名・同日時で二つ配信設定をすると配信されるのは一回のみになります。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-repeat_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -1044,8 +1056,8 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTM3MzE4MjY5MywtNjU5NzI0NjcwLC0xOT
-            A4ODg4Njg3XX0=
+            eyJoaXN0b3J5IjpbMTU2NjAwOTczNCwtMzczMTgyNjkzLC02NT
+            k3MjQ2NzAsLTE5MDg4ODg2ODddfQ==
             -->
             <h3 id="手動配信複写">手動配信(複写)</h3>
             <p>配信内容を複写する方法を説明します。</p>
@@ -1066,9 +1078,12 @@
 
             </div>
             <ol start="3" type="1">
-            <li><p>「複写して新規作成」をクリックしてください。</p>
-            <p><img src='./images/distribution/DISTRIBUTION_manual-copy_3.png' style='border:solid 2px lightgray' /></p></li>
+            <li>「複写して新規作成」をクリックしてください。</li>
             </ol>
+            <ul>
+            <li>ステータスが「エラー」のものや送信者対象がない場合は「複写して新規作成」ボタンが表示されません。</li>
+            </ul>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-copy_3.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
@@ -1082,10 +1097,11 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTkyODkyNjgxNSwxMjUwNTEyMTUxLC0xNj
-            AyMzA1NzA5LC00NDc1NDgyNjIsLTE4MTM0MDMxODQsLTUyMDE5
-            MjM5OCwtMTQ3MDk4MDEyOCwyNzU2ODE1NDEsLTExODUyODc2Nj
-            AsNDM3MzA0MTk1LC0zMDEyNDIzODUsLTc1NDE2MDgzNl19
+            eyJoaXN0b3J5IjpbMTQ4NjM5OTc5NiwtMTAzNTIyNzk4NSwtOT
+            I4OTI2ODE1LDEyNTA1MTIxNTEsLTE2MDIzMDU3MDksLTQ0NzU0
+            ODI2MiwtMTgxMzQwMzE4NCwtNTIwMTkyMzk4LC0xNDcwOTgwMT
+            I4LDI3NTY4MTU0MSwtMTE4NTI4NzY2MCw0MzczMDQxOTUsLTMw
+            MTI0MjM4NSwtNzU0MTYwODM2XX0=
             -->
             <h3 id="外部配信設定一覧の表示">外部配信設定一覧の表示</h3>
             <p>外部配信設定の表示切替を説明します。</p>
@@ -1324,7 +1340,7 @@
             </ol>
             <ul>
             <li>各帳票の右にある縦三点リーダーをクリックし、「入力・作成画面を開く」をクリックすることで「入力・作成」のURLに飛べます。</li>
-            <li>各帳票の右にある縦三点リーダーをクリックし、「検索」をクリックすると、「検索」のURLに飛べます。</li>
+            <li>各帳票の右にある縦三点リーダーをクリックし、「検索画面を開く」をクリックすると、「検索」のURLに飛べます。</li>
             </ul>
             <p><img  src='./images/survey/SURVEY_list_2.png'  style='border:solid 2px lightgray'  /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -1344,11 +1360,13 @@
             <div style="page-break-before:always">
 
             </div>
-            <p><!-- 強制的に改ページ --> <!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
+            <p><!-- 強制的に改ページ --> <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTI4MTk1ODEyNiwtMjEwNzkyNDg1XX0=
+            --> <!-- 目次メインメニュー（HOME、セグメント配信 など） --></p>
             <h3 id="新しい帳票を作成">新しい帳票を作成<!-- 目次サブメニュー --></h3>
             <p>入力フォームの新規作成について記します。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>「帳票作成」＞「新しいフォームの作成」＞「空白」をクリックすると、空の入力フォームを生成します。</li>
+            <li>「帳票作成」＞「新しいフォームの帳票を作成」＞「空白」をクリックすると、空の入力フォームを生成します。</li>
             </ol>
             <p><img src='./images/survey/SURVEY_create-new_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -1384,7 +1402,7 @@
 
             </div>
             <ol start="4" type="1">
-            <li>・「質問を追加」で質問を追加することができます。 ・「プレビュー」をクリックすると携帯画面でのイメージを確認することができます。</li>
+            <li>「プレビュー」では携帯画面でのイメージを確認することができます。</li>
             </ol>
             <p><img src='./images/survey/SURVEY_create-new_4.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -1392,13 +1410,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTQ4MjMwOTA1MCwyMjMwNjcyMzAsMjk4Nz
-            IwMzEsLTM1NzM1NjUyNCwxMDY3MDk5NDI0LDE3MzMxMjUyNTYs
-            MTczMzEyNTI1NiwtMTY2NTAyOTk0NiwtNjMxODg3NjEwLDE4MD
-            Y1ODM3NiwtMTkyNjQyMzM1OSwxNDQ2NjUxNzk5LDE3NzgxMzI4
-            ODcsLTE0ODUxMjIyNTcsLTE3NjY2ODAxNDYsMTczMzg5NDI1Ni
-            wxNjkyODI3NzcyLC02ODMxMTIwNzgsNzkyODc2MTQzLC0xMDM0
-            MDA4MzQ4XX0=
+            eyJoaXN0b3J5IjpbMjA2NTYxMTAyOCwtMzYxNDUzODU0LDE0MD
+            I0MDc2MDksLTQ4MjMwOTA1MCwyMjMwNjcyMzAsMjk4NzIwMzEs
+            LTM1NzM1NjUyNCwxMDY3MDk5NDI0LDE3MzMxMjUyNTYsMTczMz
+            EyNTI1NiwtMTY2NTAyOTk0NiwtNjMxODg3NjEwLDE4MDY1ODM3
+            NiwtMTkyNjQyMzM1OSwxNDQ2NjUxNzk5LDE3NzgxMzI4ODcsLT
+            E0ODUxMjIyNTcsLTE3NjY2ODAxNDYsMTczMzg5NDI1NiwxNjky
+            ODI3NzcyXX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="新しい帳票を作成配信設定">新しい帳票を作成(配信設定) <!-- 目次サブメニュー --></h3>
@@ -1950,7 +1968,10 @@
             <li>バージョン：プルダウンから反映したバージョンを選択します。</li>
             <li>有効にする：バージョン変更後、クリックすると選択したバージョンが有効になります。</li>
             <li>全体構成：クリックすると、シナリオ全体構成が表示されます。詳細は「3.」を参照ください。</li>
-            <li>エクスポート(LBD形式)：クリックするとシナリオデータ(LBDファイル)をダウンロードします。</li>
+            <li>エクスポート(LBD形式)：クリックするとシナリオデータ(LBDファイル)をダウンロードします。
+            <ul>
+            <li>LBDのシナリオ設定の上限が100までとなっておりますので、LBD-Webで100以上のシナリオを作成し、LBDで表示したい場合は、新たにバージョンを作成するなどして、シナリオの数が100を超えないようにしてください。</li>
+            </ul></li>
             <li>編集：クリックすると編集画面が開きます。詳細は別途【編集】の章を参照ください。</li>
             <li>インポート：クリックするとインポート画面が表示されます。詳細は「4.」を参照ください。</li>
             <li>削除：選択されているシナリオデータを削除します。</li>
@@ -1988,13 +2009,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTQyOTUyNjI1NywtMjAxNTgyNTA4OSwtMT
-            Q2NjQyOTMwOCwyMDQyNzIzNzc0LDYxMDU5NTQ5OSwtMTU5NDYw
-            MjIxNCwtNDE3MzIyMzMzLC0xNDEzNTMxMDAxLDY5Mjc2MjExNC
-            wxNTg3Mjc0MTAyLDU4NjEyNzc4MCwtNDY2MjkyNjIyLDE0OTI1
-            MDc3NzEsNjgyNTczODQ5LDE3MDc2ODMxMDYsLTYzNTIwMjEzNi
-            wyMTA4ODg5ODU5LDIwMTg5NTUzNDYsMTkxMDI2Nzk0OSwtMTQy
-            NTEwNDA0Ml19
+            eyJoaXN0b3J5IjpbNDI2MDI3NDMyLC00Mjk1MjYyNTcsLTIwMT
+            U4MjUwODksLTE0NjY0MjkzMDgsMjA0MjcyMzc3NCw2MTA1OTU0
+            OTksLTE1OTQ2MDIyMTQsLTQxNzMyMjMzMywtMTQxMzUzMTAwMS
+            w2OTI3NjIxMTQsMTU4NzI3NDEwMiw1ODYxMjc3ODAsLTQ2NjI5
+            MjYyMiwxNDkyNTA3NzcxLDY4MjU3Mzg0OSwxNzA3NjgzMTA2LC
+            02MzUyMDIxMzYsMjEwODg4OTg1OSwyMDE4OTU1MzQ2LDE5MTAy
+            Njc5NDldfQ==
             -->
             <!-- 目次メインメニュー -->
             <h3 id="編集ゴミ分別">編集(ゴミ分別) <!-- 目次サブメニュー --></h3>
@@ -3879,13 +3900,17 @@
             BdfQ==
             -->
             <h2 id="ワクチン運用例">ワクチン運用例</h2>
-            <h3 id="前提-1.7.0時点">前提　1.7.0時点</h3>
+            <h3 id="前提-1.7.1時点">前提　1.7.1時点</h3>
             <ul>
             <li>「ホーム」CSVインポートの1回あたりの上限は10万件となります。10万件以上のアップロードを行う際は、ファイルを分割して実施をお願いします
             <ul>
             <li>10万件あたりにかかるアップロード時間の目安は13分～14分程度です</li>
             </ul></li>
-            <li>「ホーム」配信の1回あたりの上限は3万件となります</li>
+            <li>「ホーム」CSVインポートにて更新を行う際の1回あたりの上限は7万件となります。
+            <ul>
+            <li>7万件以上のCSVインポートにて更新を行う際は、ファイルを分割して実施をお願いします</li>
+            </ul></li>
+            <li>「ホーム」配信の1回あたりの上限は3万件となります。</li>
             <li>ワクチン接種をご利用の際は、メインメニュー「帳票作成」の「コロナワクチン接種」テンプレートの帳票をご利用ください</li>
             </ul>
             <h3 id="事前準備システム管理者">事前準備(システム管理者)</h3>
@@ -4019,7 +4044,13 @@
             <li>初回設定時は、CSVファイルでカレンダーの登録が必要です。(初期状態ではカレンダーの空き枠設定がされていないので、設定自体が不可)
             <ul>
             <li>カレンダー設定画面を開いているのであれば閉じてカレンダー画面を開きます。</li>
-            <li>次に<a href="./images/vaccine/sample-calendar.csv">sample-calendar.csv</a>の内容を参考にインポート用のCSVを作成します。</li>
+            <li>次に<a href="./images/vaccine/sample-calendar.csv">sample-calendar.csv</a>の内容を参考にインポート用のCSVを作成します。
+            <ul>
+            <li>想定している予約開始日が未来日の場合でも、その日までの枠は0に設定してください。
+            <ul>
+            <li>ex) 5/14にCSVインポートし、予約可能日が5/31日～の場合は、5/14～5/29までの予約枠を0に設定する</li>
+            </ul></li>
+            </ul></li>
             <li>「CSV一括登録」ボタンをクリックし、「ファイルを選択」ボタンをクリックして先ほどのCSVを選択後「登録する」ボタンをクリックしてカレンダーをインポートします。
             <ul>
             <li>カレンダーをインポートする際は最低連続した7日間以上の情報をインポートしてください。</li>
@@ -4044,6 +4075,7 @@
             </ul></li>
             <li>「予約可能日設定」を用いて、同日予約での最大予約可能数や予約可能日開始を制限することができます。
             <ul>
+            <li>※「同日予約での最大予約可能数」を入れると複数予約ができなくなりますので注意が必要です。</li>
             <li>詳しくは【設定-トップ画面と初期独立カレンダー設定】を参照ください。</li>
             </ul></li>
             </ul>
@@ -4219,13 +4251,13 @@
 
             -->
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMjI3NjI1OTIsMTU0NTM0NjIwNywyMDI3MT
-            czMjUsLTEyNDY5NzExNTYsLTY1ODQwOTIyMSwtMzk4NzYyMDY2
-            LC0xNDc2MDQzNDA1LDgwMDI4NDg0NiwtMzg2NzM3NjMzLDYxMT
-            M1NTgzNSwtMTQ1MzYxNTcwNywxMjYyNzUyNzAsMTQ3OTE3OTA5
-            NywtMTI0MTcxOTA3OSwtMTA0OTEzMTgyNyw5NDIwNTM0NzEsLT
-            EyNTg5NzI0OSwtMTk4NDkzOTI5NywtMTk0MjA4NTI4LC00MTY1
-            NTEyMzNdfQ==
+            eyJoaXN0b3J5IjpbMTg0MzYwMjEzOSwxOTc2MzA2MDQ1LDc2OT
+            E0NTk2OCw0MzQ3ODAxOTAsLTg1NzQxNTgwOSwyMjc2MjU5Miwx
+            NTQ1MzQ2MjA3LDIwMjcxNzMyNSwtMTI0Njk3MTE1NiwtNjU4ND
+            A5MjIxLC0zOTg3NjIwNjYsLTE0NzYwNDM0MDUsODAwMjg0ODQ2
+            LC0zODY3Mzc2MzMsNjExMzU1ODM1LC0xNDUzNjE1NzA3LDEyNj
+            I3NTI3MCwxNDc5MTc5MDk3LC0xMjQxNzE5MDc5LC0xMDQ5MTMx
+            ODI3XX0=
             -->
             <h3 id="liffでの予約変更キャンセルユーザー">LIFFでの予約変更・キャンセル(ユーザー)</h3>
             <ol type="1">
@@ -4310,6 +4342,7 @@
             <li>〇となってる場所で、予約変更したい日時の場所をタップします。
             <ul>
             <li>日付選択後、「日付確定」ボタンをタップすると確認ダイアログが表示されるので、「はい」をタップします。</li>
+            <li>※同一の端末にて同日同時刻への複数予約は不可となります。</li>
             </ul></li>
             </ul>
             <p><br></p>
@@ -4388,10 +4421,11 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTEwNTQyNTUyNjIsLTIwOTg5NjAzODgsLT
-            IxMDY3MTY3MjUsMTk2MDQ2MDUxMyw5OTAxNzA5NzcsNTc4NTgw
-            Mjk4LC0xMTkwMjc3NjAxLC0xMzU3Mjk0MTkyLC0yNTE4OTU0Nj
-            gsLTExOTgyOTMzOTAsNzMwOTk4MTE2XX0=
+            eyJoaXN0b3J5IjpbLTEzMjAwNjcyNzMsLTEwNTQyNTUyNjIsLT
+            IwOTg5NjAzODgsLTIxMDY3MTY3MjUsMTk2MDQ2MDUxMyw5OTAx
+            NzA5NzcsNTc4NTgwMjk4LC0xMTkwMjc3NjAxLC0xMzU3Mjk0MT
+            kyLC0yNTE4OTU0NjgsLTExOTgyOTMzOTAsNzMwOTk4MTE2XX0=
+
             -->
             <h3 id="電話受付の際の管理画面からの登録変更キャンセルシステム管理者">電話受付の際の管理画面からの登録・変更・キャンセル(システム管理者)</h3>
             <ol type="1">
