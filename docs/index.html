@@ -181,7 +181,7 @@
         <li><a href="#外部システム連携csvエクスポート">外部システム連携（CSVエクスポート）</a></li>
         <li><a href="#クーポンコードが再発行変更になった際">クーポンコードが再発行（変更）になった際</a></li>
         <li><a href="#次回接種日のリマインド通知">次回接種日のリマインド通知</a></li>
-        <li><a href="#個別接種の方へ">個別接種の方へ</a></li>
+        <li><a href="#個別接種対応について">個別接種対応について</a></li>
         <li><a href="#権限について">権限について</a></li>
         <li><a href="#権限毎の操作権限マトリクス">権限毎の操作権限マトリクス</a></li>
         </ul></li>
@@ -462,6 +462,7 @@
             <li>下記の画像上の「状態」「宛名番号」等の項目の左にあるチェックボックスにチェックを入れると、表示されているデータのチェックボックスに一気にチェックが入ります。</li>
             <li>「検索条件のCSV出力処理」をクリックし、「通知情報」の「CSVエクスポート」タブからダウンロードボタンを押下することでファイルを保存することが可能です。
             <ul>
+            <li>※ 「検索」「検索条件をクリア」「検索条件のCSV出力処理」は「2.」の画面に表示されている「検索条件」をクリックすることで表示されます。</li>
             <li>「検索条件のCSV出力処理」完了後、snackbarに通知情報を確認する旨のメッセージが表示されます。</li>
             </ul></li>
             </ul>
@@ -482,9 +483,9 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTMxNzIwMTI3NiwtNzY0Mzc5OTkxLDIwMz
-            MzNjY3MDMsLTE1OTEwODU1MzIsLTU2OTgzNDMyNCwtNjk4ODA4
-            MDU2LDE4Mzc1NjQyNiw3MzA5OTgxMTZdfQ==
+            eyJoaXN0b3J5IjpbLTY1ODI1NTc4NiwxMzE3MjAxMjc2LC03Nj
+            QzNzk5OTEsMjAzMzM2NjcwMywtMTU5MTA4NTUzMiwtNTY5ODM0
+            MzI0LC02OTg4MDgwNTYsMTgzNzU2NDI2LDczMDk5ODExNl19
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の配信">追加型帳票の配信<!-- 目次サブメニュー --></h3>
@@ -511,7 +512,7 @@
             <li>作成画面では、タイトルを入力し、タイプは「選択」ボタンをクリック、メッセージを入力し、「確認画面へ」をクリックします。</li>
             </ol>
             <ul>
-            <li>個別ではなく全体に対して配信を行いたい場合には、タイプの「検索条件」をクリックしてください。</li>
+            <li>個別ではなく全体に対して配信を行いたい場合には、タイプの「検索条件」をクリックします。</li>
             <li>「リマインド通知」をクリックするとメッセージに以下の画像のようなテンプレートが入力されます。</li>
             <li>こちらの3項目は全て必須項目になります。</li>
             </ul>
@@ -529,10 +530,10 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTc3OTI0ODMyNCwxOTI1NjY2MTAzLC0xOT
-            g5NTU0NzkyLC0xMDcwNDAyNjcwLC0yMDM1ODM3ODYzLC0xMjE1
-            NTYzOTYwLC0zODgzMzExNiwtMjE0MzIzODM2OSwxNjE4MDY0Nj
-            g2LDczMDk5ODExNl19
+            eyJoaXN0b3J5IjpbLTkxNTYwOTI1MywtNzc5MjQ4MzI0LDE5Mj
+            U2NjYxMDMsLTE5ODk1NTQ3OTIsLTEwNzA0MDI2NzAsLTIwMzU4
+            Mzc4NjMsLTEyMTU1NjM5NjAsLTM4ODMzMTE2LC0yMTQzMjM4Mz
+            Y5LDE2MTgwNjQ2ODYsNzMwOTk4MTE2XX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の削除">追加型帳票の削除 <!-- 目次サブメニュー --></h3>
@@ -660,17 +661,12 @@
 
             </div>
             <ol start="3" type="1">
-            <li>LIFFから予約の変更やキャンセルがあった場合</li>
+            <li>LIFF・管理画面から予約、予約の変更、キャンセルがあった場合</li>
             </ol>
             <ul>
-            <li>LIFFから予約の変更があった場合
+            <li>LIFFから予約、予約の変更があった場合
             <ul>
-            <li>元々入っていた予約データが「取り消し」ステータスになります。</li>
-            <li>ステータスは「未処理」で新しいレコードが追加されます。</li>
-            </ul></li>
-            <li>LIFFからキャンセルがあった場合
-            <ul>
-            <li>ステータスの変更はなく、対象レコードの予約日が削除されます。 <br> ※予約の変更を行ったデータは接種券番号「111111111111111111」で、予約のキャンセルを行ったデータは接種券番号「222222222222222222」になります。</li>
+            <li>予約、予約の変更を行った「未対応」のデータ1件のままになります。</li>
             </ul></li>
             </ul>
             <p><img src='./images/home/HOME_status_3.png' style='border:solid 2px lightgray' /></p>
@@ -678,17 +674,24 @@
             <div style="page-break-before:always">
 
             </div>
+            <ul>
+            <li>LIFFからキャンセルがあった場合
+            <ul>
+            <li>キャンセルを行ったデータのステータスが「キャンセル」になります。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/home/HOME_status_3-2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
             <ol start="4" type="1">
-            <li>管理画面から予約の変更やキャンセルがあった場合</li>
+            <li>LINEから予約、予約の変更、キャンセルがあった場合</li>
             </ol>
             <ul>
-            <li>管理画面から予約の変更があった場合
+            <li>LINEから予約、予約の変更があった場合
             <ul>
-            <li>対象帳票をそのまま編集するため、ステータスの変更はありません。</li>
-            </ul></li>
-            <li>管理画面から予約のキャンセルがあった場合
-            <ul>
-            <li>ステータスが「キャンセル」に変更されます。</li>
+            <li>予約、予約の変更を行ったデータが「取り消し」になり、新たに「未対応」のデータが作成されます。</li>
             </ul></li>
             </ul>
             <p><img src='./images/home/HOME_status_4.png' style='border:solid 2px lightgray' /></p>
@@ -696,13 +699,25 @@
             <div style="page-break-before:always">
 
             </div>
+            <ul>
+            <li>LINEから予約のキャンセルがあった場合
+            <ul>
+            <li>キャンセルを行ったデータが「キャンセル」に変更されます。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/home/HOME_status_4-2.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTIwMDYyMTAyOTIsLTE0NzEwMjY1NTYsLT
-            IxMTE3MDEwNzksNzU0NDg2MDU3LDIxNDg2MTE5MSwtNTQwNzMx
-            NTA4LDE4NTgxOTk0NjEsMTE5ODE3NjczNSw1NTU1MTIyOTEsLT
-            I3NzUyMDA1MiwtMTI3NTQ5NDM1MywtNTI0NTg1MTIxLDQ4OTUy
-            MjM5OCw2NzM4MjI2NjMsLTE4NzI4OTY3MDUsLTcxMzU3MjE3MF
-            19
+            eyJoaXN0b3J5IjpbMTQzNzY1ODUyNywzODk4NDkwOTEsNTI1MT
+            IwNDMzLDUwNTMyMTMyOCwxMDQ1MTMzOTMxLC0yMDA2MjEwMjky
+            LC0xNDcxMDI2NTU2LC0yMTExNzAxMDc5LDc1NDQ4NjA1NywyMT
+            Q4NjExOTEsLTU0MDczMTUwOCwxODU4MTk5NDYxLDExOTgxNzY3
+            MzUsNTU1NTEyMjkxLC0yNzc1MjAwNTIsLTEyNzU0OTQzNTMsLT
+            UyNDU4NTEyMSw0ODk1MjIzOTgsNjczODIyNjYzLC0xODcyODk2
+            NzA1XX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票の管理メモ">追加型帳票の管理メモ <!-- 目次サブメニュー --></h3>
@@ -1049,7 +1064,7 @@
 
             </div>
             <ol start="4" type="1">
-            <li>本文を入力し「配信」ボタンで繰り返し配信条件設定を行い定され行うことができます。 ※同内容の二種類の帳票及び同帳票に、同配信先・同件名・同日時で二つ配信設定をすると配信されるのは一回のみになります。</li>
+            <li>本文を入力し「配信」ボタンで繰り返し配信条件設定を行うことができます。 ※同内容の二種類の帳票及び同帳票に、同配信先・同件名・同日時で二つ配信設定をすると配信されるのは一回のみになります。</li>
             </ol>
             <p><img src='./images/distribution/DISTRIBUTION_manual-repeat_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -1057,8 +1072,8 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTU2NjAwOTczNCwtMzczMTgyNjkzLC02NT
-            k3MjQ2NzAsLTE5MDg4ODg2ODddfQ==
+            eyJoaXN0b3J5IjpbNzU1MzU2NTMsMTU2NjAwOTczNCwtMzczMT
+            gyNjkzLC02NTk3MjQ2NzAsLTE5MDg4ODg2ODddfQ==
             -->
             <h3 id="手動配信複写">手動配信(複写)</h3>
             <p>配信内容を複写する方法を説明します。</p>
@@ -1367,7 +1382,7 @@
             <h3 id="新しい帳票を作成">新しい帳票を作成<!-- 目次サブメニュー --></h3>
             <p>入力フォームの新規作成について記します。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>「帳票作成」＞「新しいフォームの帳票を作成」＞「空白」をクリックすると、空の入力フォームを生成します。</li>
+            <li>「帳票作成」＞「新しい帳票を作成」＞「空白」をクリックすると、空の入力フォームを生成します。</li>
             </ol>
             <p><img src='./images/survey/SURVEY_create-new_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -1408,7 +1423,7 @@
             <ul>
             <li>質問を追加：　現在選択している項目の下に新たに項目を追加することができます。</li>
             <li>質問を移動：　質問の並べ替え画面が表示され、そちらから現在作成している項目の並びを入れ替えることができます。</li>
-            <li>プレビュー：　現在開いている項目を閉じることができます。</li>
+            <li>プレビュー：　プレビュー画面の内容が更新されます。</li>
             </ul>
             <p><img src='./images/survey/SURVEY_create-new_4.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -1416,13 +1431,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTE3MzA1MTUxMSwyMDY1NjExMDI4LC0zNj
-            E0NTM4NTQsMTQwMjQwNzYwOSwtNDgyMzA5MDUwLDIyMzA2NzIz
-            MCwyOTg3MjAzMSwtMzU3MzU2NTI0LDEwNjcwOTk0MjQsMTczMz
-            EyNTI1NiwxNzMzMTI1MjU2LC0xNjY1MDI5OTQ2LC02MzE4ODc2
-            MTAsMTgwNjU4Mzc2LC0xOTI2NDIzMzU5LDE0NDY2NTE3OTksMT
-            c3ODEzMjg4NywtMTQ4NTEyMjI1NywtMTc2NjY4MDE0NiwxNzMz
-            ODk0MjU2XX0=
+            eyJoaXN0b3J5IjpbMTI2MTU5MTAyMiwtMTgxNjcyMjgwNSwxMT
+            czMDUxNTExLDIwNjU2MTEwMjgsLTM2MTQ1Mzg1NCwxNDAyNDA3
+            NjA5LC00ODIzMDkwNTAsMjIzMDY3MjMwLDI5ODcyMDMxLC0zNT
+            czNTY1MjQsMTA2NzA5OTQyNCwxNzMzMTI1MjU2LDE3MzMxMjUy
+            NTYsLTE2NjUwMjk5NDYsLTYzMTg4NzYxMCwxODA2NTgzNzYsLT
+            E5MjY0MjMzNTksMTQ0NjY1MTc5OSwxNzc4MTMyODg3LC0xNDg1
+            MTIyMjU3XX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="新しい帳票を作成配信設定">新しい帳票を作成(配信設定) <!-- 目次サブメニュー --></h3>
@@ -1697,7 +1712,10 @@
             -->
             <!-- 目次メインメニュー -->
             <h3 id="アイテムのオプション">アイテムのオプション <!-- 目次サブメニュー --></h3>
-            <p>各アイテムのオプションについて説明します。 <!-- 最初に何の説明をするのか明記 --> 1. オプション【記述式】内の各オプション 各オプションでは必須項目である「タイトル」、オプションの説明に使用できる「説明」が設定されています。 また、「編集不可」、「管理項目」、「インデックスキー」、「照会キー」、「必須」の5つのトグルボタンが使用可能です。</p>
+            <p>各アイテムのオプションについて説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <ol type="1">
+            <li>オプション【記述式】内の各オプション 各オプションでは必須項目である「タイトル」、オプションの説明に使用できる「説明」が設定されています。 また、「編集不可」、「管理項目」、「インデックスキー」、「照会キー」、「必須」の5つのトグルボタンが使用可能です。</li>
+            </ol>
             <ul>
             <li>1行テキスト
             <ul>
@@ -1909,13 +1927,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTgyNzA1MDAwMywxMDk3MTU5Mzc4LC0xMj
-            YyMTY4MTc4LC0xNDE4OTg5MTMzLDE1Mzc3MDA2LC00Nzc4NjI2
-            MzgsLTg0Nzg3ODAyMSwxNDQ1MTk3NTg5LDE4ODUzOTcxMDksLT
-            E4OTEwMjA3OTcsMTk2NDM1NTk4OCwxMDY0MTQ4MDg5LC0xMDA4
-            ODYzMDE1LDY1NzQwODcwNiwxNTUyMzE4NTA2LC05NjExNzgwNT
-            MsMTM4NDUxNTk2MywtMzEzOTYwNTQsLTM2NzMxODI0Miw5NTI1
-            NjQ1MTRdfQ==
+            eyJoaXN0b3J5IjpbLTQzMzEyMDE5MSwxNDAyMjc2NzE5LC04Nj
+            gwNjUzNzksMTgyNzA1MDAwMywxMDk3MTU5Mzc4LC0xMjYyMTY4
+            MTc4LC0xNDE4OTg5MTMzLDE1Mzc3MDA2LC00Nzc4NjI2MzgsLT
+            g0Nzg3ODAyMSwxNDQ1MTk3NTg5LDE4ODUzOTcxMDksLTE4OTEw
+            MjA3OTcsMTk2NDM1NTk4OCwxMDY0MTQ4MDg5LC0xMDA4ODYzMD
+            E1LDY1NzQwODcwNiwxNTUyMzE4NTA2LC05NjExNzgwNTMsMTM4
+            NDUxNTk2M119
             -->
             <!-- 目次メインメニュー -->
             <h3 id="アイテム内の各スイッチ">アイテム内の各スイッチ <!-- 目次サブメニュー --></h3>
@@ -2043,7 +2061,7 @@
             </ul></li>
             <li>編集：クリックすると編集画面が開きます。詳細は別途【編集】の章を参照ください。</li>
             <li>インポート：クリックするとインポート画面が表示されます。詳細は「4.」を参照ください。</li>
-            <li>削除：シナリオ削除のダイアログが表示され、そちらからシナリオの削除を行うことができます。</li>
+            <li>削除：削除ダイアログが表示されますので、指示に従うことで削除を行うことができます。</li>
             </ul>
             <p><img src='./images/scenario/SCENARIO_top_2.png' style='border:solid 2px lightgray' /></p>
             <br>
@@ -2078,13 +2096,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE5OTM5MTc2OTEsNDI2MDI3NDMyLC00Mj
-            k1MjYyNTcsLTIwMTU4MjUwODksLTE0NjY0MjkzMDgsMjA0Mjcy
-            Mzc3NCw2MTA1OTU0OTksLTE1OTQ2MDIyMTQsLTQxNzMyMjMzMy
-            wtMTQxMzUzMTAwMSw2OTI3NjIxMTQsMTU4NzI3NDEwMiw1ODYx
-            Mjc3ODAsLTQ2NjI5MjYyMiwxNDkyNTA3NzcxLDY4MjU3Mzg0OS
-            wxNzA3NjgzMTA2LC02MzUyMDIxMzYsMjEwODg4OTg1OSwyMDE4
-            OTU1MzQ2XX0=
+            eyJoaXN0b3J5IjpbNTc2NTEyMjM3LC0xOTkzOTE3NjkxLDQyNj
+            AyNzQzMiwtNDI5NTI2MjU3LC0yMDE1ODI1MDg5LC0xNDY2NDI5
+            MzA4LDIwNDI3MjM3NzQsNjEwNTk1NDk5LC0xNTk0NjAyMjE0LC
+            00MTczMjIzMzMsLTE0MTM1MzEwMDEsNjkyNzYyMTE0LDE1ODcy
+            NzQxMDIsNTg2MTI3NzgwLC00NjYyOTI2MjIsMTQ5MjUwNzc3MS
+            w2ODI1NzM4NDksMTcwNzY4MzEwNiwtNjM1MjAyMTM2LDIxMDg4
+            ODk4NTldfQ==
             -->
             <!-- 目次メインメニュー -->
             <h3 id="編集ゴミ分別">編集(ゴミ分別) <!-- 目次サブメニュー --></h3>
@@ -5035,12 +5053,23 @@
             LC0xOTA2NDM5NDQwLC0yMDQxMDU4MTI4LC0xMTg3MDg5MjYwLD
             czMDk5ODExNl19
             -->
-            <h3 id="個別接種の方へ">個別接種の方へ</h3>
+            <h3 id="個別接種対応について">個別接種対応について</h3>
             <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <h4 id="想定ユースケース">想定ユースケース</h4>
+            <ul>
+            <li>「中分類＞小分類」項目ごとにチームに割り振り、作成した帳票のレコードは割り振ったチームのメインメニュー【ホーム】から閲覧可能です。</li>
+            <li>カレンダーの空き枠数は全チーム共通で閲覧可能です。</li>
+            </ul>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
             <ol type="1">
-            <li>割り振りたいユーザとチームの設定(システム管理者)</li>
+            <li>割り振りたいユーザとチームの設定(システム管理者) ※ すでに割り振りたいユーザとチームの設定が完了している場合はこちらは飛ばしてください。</li>
             </ol>
-            <p>※ すでに割り振りたいユーザとチームの設定が完了している場合はこちらは飛ばしてください。</p>
             <ul>
             <li>メインメニュー「ユーザ設定」の「チーム」タブからチーム作成を行います。
             <ul>
@@ -5064,6 +5093,7 @@
             <ul>
             <li>【事前準備(システム管理者)〈5.予約帳票の作成〉】を参考に予約帳票を作成し、「閲覧権限設定へ」をクリックします。</li>
             </ul></li>
+            <li>※ すでに帳票を作成されている場合は、帳票の編集からも同様の操作を行うことができます。</li>
             </ul>
             <p><img  src='./images/vaccine/INDIVIDUAL_Survey.png'  style='border:solid 2px lightgray'  /></p>
             <p><br></p>
@@ -5073,7 +5103,7 @@
             <ul>
             <li>最初に、作成する予約帳票を閲覧できるチームを選択します。
             <ul>
-            <li>この後、小項目ごとに割り振りを行うチームを設定できますが、そのためにはこちらで割り振りを行うチームを選択しておく必要があります。</li>
+            <li>後で「中分類＞小分類」項目ごとに割り振りを行うチームを設定できますが、そのためにはこちらで割り振りを行うチームを選択しておく必要があります。</li>
             </ul></li>
             </ul>
             <p><img  src='./images/vaccine/INDIVIDUAL_Survey-2.png'  style='border:solid 2px lightgray'  /></p>
@@ -5084,7 +5114,7 @@
             <ul>
             <li>次に、「大分類」でカレンダーを選択し、「検索」をクリックします。
             <ul>
-            <li>「検索」をクリックすると選択した大分類に紐づく小項目が表示されます。</li>
+            <li>「検索」をクリックすると選択した大分類に紐づく「中分類＞小分類」項目が表示されます。</li>
             </ul></li>
             </ul>
             <p><img  src='./images/vaccine/INDIVIDUAL_Survey-3.png'  style='border:solid 2px lightgray'  /></p>
@@ -5093,12 +5123,12 @@
 
             </div>
             <ul>
-            <li>個別に小項目に対してチームを割り振りたい場合
+            <li>個別に「中分類＞小分類」項目に対してチームを割り振りたい場合
             <ul>
-            <li>割り振りを行いたい小項目をクリックすることで、クリックした小項目に割り振るチームを選択することができます。
+            <li>割り振りを行いたい「中分類＞小分類」項目をクリックすることで、クリックした「中分類＞小分類」項目に割り振るチームを選択することができます。
             <ul>
-            <li>※ 一つの小項目に対して割り振りを行えるチームの最大数は10件です。</li>
-            <li>※ チームは複数の小項目に対して割り振りを行うことができます。</li>
+            <li>※ 一つの「中分類＞小分類」項目に対して割り振りを行えるチームの最大数は10件です。</li>
+            <li>※ チームは複数の「中分類＞小分類」項目に対して割り振りを行うことができます。</li>
             </ul></li>
             </ul></li>
             <li>設定が完了しましたら、右下にある「閉じる」をクリックしてください。</li>
@@ -5109,10 +5139,10 @@
 
             </div>
             <ul>
-            <li>複数の小項目に対して同じチームを割り振りたい場合
+            <li>複数の「中分類＞小分類」項目に対して同じチームを割り振りたい場合
             <ul>
-            <li>各小項目の左にあるチェックボックスにチェックを入れ、「一括設定」をクリックし、「一括設定」画面を開きます。</li>
-            <li>「中分類＞小分類」項目の左にあるチェックボックスにチェックを入れることで全ての小項目にチェックを入れることもできます。</li>
+            <li>各「中分類＞小分類」項目の左にあるチェックボックスにチェックを入れ、「一括設定」をクリックし、「一括設定」画面を開きます。</li>
+            <li>「中分類＞小分類」項目の左にあるチェックボックスにチェックを入れることで全ての「中分類＞小分類」項目にチェックを入れることもできます。</li>
             </ul></li>
             </ul>
             <p><img  src='./images/vaccine/INDIVIDUAL_Survey-5.png'  style='border:solid 2px lightgray'  /></p>
@@ -5121,7 +5151,7 @@
 
             </div>
             <ul>
-            <li>「一括設定」画面ではチームの一括設定と個別で小項目に対してもチームの設定が行えます。</li>
+            <li>「一括設定」画面ではチームの一括設定と個別で「中分類＞小分類」項目に対してもチームの設定が行えます。</li>
             <li>設定が完了しましたら、右下にある「閉じる」をクリックしてください。</li>
             </ul>
             <p><img  src='./images/vaccine/INDIVIDUAL_Survey-6.png'  style='border:solid 2px lightgray'  /></p>
@@ -5131,7 +5161,7 @@
             </div>
             <ul>
             <li>最後に「登録確認」をクリックすることで確認ダイアログが表示され、確認ダイアログで「帳票登録」をクリックすると個別接種の予約帳票が作成されます。</li>
-            <li>※ チームを一つも設定していない小項目は、全てのチームが閲覧可能になります。</li>
+            <li>※ チームを一つも設定していない「中分類＞小分類」項目は、全てのチームが閲覧可能になります。</li>
             </ul>
             <p><img  src='./images/vaccine/INDIVIDUAL_Survey-7.png'  style='border:solid 2px lightgray'  /></p>
             <p><br></p>
@@ -5139,13 +5169,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTUzODYwNDE3MCwxODc4MzQxMjczLC0xMz
-            U5NTE3NzYyLDIxMDEzNjkwNzYsMTQ0MzEzNjAyOSw5NzE1MDcy
-            NDIsNzEwNjAxNjYzLC0xNzk3MzI3NDIwLC0zNTE4ODgwNDMsNj
-            A0NDg1OTgwLDE3OTYwNjI0MTEsLTEyMDc1ODEyMTUsMTM1NTky
-            MjM1NiwtMTk1NDQ5MDcwMCwtNTYwMTc5NiwyMDc4NzUwMjE0LC
-            04MTU1MzY5OTAsMTkyNjc4MzU0OSwtMjExNzExNDc0MCwtMTA2
-            MTQ2ODkyNl19
+            eyJoaXN0b3J5IjpbMjA2NTg0NjYzMywyMDIwMTcwMTY5LC0xNj
+            g5MDE2Njg5LDU5NzUxNjMxNCwxNzY1NjU4NjcxLC0xNDUxMjA3
+            OTUyLDE1NDgxOTYwNzAsLTUzODYwNDE3MCwxODc4MzQxMjczLC
+            0xMzU5NTE3NzYyLDIxMDEzNjkwNzYsMTQ0MzEzNjAyOSw5NzE1
+            MDcyNDIsNzEwNjAxNjYzLC0xNzk3MzI3NDIwLC0zNTE4ODgwND
+            MsNjA0NDg1OTgwLDE3OTYwNjI0MTEsLTEyMDc1ODEyMTUsMTM1
+            NTkyMjM1Nl19
             -->
             <h3 id="権限について">権限について</h3>
             <ol type="1">
@@ -5968,73 +5998,85 @@
             <td></td>
             </tr>
             <tr class="even">
-            <td>- LIFF・WEBを開く</td>
+            <td>- 入力・作成画面を開く</td>
             <td>●</td>
-            <td></td>
+            <td>●</td>
             <td></td>
             </tr>
             <tr class="odd">
+            <td>- 検索画面を開く</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            </tr>
+            <tr class="even">
             <td>- 無効／有効にする</td>
             <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td>閲覧権限設定へ</td>
             <td>●</td>
+            <td></td>
+            <td></td>
+            </tr>
+            <tr class="even">
+            <td>帳票閲覧チームの選択</td>
+            <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
             <tr class="odd">
-            <td>- 帳票閲覧チームの選択</td>
+            <td>大分類</td>
             <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
             <tr class="even">
-            <td>- 大分類</td>
+            <td>検索</td>
             <td>●</td>
-            <td>●</td>
+            <td></td>
             <td></td>
             </tr>
             <tr class="odd">
-            <td>- 帳票閲覧チームの選択</td>
+            <td>中分類＞小分類</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
             <tr class="even">
-            <td>- 検索</td>
+            <td>一括設定</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
             <tr class="odd">
-            <td>- 小項目</td>
+            <td>- チーム選択</td>
             <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
             <tr class="even">
-            <td>- 一括設定</td>
+            <td>- 閉じる</td>
             <td>●</td>
-            <td>●</td>
+            <td></td>
             <td></td>
             </tr>
             <tr class="odd">
-            <td>- 登録確認</td>
+            <td>登録確認</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
             <tr class="even">
-            <td>- キャンセル</td>
+            <td>キャンセル</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
             <tr class="odd">
-            <td>- 確認ダイアログ</td>
+            <td>確認ダイアログ</td>
             <td>●</td>
             <td></td>
             <td></td>
@@ -8994,84 +9036,90 @@
             <td></td>
             </tr>
             <tr class="even">
-            <td>- LIFF・WEBを開く</td>
+            <td>- 入力・作成画面を開く</td>
             <td>●</td>
-            <td></td>
+            <td>●</td>
             <td></td>
             </tr>
             <tr class="odd">
+            <td>- 検索画面を開く</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            </tr>
+            <tr class="even">
             <td>- 無効／有効にする</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td>閲覧権限設定へ</td>
             <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td>- 帳票閲覧チームの選択</td>
             <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td>- 大分類</td>
             <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td>- 帳票閲覧チームの選択</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td>- 検索</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td>- 小項目</td>
             <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td>- 一括設定</td>
             <td>●</td>
             <td>●</td>
             <td></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td>- 登録確認</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td>- キャンセル</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td>- 確認ダイアログ</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td>- 帳票登録・帳票更新</td>
             <td>●</td>
             <td></td>
             <td></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td>- キャンセル</td>
             <td>●</td>
             <td></td>
@@ -11719,9 +11767,9 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTcxOTc5NDgxMSwxNTcwNTY2OTM1LDYwMD
-            UyNDEzNywzMTU4NTI3MDgsNjI2MDA1NywtMTUzNjkxNTE5Ml19
-
+            eyJoaXN0b3J5IjpbLTc4MTA1NjY3LDE5ODIzNDQ1MTMsMTI0Mj
+            c0MjQ1MCwxNTcwNTY2OTM1LDYwMDUyNDEzNywzMTU4NTI3MDgs
+            NjI2MDA1NywtMTUzNjkxNTE5Ml19
             -->
             </div>
   </div>
