@@ -3700,29 +3700,77 @@
             <li>ファイルを選択し、「登録する」を押すと上書きされます。</li>
             </ol>
             <p><img src='./images/bosai/BOSAI_list-register_2.png' style='border:solid 2px lightgray' /></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <ol start="3" type="1">
-            <li>上記に登録する際のサンプルファイルについて説明します。 ・避難先名称(避難所・避難場所)：正式名称で記載 ・避難先名称(かな)：よみがなを記入 ・住所：マンションやアパート名等まで含める ・緯度：北緯2桁＋小数点以下5桁以上 ・経度：東経3桁＋小数点以下5桁以上 ・電話番号：避難施設の電話番号(ハイフンなし11桁) ・避難所種別：避難所／避難場所等の種類の区分。避難所の種別をフラグで記載(複数選択可) 1：避難場所 2：臨時避難所 3：避難所を兼ねる避難場所 4：広域避難場所：開設措置なし 5：一時避難場所：開設措置なし 9：福祉避難所 ・災害種別：当該避難（場）所の対応している災害種別。本項目で選択した災害種別の発災時避難先として使用可能。 【選択式（択複）】 １：洪水（風水害） ２：崖崩れ、土石流及び地滑り ３：高潮 ４：地震 ５：津波 ６：大規模な火事 ７：内水氾濫 ８：火山現象 ・情報入力者メールアドレス ・ID1(団体コード)：全国地方公共団体コード。発災時は郵便番号・住所から自動入力 ・ＩＤ2(避難所の通し番号)：避難所毎に付与されているID。各市区町村における通し番号を記載。</li>
+            <li>上記に登録する際のサンプルファイルについて説明します。</li>
             </ol>
+            <ul>
+            <li>避難先名称(避難所・避難場所)：正式名称で記載</li>
+            <li>避難先名称(かな)：よみがなを記入</li>
+            <li>住所：マンションやアパート名等まで含める</li>
+            <li>緯度：北緯2桁＋小数点以下5桁以上</li>
+            <li>経度：東経3桁＋小数点以下5桁以上</li>
+            <li>電話番号：避難施設の電話番号(ハイフンなし11桁)</li>
+            <li>避難所種別：避難所／避難場所等の種類の区分。避難所の種別をフラグで記載(複数選択可)
+            <ul>
+            <li>避難場所</li>
+            <li>臨時避難所</li>
+            <li>避難所を兼ねる避難場所</li>
+            <li>広域避難場所：開設措置なし</li>
+            <li>一時避難場所：開設措置なし</li>
+            <li>福祉避難所</li>
+            </ul></li>
+            <li>災害種別：当該避難（場）所の対応している災害種別。本項目で選択した災害種別の発災時避難先として使用可能。 【選択式（択複）】
+            <ul>
+            <li>洪水（風水害）</li>
+            <li>崖崩れ、土石流及び地滑り</li>
+            <li>高潮</li>
+            <li>地震</li>
+            <li>津波</li>
+            <li>大規模な火事</li>
+            <li>内水氾濫</li>
+            <li>火山現象</li>
+            </ul></li>
+            <li>情報入力者メールアドレス</li>
+            <li>ID1(団体コード)：全国地方公共団体コード。発災時は郵便番号・住所から自動入力</li>
+            <li>ID2(避難所の通し番号)：避難所毎に付与されているID。各市区町村における通し番号を記載。</li>
+            </ul>
             <p><img src='./images/bosai/BOSAI_list-register_3.png' style='border:solid 2px lightgray' /></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <ol start="4" type="1">
-            <li>サンプルファイルの続きを説明します。 　・情報公開可否：本避難先情報の一般公開可否。ある場合は〇 ・最終更新日：避難所情報を最後に更新した日時。yyyy/MM/dd HH:mm ・施設面積（㎡）/ 屋外：校庭・公園等の面積。面積を整数で（約は不要）。 ・施設面積（㎡）/ 屋内：延床面積。面積を整数で（約は不要）。 ・想定収容人数：収容可能人数　／　避難所定員　／　最大の収容人数 。整数。 ・コロナ想定収容人数：COVID-19をふまえた収容可能人数　／　避難所定員　／　最大の収容人数。整数。 ・ネットワーク環境の有無：Wi-Fi等が存在するか。携帯の電波が入るか。避難者に開放可能な無線LANがある場合は〇 ・各携帯キャリアの電波状況等：携帯の電波が入るか。主要キャリア3社が入る場合は〇 　・隔離可能場所の有無：感染症患者／濃厚接触者の発生時に当該施設内で隔離対応可能か。隔離可能場所が用意可能かどうかフラグで記載。。 1：隔離場所を用意可能 2：隔離場所を用意可能でない 0：不明 ・COVID-19対応備蓄設備の有無：コロナ関連の機材・備品等の準備。ダンボールパーティション、体温計、マスク、アルコール消毒液 等ある場合は〇</li>
+            <li>サンプルファイルの続きを説明します。</li>
             </ol>
+            <ul>
+            <li>情報公開可否：本避難先情報の一般公開可否。ある場合は〇</li>
+            <li>最終更新日：避難所情報を最後に更新した日時。yyyy/MM/dd HH:mm</li>
+            <li>施設面積（㎡）/ 屋外：校庭・公園等の面積。面積を整数で（約は不要）。</li>
+            <li>施設面積（㎡）/ 屋内：延床面積。面積を整数で（約は不要）。</li>
+            <li>想定収容人数：収容可能人数　／　避難所定員　／　最大の収容人数 。整数。</li>
+            <li>コロナ想定収容人数：COVID-19をふまえた収容可能人数　／　避難所定員　／　最大の収容人数。整数。</li>
+            <li>ネットワーク環境の有無：Wi-Fi等が存在するか。携帯の電波が入るか。避難者に開放可能な無線LANがある場合は〇</li>
+            <li>各携帯キャリアの電波状況等：携帯の電波が入るか。主要キャリア3社が入る場合は〇</li>
+            <li>隔離可能場所の有無：感染症患者／濃厚接触者の発生時に当該施設内で隔離対応可能か。隔離可能場所が用意可能かどうかフラグで記載。。
+            <ul>
+            <li>1：隔離場所を用意可能</li>
+            <li>2：隔離場所を用意可能でない</li>
+            <li>0：不明</li>
+            </ul></li>
+            <li>COVID-19対応備蓄設備の有無：コロナ関連の機材・備品等の準備。ダンボールパーティション、体温計、マスク、アルコール消毒液等ある場合は〇</li>
+            </ul>
             <p><img src='./images/bosai/BOSAI_list-register_4.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTE2MjEyNjQwMCwtMTU3MjE1NDMxNSwtMT
-            k3MTg1MzQyOV19
+            eyJoaXN0b3J5IjpbLTMyNDkxOTY4OSwxMTYyMTI2NDAwLC0xNT
+            cyMTU0MzE1LC0xOTcxODUzNDI5XX0=
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="登録施設施設一覧削除">登録施設(施設一覧・削除)<!-- 目次サブメニュー --></h3>
@@ -3976,7 +4024,7 @@
             <li>ロゴ画像の画像箇所にマウスを移動します。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_logoimg_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
@@ -3984,7 +4032,7 @@
             <li>「ロゴ画像を選択」をクリックし画像を指定した後、縦サイズ、横サイズを指定します。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_logoimg_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
@@ -3992,14 +4040,14 @@
             <li>「更新」をクリックすると、管理画面に指定したロゴ画像が表示されます。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_logoimg_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTE1NDIzOTQ0NCwtMTAzNjQ3NTQzNSw4MT
-            g4Njc5MzAsMTU3Mzg0NzM5LDEzNDI1NzYzMzcsMjA4MzkxMjQw
-            OSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbOTA0ODAyNDM0LC03MjE1MzgzNDgsMTE1ND
+            IzOTQ0NCwtMTAzNjQ3NTQzNSw4MTg4Njc5MzAsMTU3Mzg0NzM5
+            LDEzNDI1NzYzMzcsMjA4MzkxMjQwOSwtNzEzNTcyMTcwXX0=
             -->
             <!-- 目次メインメニュー -->
             <h3 id="メニュースタイル">メニュースタイル <!-- 目次サブメニュー --></h3>
@@ -4007,7 +4055,7 @@
             <ol type="1">
             <li>「システム設定」から「一般設定」をクリックします。</li>
             </ol>
-            <p><img src='./images/system/SYSTEM_menustyle_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/system/STSTEM_logoimg_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -4017,7 +4065,7 @@
             <li>メニュースタイルの「横並び」をクリックし、「更新」をクリックするとメニューが横に並びます。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_menustyle_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
@@ -4025,14 +4073,14 @@
             <li>メニュースタイルの「縦並び」をクリックし、「更新」をクリックするとメニューが縦に並びます。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_menustyle_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTY2NzkwODE2MiwtMTI4ODQzMzM3NCwxNj
-            M0NjM5NDUyLDc2MDQ1NzA2LDEzNDI1NzYzMzcsMjA4MzkxMjQw
-            OSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbLTU1OTYwMzgwMSwxNjY3OTA4MTYyLC0xMj
+            g4NDMzMzc0LDE2MzQ2Mzk0NTIsNzYwNDU3MDYsMTM0MjU3NjMz
+            NywyMDgzOTEyNDA5LC03MTM1NzIxNzBdfQ==
             -->
             <!-- 目次メインメニュー -->
             <h3 id="テナント名">テナント名 <!-- 目次サブメニュー --></h3>
@@ -4040,7 +4088,7 @@
             <ol type="1">
             <li>「システム設定」から「一般設定」をクリックします。</li>
             </ol>
-            <p><img src='./images/system/SYSTEM_tenant_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/system/STSTEM_logoimg_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -4050,7 +4098,7 @@
             <li>テナント名を入力し、「保存」をクリックします。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_tenant_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
@@ -4058,60 +4106,142 @@
             <li>入力したテナント名が表示されます。</li>
             </ol>
             <p><img src='./images/system/SYSTEM_tenant_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <br>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTQwNjg1ODcwOSw3Mzc3MTczMTgsMTU0Nz
-            c5MTYyLDc2MDQ1NzA2LDEzNDI1NzYzMzcsMjA4MzkxMjQwOSwt
-            NzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbLTEzMTcyMDA5MTYsMTQwNjg1ODcwOSw3Mz
+            c3MTczMTgsMTU0Nzc5MTYyLDc2MDQ1NzA2LDEzNDI1NzYzMzcs
+            MjA4MzkxMjQwOSwtNzEzNTcyMTcwXX0=
             -->
             <!-- 目次メインメニュー -->
             <h3 id="テーマカラー">テーマカラー <!-- 目次サブメニュー --></h3>
             <p>管理画面の配色の設定方法を記載します。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
-            <li>「システム設定」から「一般設定」をクリックします。「テーマカラー」項目でメニュー画面の配色を変更できます。</li>
+            <li>「システム設定」から「一般設定」をクリックします。</li>
             </ol>
-            <p><img src='./images/system/SYSTEM_theme-color_1.png' style='border:solid 2px lightgray' /> <br></p>
+            <p><img src='./images/system/STSTEM_logoimg_1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
             <ol start="2" type="1">
+            <li>「テーマカラー」項目でメニュー画面の配色を変更できます。</li>
+            </ol>
+            <p><img src='./images/system/SYSTEM_theme-color_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
             <li>カラーコードの指定、またはカラーピッカーから配色を指定できます。主な変更項目は以下です。</li>
             </ol>
             <ul>
             <li>「一次色」：ヘッダーのメニューや設定ボタン、文字色などメインとなるカラーを指定</li>
             <li>「ヘッダーの背景色」「コンテンツの背景色」「フッターの背景色」：ページの背景色を指定</li>
             </ul>
-            <img src='./images/system/SYSTEM_theme-color_2.png' style='border:solid 2px lightgray' /> <br>
+            <p><img src='./images/system/SYSTEM_theme-color_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTMxOTM5OTM0OCwtMzk0OTA4NjMwLDczNz
-            cxNzMxOCwxNTQ3NzkxNjIsNzYwNDU3MDYsMTM0MjU3NjMzNywy
-            MDgzOTEyNDA5LC03MTM1NzIxNzBdfQ==
+            eyJoaXN0b3J5IjpbLTEyNjc5NDA4MjQsLTMxOTM5OTM0OCwtMz
+            k0OTA4NjMwLDczNzcxNzMxOCwxNTQ3NzkxNjIsNzYwNDU3MDYs
+            MTM0MjU3NjMzNywyMDgzOTEyNDA5LC03MTM1NzIxNzBdfQ==
             -->
             <!-- 目次メインメニュー -->
             <h3 id="line設定">LINE設定 <!-- 目次サブメニュー --></h3>
-            <p>LINE Developers で開設した Messaging API との連携設定の方法を記載します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p>LINE設定で行える各設定について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
             <ol type="1">
             <li>「システム設定」から「LINE設定」をクリックします。</li>
             </ol>
-            <p><img src='./images/system/SYSTEM_LINE-setting_1.png' style='border:solid 2px lightgray' /> <br></p>
+            <p><img src='./images/system/SYSTEM_LINE-setting_1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
             <ol start="2" type="1">
-            <li>Messaging API の各種情報を登録します。本番とサンドボックスそれぞれに登録します。</li>
+            <li>Messaging API(本番)またはMessaging API(サンドボックス)をクリックします。</li>
             </ol>
             <ul>
-            <li>「チャネルアクセストークン」：チャネル基本設定にある、チャネルアクセストークン情報を登録</li>
-            <li>「チャネルID」：Massaging API設定にある、チャネルID情報を登録</li>
-            <li>「チャネルシークレット」：チャネル基本設定にある、チャネルシークレット情報を登録</li>
+            <li>ここでは、LINE Developers で開設した Messaging API との連携設定を行うことができます。</li>
             </ul>
+            <p><img src='./images/system/SYSTEM_LINE-setting_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>Messaging API の各種情報を本番またはサンドボックスに登録することができます。
+            <ul>
+            <li>「チャネルアクセストークン」：チャネル基本設定にある、チャネルアクセストークン情報</li>
+            <li>「チャネルID」：Massaging API設定にある、チャネルID情報</li>
+            <li>「チャネルシークレット」：チャネル基本設定にある、チャネルシークレット情報</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-setting_2-2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>損傷報告先メールアドレスをクリックします。</li>
+            </ol>
+            <ul>
+            <li>ここでは、市民から損傷報告を受ける際のメールアドレスとメールドメインを設定することができます。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-setting_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>損傷報告先メールアドレスや損傷報告送信メールドメインは登録することができます。
+            <ul>
+            <li>「損傷報告先メールアドレス」： 損傷報告があった際に送られてくるメールアドレス</li>
+            <li>「損傷報告送信メールドメイン」： 損傷報告があった際に送られてくるメールアドレスのドメイン</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-setting_3-2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>他の設定をクリックします。</li>
+            </ol>
+            <ul>
+            <li>ここではlscの設定情報を確認することができます。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-setting_4.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>セグメント配信のチャネルアクセストークンとチャネルシークレット、帳票のチャネルIDとチャネルシークレットは変更を行うことができます。
+            <ul>
+            <li>「DISTRIBUTION_MSG_CHANNEL_ACCESS_TOKEN」： セグメント配信のチャネルアクセストークン</li>
+            <li>「DISTRIBUTION_MSG_CHANNEL_SECRET」： セグメント配信のチャネルシークレット</li>
+            <li>「SURVEY_LINELOGIN_CHANNEL_ID」： 帳票のチャネルID</li>
+            <li>「SURVEY_LINELOGIN_CHANNEL_SECRET」： 帳票のチャネルシークレット</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-setting_4-2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <p><img src='./images/system/SYSTEM_LINE-setting_4-3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMjExNDk0NTc1NSwtMzk0OTA4NjMwLDczNz
-            cxNzMxOCwxNTQ3NzkxNjIsNzYwNDU3MDYsMTM0MjU3NjMzNywy
-            MDgzOTEyNDA5LC03MTM1NzIxNzBdfQ==
+            eyJoaXN0b3J5IjpbNjE2NTQzMDU4LDczOTgzNzA3OCwxOTM0OT
+            U2MTI4LDkyMTU3MTQyNywtMjkzMzUzODMsLTE3MjE1NjMzMDIs
+            LTE2OTU0MjU2MzgsLTczNjk3MTEwOCwyMTE0OTQ1NzU1LC0zOT
+            Q5MDg2MzAsNzM3NzE3MzE4LDE1NDc3OTE2Miw3NjA0NTcwNiwx
+            MzQyNTc2MzM3LDIwODM5MTI0MDksLTcxMzU3MjE3MF19
             -->
             <!-- 目次メインメニュー -->
             <h3 id="メール設定">メール設定<!-- 目次サブメニュー --></h3>
@@ -4119,22 +4249,40 @@
             <ol type="1">
             <li>「システム設定」から「メール設定」をクリックします。</li>
             </ol>
-            <p><img src='./images/system/SYSTEM_mail-setting_1.png' style='border:solid 2px lightgray' /> <br></p>
+            <p><img src='./images/system/SYSTEM_mail-setting_1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
             <ol start="2" type="1">
-            <li>招待メールで送信される、ユーザー名と一時パスワードを通知する文面内容を編集します。初期値（英語）が設定されています。「保存」をクリックすると変更内容が確定されます。</li>
+            <li>ユーザ作成後の招待メールで送信される、ユーザー名と一時パスワードを通知する文面内容を編集します。</li>
             </ol>
+            <ul>
+            <li>初期値（英語）が設定されています。「保存」をクリックすると変更内容が確定されます。
             <ul>
             <li>「招待メールの件名」「招待メールのメッセージ」：送信される招待メールの件名（Subject）と本文（body）を変更します。</li>
             <li>「{username}」：あらかじめ設定されたユーザーネームが挿入される領域です。</li>
             <li>「{####}」：あらかじめ設定されたパスワードが挿入される領域です。</li>
+            </ul></li>
             </ul>
+            <p><img src='./images/system/SYSTEM_mail-setting_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>認証メール設定も同様に設定できます。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_mail-setting_2-2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNDM4MzI0NTM3LC05NjI0NTc0MzMsLTM5ND
-            kwODYzMCw3Mzc3MTczMTgsMTU0Nzc5MTYyLDc2MDQ1NzA2LDEz
-            NDI1NzYzMzcsMjA4MzkxMjQwOSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbLTYwNTYwNDc4MSw0MzgzMjQ1MzcsLTk2Mj
+            Q1NzQzMywtMzk0OTA4NjMwLDczNzcxNzMxOCwxNTQ3NzkxNjIs
+            NzYwNDU3MDYsMTM0MjU3NjMzNywyMDgzOTEyNDA5LC03MTM1Nz
+            IxNzBdfQ==
             -->
             <h2 id="ユーザ設定">ユーザ設定</h2>
             <h3 id="一覧とポリシー設定">一覧とポリシー設定</h3>
