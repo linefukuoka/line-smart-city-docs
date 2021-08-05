@@ -61,6 +61,7 @@
         <li><a href="#検索日付">検索(日付)</a></li>
         <li><a href="#入力情報修正">入力情報修正</a></li>
         <li><a href="#csvエクスポート">CSVエクスポート</a></li>
+        <li><a href="#操作ログ">操作ログ</a></li>
         <li><a href="#追加型帳票-一覧画面">追加型帳票-一覧画面</a></li>
         <li><a href="#追加型帳票-csvインポート">追加型帳票-CSVインポート<!-- 目次サブメニュー --></a></li>
         <li><a href="#追加型帳票-csvエクスポート">追加型帳票-CSVエクスポート<!-- 目次サブメニュー --></a></li>
@@ -174,7 +175,7 @@
         </ul></li>
         <li><a href="#ワクチン運用例">ワクチン運用例</a>
         <ul>
-        <li><a href="#前提-1.9.0時点">前提　1.9.0時点</a></li>
+        <li><a href="#前提-1.10.0時点">前提　1.10.0時点</a></li>
         <li><a href="#事前準備システム管理者">事前準備(システム管理者)</a></li>
         <li><a href="#liffでの予約変更キャンセルユーザー">LIFFでの予約変更・キャンセル(ユーザー)</a></li>
         <li><a href="#電話受付の際の管理画面からの登録変更キャンセルシステム管理者">電話受付の際の管理画面からの登録・変更・キャンセル(システム管理者)</a></li>
@@ -374,6 +375,86 @@
             Q1MDU5MywtMTgyODY2Mjk0LDUyNTA5Njg3MiwyMDgxNTAzMjIw
             LDE3Nzg3NDAwMzksLTMxMzcxNzg3OSwtNzEzNTcyMTcwXX0=
             -->
+            <h3 id="操作ログ">操作ログ</h3>
+            <p>帳票レコードに対して行われた操作をログとして出力する方法を説明します。</p>
+            <p><br> <!-- 改行 --></p>
+            <ol type="1">
+            <li>メインメニュー【ホーム】をクリックし、出力対象の帳票とそのレコードを表示します。</li>
+            </ol>
+            <ul>
+            <li>「検索条件」や「日付」から抽出条件を指定し、レコードの絞り込みを行うことができます。</li>
+            </ul>
+            <p><img src='./images/home/HOME_log_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>ログを出力したいレコードを選択します。</li>
+            </ol>
+            <p><img src='./images/home/HOME_log_2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>レコードの詳細画面から「操作ログをダウンロードする」をクリックし、ログを出力します。</li>
+            </ol>
+            <ul>
+            <li>※ 実際にLIFF・LINEから回答いただいたレコードのみログの出力が行えるため、注意が必要です。</li>
+            </ul>
+            <p><img src='./images/home/HOME_log_3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="4" type="1">
+            <li>出力したCSVファイルは以下のようになります。</li>
+            </ol>
+            <ul>
+            <li>A列：
+            <ul>
+            <li>「帳票名_パーティションキー」で表示される。</li>
+            </ul></li>
+            <li>B列：
+            <ul>
+            <li>ユーザーからの操作の場合は「ユーザー」</li>
+            <li>管理画面からの操作の場合は〈操作したユーザー名〉が表示される。</li>
+            </ul></li>
+            <li>C列：
+            <ul>
+            <li>操作日時が「yyyy/mm/dd hh:mm:ss」で表示される。</li>
+            </ul></li>
+            <li>D列：
+            <ul>
+            <li>LIFFから新規予約した場合は「作成」</li>
+            <li>LINE送信の場合は「配信」</li>
+            <li>ユーザIDリセットの場合は「ユーザIDリセット」</li>
+            <li>その他の場合は、「保存」が表示される</li>
+            </ul></li>
+            <li>E列：
+            <ul>
+            <li>LIFFから新規予約した場合は〈全項目の項目名と値〉</li>
+            <li>管理メモの更新の場合は〈管理メモの内容全て〉</li>
+            <li>LINE送信の場合は〈配信したメッセージ本文〉</li>
+            <li>ユーザIDリセットの場合は〈-〉</li>
+            <li>その他の場合は、以前のデータとの差分が表示される</li>
+            </ul></li>
+            <li>表示件数は最新の50行のみ表示し、それ以上になると古いデータから削除されていきます。</li>
+            </ul>
+            <p><img src='./images/home/HOME_log_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbLTQ1NTQyMDA4OCwtNzM4NTc2MDY0LDEzND
+            k5MzgxMjUsLTE3OTI1MzM0MDMsMTc3Mzc4MTAzNCwtMTE4NDM3
+            MTc3LC0yMTE0MTg0NjMzLDc3MTYwNjMyLDE4ODk0OTMwNTgsLT
+            EwMDM1NzIyOTUsLTQzMDQ2NjA2MSwtMTE4ODUxNzgwMywyMjgw
+            ODYzODYsLTEwMjE0NzAxNjAsNjEzNjE0NTcsMTA2MDM3Mjg1MS
+            w3MzA5OTgxMTZdfQ==
+            -->
             <h3 id="追加型帳票-一覧画面">追加型帳票-一覧画面</h3>
             <p>追加型帳票の一覧で追加された項目、機能を説明します。 ※追加型帳票への項目追加方法は【帳票作成(追加型帳票)】を参照ください。</p>
             <p><br></p>
@@ -381,15 +462,42 @@
             <li>追加型帳票をプルダウンから選択すると、対象となるデータの一覧が表示されます。</li>
             </ol>
             <ul>
-            <li>「選択チェックボックス」： 削除、CSV出力をする対象データを選択します。各項目の行にあるチェックボックスにチェックを入れると表示されているデータ全てにチェックが入ります。</li>
-            <li>「#」： 内部IDになります。LINEまたは管理画面から登録したデータには内部で自動採番されます。インポートしたデータには採番されず空白になります。（内部IDのため検索はできません）</li>
-            <li>「CSVエクスポート」： 選択したデータ全てをCSVエクスポートします。　※詳しくは【追加型帳票のCSVエクスポート】を参照。</li>
-            <li>「CSVインポート」： CSVファイルを選択し、選択したCSVファイルをインポートします。　※詳しくは【追加型帳票のCSVインポート】を参照。</li>
-            <li>「配信」： 選択した対象にLINE送信します。LINEで登録したデータに紐づけられているlineuseridが対象となります。　※詳しくは【追加型帳票の配信】を参照。</li>
-            <li>「全体件数を取得」： 入っているデータの件数を取得することができます。　※詳しくは【全体件数取得】を参照。</li>
-            <li>「通知情報」： インポートやエクスポート、配信の情報が表示されます。大量データの場合時間がかかるためこちらで完了したかを確認します。　※詳しくは【追加型帳票の通知情報】を参照。</li>
-            <li>「設定アイコン」： 表示件数や表示項目などの表示設定を行うことができます。　</li>
-            <li>「LINE/外部」： LINEから登録された場合は「LINE」と表示され、管理画面から登録された場合は「WEB」と表示され、インポートデータの場合、「外部」と表示されます。</li>
+            <li>「選択チェックボックス」：
+            <ul>
+            <li>削除、CSV出力をする対象データを選択します。各項目の行にあるチェックボックスにチェックを入れると表示されているデータ全てにチェックが入ります。</li>
+            </ul></li>
+            <li>「#」：
+            <ul>
+            <li>内部IDになります。LINEまたは管理画面から登録したデータには内部で自動採番されます。インポートしたデータには採番されず空白になります。（内部IDのため検索はできません）</li>
+            </ul></li>
+            <li>「CSVエクスポート」：
+            <ul>
+            <li>選択したデータ全てをCSVエクスポートします。　※詳しくは【追加型帳票のCSVエクスポート】を参照。</li>
+            </ul></li>
+            <li>「CSVインポート」：
+            <ul>
+            <li>CSVファイルを選択し、選択したCSVファイルをインポートします。　※詳しくは【追加型帳票のCSVインポート】を参照。</li>
+            </ul></li>
+            <li>「配信」：
+            <ul>
+            <li>選択した対象にLINE送信します。LINEで登録したデータに紐づけられているlineuseridが対象となります。　※詳しくは【追加型帳票の配信】を参照。</li>
+            </ul></li>
+            <li>「全体件数を取得」：
+            <ul>
+            <li>入っているデータの件数を取得することができます。　※詳しくは【全体件数取得】を参照。</li>
+            </ul></li>
+            <li>「通知情報」：
+            <ul>
+            <li>インポートやエクスポート、配信の情報が表示されます。大量データの場合時間がかかるためこちらで完了したかを確認します。　※詳しくは【追加型帳票の通知情報】を参照。</li>
+            </ul></li>
+            <li>「設定アイコン」：
+            <ul>
+            <li>表示件数や表示項目などの表示設定を行うことができます。　</li>
+            </ul></li>
+            <li>「LINE/外部」：
+            <ul>
+            <li>LINEから登録された場合は「LINE」と表示され、管理画面から登録された場合は「WEB」と表示され、インポートデータの場合、「外部」と表示されます。</li>
+            </ul></li>
             </ul>
             <p><img src='./images/home/HOME_add-list.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
@@ -397,12 +505,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTE4NjAwOTU1NDgsNTU2MDU3NzMzLDYyMj
-            kyNzEwNSwtNDQ4NzI3MTc0LDEwMTE5MDIzNTcsNTg3ODQxMTg4
-            LDEyNDY2MDgwMzcsOTc4NzQxOTE4LDEwMjIzNzkzMzksMTYxNj
-            A3NDk5OSwtNjExNDI5MDA2LDU0NjAyNTYxLDExOTU5MTIwNjAs
-            MTM1ODM2MTMyNSwtNTkwNzE0Nzk0LDE1NTA4MzkxMTUsMTA5OT
-            k3MDAxMSw2MTU4OTgyODEsLTE2ODA1NDM0MDVdfQ==
+            eyJoaXN0b3J5IjpbLTIwODg5NDc5MDUsLTE4NjAwOTU1NDgsNT
+            U2MDU3NzMzLDYyMjkyNzEwNSwtNDQ4NzI3MTc0LDEwMTE5MDIz
+            NTcsNTg3ODQxMTg4LDEyNDY2MDgwMzcsOTc4NzQxOTE4LDEwMj
+            IzNzkzMzksMTYxNjA3NDk5OSwtNjExNDI5MDA2LDU0NjAyNTYx
+            LDExOTU5MTIwNjAsMTM1ODM2MTMyNSwtNTkwNzE0Nzk0LDE1NT
+            A4MzkxMTUsMTA5OTk3MDAxMSw2MTU4OTgyODEsLTE2ODA1NDM0
+            MDVdfQ==
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票-csvインポート">追加型帳票-CSVインポート<!-- 目次サブメニュー --></h3>
@@ -1005,19 +1114,22 @@
             <ol start="4" type="1">
             <li>画面下部の「配信」をクリックすることにより直ちに配信されます。</li>
             </ol>
+            <ul>
+            <li>※ 追加型の帳票は配信対象外となっており、配信先に追加型帳票を選択し、「配信」をクリックするとエラーになるので、注意が必要です。</li>
+            </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-now_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTgxNzUxODc3MiwxMzgzODI2MzQyLC00Nj
-            UyMDA2NzQsLTE5MTU1MDc0NzIsLTEwNzE0Njk1MjQsLTk2MTIx
-            MDY5LDE2NTQ4MDA3NjgsLTU4OTE3ODE3NiwtODgzMTcwMjcyLD
-            EyMjkyMDk5Miw3NDgxMjEzMzAsLTE2NDEwMTYxNTIsMTUzNDgz
-            NzgyOCwtNTIwMTkyMzk4LC0xNDcwOTgwMTI4LDI3NTY4MTU0MS
-            wtMTE4NTI4NzY2MCw0MzczMDQxOTUsLTMwMTI0MjM4NSwtNzU0
-            MTYwODM2XX0=
+            eyJoaXN0b3J5IjpbMjMyMjg5NDEzLDE1OTA1NDc4MjcsLTExMD
+            Y1MTA2NSwtODE3NTE4NzcyLDEzODM4MjYzNDIsLTQ2NTIwMDY3
+            NCwtMTkxNTUwNzQ3MiwtMTA3MTQ2OTUyNCwtOTYxMjEwNjksMT
+            Y1NDgwMDc2OCwtNTg5MTc4MTc2LC04ODMxNzAyNzIsMTIyOTIw
+            OTkyLDc0ODEyMTMzMCwtMTY0MTAxNjE1MiwxNTM0ODM3ODI4LC
+            01MjAxOTIzOTgsLTE0NzA5ODAxMjgsMjc1NjgxNTQxLC0xMTg1
+            Mjg3NjYwXX0=
             -->
             <h3 id="手動配信-1回のみ配信">手動配信-1回のみ配信</h3>
             <p>手動で1回のみ配信する方法を説明します。</p>
@@ -1053,7 +1165,7 @@
             <ul>
             <li>配信先の「絞り込み」では帳票選択後、帳票に存在する項目ごとに配信条件を設定できます。
             <ul>
-            <li>こちらで表示される項目は「ラジオボタン」、「チェックボックス」、「プルダウン」のみとなります。</li>
+            <li>こちらで表示されるアイテムキー(項目)は「ラジオボタン」、「チェックボックス」、「プルダウン」のみとなります。</li>
             </ul></li>
             </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-now_3-2.png' style='border:solid 2px lightgray' /></p>
@@ -1064,18 +1176,21 @@
             <ol start="4" type="1">
             <li>画面下部の「配信」をクリックすることより配信設定を行えます。</li>
             </ol>
+            <ul>
+            <li>※ 追加型の帳票は配信対象外となっており、配信先に追加型帳票を選択し、「配信」をクリックするとエラーになるので、注意が必要です。</li>
+            </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-onetime_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbNTkzNzg1MDg5LC01OTQ5NDc0MywtMTE3OD
-            gyNTY3NSwxODk1NTM1NTA3LC03MzAxNDY4MzUsLTEyOTU4NTE3
-            NzUsLTY3OTk2Nzc3Miw1MzAzMDg4ODksODE4MjczMDc3LDc3Mj
-            UxMjU0MSwtMTgxMzQwMzE4NCwtNTIwMTkyMzk4LC0xNDcwOTgw
-            MTI4LDI3NTY4MTU0MSwtMTE4NTI4NzY2MCw0MzczMDQxOTUsLT
-            MwMTI0MjM4NSwtNzU0MTYwODM2XX0=
+            eyJoaXN0b3J5IjpbLTU2NzAxNDE3NiwtNTk0OTQ3NDMsLTExNz
+            g4MjU2NzUsMTg5NTUzNTUwNywtNzMwMTQ2ODM1LC0xMjk1ODUx
+            Nzc1LC02Nzk5Njc3NzIsNTMwMzA4ODg5LDgxODI3MzA3Nyw3Nz
+            I1MTI1NDEsLTE4MTM0MDMxODQsLTUyMDE5MjM5OCwtMTQ3MDk4
+            MDEyOCwyNzU2ODE1NDEsLTExODUyODc2NjAsNDM3MzA0MTk1LC
+            0zMDEyNDIzODUsLTc1NDE2MDgzNl19
             -->
             <h3 id="手動配信-繰り返し配信">手動配信-繰り返し配信</h3>
             <p>繰り返し配信する方法を説明します。</p>
@@ -1133,6 +1248,7 @@
             <ul>
             <li>※ 同内容の二種類の帳票及び同帳票に、同配信先・同件名・同日時で二つ配信設定をすると配信されるのは一回のみになります。</li>
             <li>※ 配信内容に入力する文字は5000文字以内である必要があります。</li>
+            <li>※ 追加型の帳票は配信対象外となっており、配信先に追加型帳票を選択し、「配信」をクリックするとエラーになるので、注意が必要です。</li>
             </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-repeat_4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
@@ -1140,7 +1256,7 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTM4NTAwMDUwMCwtNTY4NTc4OTMwLDEwOD
+            eyJoaXN0b3J5IjpbLTU5MzQ4NTIyMSwtNTY4NTc4OTMwLDEwOD
             AwNzk4OTcsLTE4ODAzNzEwNjIsMTIxOTE1OTMyMiw3NTUzNTY1
             MywxNTY2MDA5NzM0LC0zNzMxODI2OTMsLTY1OTcyNDY3MCwtMT
             kwODg4ODY4N119
@@ -1293,21 +1409,24 @@
 
             </div>
             <ol start="3" type="1">
-            <li>「保存」をクリックしていただけると外部配信設定が新規作成されます。</li>
+            <li>「保存」をクリックすると外部配信設定が新規作成されます。</li>
             </ol>
+            <ul>
+            <li>※ 追加型の帳票は配信対象外となっており、配信先に追加型帳票を選択し、「保存」をクリックするとエラーになるので、注意が必要です。</li>
+            </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-create_3.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMzE0MzYzNzgyLDE4NDU3OTUyNzQsNTE4NT
-            k3MTQ4LDY0MDQyNTAzMSwtMjAwMTM4NDkyMCw5NTc5NDI4MCwx
-            OTExMjgxNzY5LDE3ODM1NTIxNDgsMTkyMDIyNjYxMCwtNzExMD
-            Y1ODUwLDE3ODQ5NjUyMjMsLTkyNDYwNjcwMCwtMjI1Mzg3ODM4
-            LC0xNDkwMzg1Mjk1LC05MDY2MDAzNDQsLTk4MjczNTMzMSwxMD
-            Y1MjY1MjAsLTkwNjUwODM5NiwtNTE4MzA5OTc4LDE0NjQ1NTQw
-            MzZdfQ==
+            eyJoaXN0b3J5IjpbMzI3MTQ1NjM4LDMxNDM2Mzc4MiwxODQ1Nz
+            k1Mjc0LDUxODU5NzE0OCw2NDA0MjUwMzEsLTIwMDEzODQ5MjAs
+            OTU3OTQyODAsMTkxMTI4MTc2OSwxNzgzNTUyMTQ4LDE5MjAyMj
+            Y2MTAsLTcxMTA2NTg1MCwxNzg0OTY1MjIzLC05MjQ2MDY3MDAs
+            LTIyNTM4NzgzOCwtMTQ5MDM4NTI5NSwtOTA2NjAwMzQ0LC05OD
+            I3MzUzMzEsMTA2NTI2NTIwLC05MDY1MDgzOTYsLTUxODMwOTk3
+            OF19
             -->
             <h3 id="外部配信設定-抽出条件">外部配信設定-抽出条件</h3>
             <p>外部配信設定の抽出条件を設定する方法を説明します。</p>
@@ -4583,7 +4702,7 @@
             0xODcyODk2NzA1LC03MTM1NzIxNzBdfQ==
             -->
             <h2 id="ワクチン運用例">ワクチン運用例</h2>
-            <h3 id="前提-1.9.0時点">前提　1.9.0時点</h3>
+            <h3 id="前提-1.10.0時点">前提　1.10.0時点</h3>
             <ul>
             <li>「ホーム」CSVインポートの1回あたりの上限は10万件となります。10万件以上のアップロードを行う際は、ファイルを分割して実施をお願いします
             <ul>
@@ -4940,12 +5059,12 @@
 
             -->
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTU2MDA1NDY2LC03NzgyMzY4MjcsNDk3OD
-            YzNjQ5LDQ5Nzg2MzY0OSwzNDUwMzAxNDUsMTg0MzYwMjEzOSwx
-            OTc2MzA2MDQ1LDc2OTE0NTk2OCw0MzQ3ODAxOTAsLTg1NzQxNT
-            gwOSwyMjc2MjU5MiwxNTQ1MzQ2MjA3LDIwMjcxNzMyNSwtMTI0
-            Njk3MTE1NiwtNjU4NDA5MjIxLC0zOTg3NjIwNjYsLTE0NzYwND
-            M0MDUsODAwMjg0ODQ2LC0zODY3Mzc2MzMsNjExMzU1ODM1XX0=
+            eyJoaXN0b3J5IjpbNDMyMzE0NDY2LC01NjAwNTQ2NiwtNzc4Mj
+            M2ODI3LDQ5Nzg2MzY0OSw0OTc4NjM2NDksMzQ1MDMwMTQ1LDE4
+            NDM2MDIxMzksMTk3NjMwNjA0NSw3NjkxNDU5NjgsNDM0NzgwMT
+            kwLC04NTc0MTU4MDksMjI3NjI1OTIsMTU0NTM0NjIwNywyMDI3
+            MTczMjUsLTEyNDY5NzExNTYsLTY1ODQwOTIyMSwtMzk4NzYyMD
+            Y2LC0xNDc2MDQzNDA1LDgwMDI4NDg0NiwtMzg2NzM3NjMzXX0=
 
             -->
             <h3 id="liffでの予約変更キャンセルユーザー">LIFFでの予約変更・キャンセル(ユーザー)</h3>
@@ -12588,7 +12707,7 @@
   </div>
 
   <footer>
-    Copyright (C) LINE Fukuoka Corp. All Rights Reserved. Version 1.9.1
+    Copyright (C) LINE Fukuoka Corp. All Rights Reserved. Version 1.10.0
   </footer>  
   <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
 
