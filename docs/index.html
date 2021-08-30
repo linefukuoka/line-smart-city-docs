@@ -1494,7 +1494,7 @@
 
             </div>
             <ol start="3" type="1">
-            <li>「本文変更条件」に正規表現を記入します。</li>
+            <li>「本文変更条件」にsedコマンドの正規表現を記入します。</li>
             </ol>
             <ul>
             <li>例として下5行を消す正規表現を記入しています。
@@ -1503,6 +1503,48 @@
             </ul></li>
             </ul>
             <p><img src='./images/distribution/DISTRIBUTION_manual-revise_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>その他の正規表現
+            <ul>
+            <li>s/置換前/置換後</li>
+            <li>置換前の文字を置換後の文字に変更します。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-revise_3-1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>/^文字列/d</li>
+            <li>指定した文字列から始まる行を削除します。</li>
+            </ul>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-revise_3-2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>1d;1d;1d;1d;1d;</li>
+            <li>先頭の5行を削除します。
+            <ul>
+            <li>1d;の数によって削除する行数を変更することができます</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-revise_3-3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>5d;</li>
+            <li>5行目を削除します。</li>
+            </ul>
+            <p><img src='./images/distribution/DISTRIBUTION_manual-revise_3-4.png' style='border:solid 2px lightgray' /></p>
             <p><br></p>
             <div style="page-break-before:always">
 
@@ -1516,13 +1558,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTEwMjMyNDg2MjMsMTY2NDg0NjQ0LC0xMj
-            EyMjE3NzEsLTE4MDE4MTg1MDksLTM5NTg4NjQ1OSwtMTY0Njk1
-            Mjk0MCw4MDk4ODEwMzEsMTgxNDI5NzYxNSwzMTM5NDgxMDQsLT
-            EwNDI0MzU3OSwxMjUwNTEyMTUxLC0xNjAyMzA1NzA5LC00NDc1
-            NDgyNjIsLTE4MTM0MDMxODQsLTUyMDE5MjM5OCwtMTQ3MDk4MD
-            EyOCwyNzU2ODE1NDEsLTExODUyODc2NjAsNDM3MzA0MTk1LC0z
-            MDEyNDIzODVdfQ==
+            eyJoaXN0b3J5IjpbLTQ2ODI5Njg1MSwxMzIzMzY2MjM4LDE4Mz
+            IxNjQ3NCwyNTA5MDQ1ODAsMTY0MTUxMzA3MywtMTQ2NDU1MjQz
+            OCwtMTk3NjE0OTY4OCwxMzI4NjM4MCwtMTk3NjE0OTY4OCwxNz
+            AzNTAxMTk4LDUyMDYyNzg1NywxOTgxNzUzODM3LDEzMjUzMTY0
+            NjEsLTg5NDI0NTI0MSwtODEwMDk3NTUzLDk5MDcxNTkyNywtOT
+            Q5NjI4MDUxLC0xNzYwMDkyODU0LDIxMTI4MjUzMDMsNjA1NDg1
+            NDYzXX0=
             -->
             <h3 id="外部配信設定-配信">外部配信設定-配信</h3>
             <p>外部配信の行い方を説明します。</p>
