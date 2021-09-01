@@ -164,6 +164,7 @@
         <li><a href="#テナント名">テナント名 <!-- 目次サブメニュー --></a></li>
         <li><a href="#テーマカラー">テーマカラー <!-- 目次サブメニュー --></a></li>
         <li><a href="#line設定">LINE設定 <!-- 目次サブメニュー --></a></li>
+        <li><a href="#line設定-whitelist化">LINE設定-whitelist化 <!-- 目次サブメニュー --></a></li>
         <li><a href="#メール設定">メール設定<!-- 目次サブメニュー --></a></li>
         <li><a href="#操作ログ出力">操作ログ出力<!-- 目次サブメニュー --></a></li>
         </ul></li>
@@ -4726,6 +4727,70 @@
             M2OTcxMTA4LDIxMTQ5NDU3NTUsLTM5NDkwODYzMCw3Mzc3MTcz
             MTgsMTU0Nzc5MTYyLDc2MDQ1NzA2LDEzNDI1NzYzMzcsMjA4Mz
             kxMjQwOSwtNzEzNTcyMTcwXX0=
+            -->
+            <!-- 目次メインメニュー -->
+            <h3 id="line設定-whitelist化">LINE設定-whitelist化 <!-- 目次サブメニュー --></h3>
+            <p>AWS Secrets Managerの設定を変えることにより、送信元メールアドレスをwhitelist化（指定したメールアドレスのみ受信を許可）することができます。</p>
+            <ol type="1">
+            <li>AWSでの設定</li>
+            </ol>
+            <ul>
+            <li>AWSのマネジメントコンソールからSecrets Managerを開きます。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-whitelist_1.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>対象のシークレットを選択します。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-whitelist_2.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「シークレットの値を取得する」をクリックします。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-whitelist_3.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「編集する」をクリックします。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-whitelist_4.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「DISTRIBUTION_EMAIL_WHITELIST」の値に、whitelistに追加したいメールアドレスを「,」区切りで入力します。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-whitelist_5.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「保存する」をクリックします。</li>
+            </ul>
+            <p><img src='./images/system/SYSTEM_LINE-whitelist_6.png' style='border:solid 2px lightgray' /></p>
+            <p><br></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="2" type="1">
+            <li>設定の反映</li>
+            </ol>
+            <ul>
+            <li>lsc.shから変更を反映します。</li>
+            </ul>
+            <pre><code>$ ./lsc.sh distribution fresh</code></pre>
+            <!--stackedit_data:
+            eyJoaXN0b3J5IjpbMTYxMjk4NTUzMV19
             -->
             <!-- 目次メインメニュー -->
             <h3 id="メール設定">メール設定<!-- 目次サブメニュー --></h3>
