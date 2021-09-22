@@ -285,15 +285,18 @@
             <ol start="4" type="1">
             <li>指定した条件にマッチするデータが表示されます。</li>
             </ol>
+            <ul>
+            <li>※ 基本検索との併用も可能です。基本検索の詳細は【検索(基本)】を参照。</li>
+            </ul>
             <p><img src='./images/home/HOME_search-date_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br></p>
             <div style="page-break-before:always">
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTk4NDQ4MjA2MCwtMTI3NTAxMDM1NywtMj
-            ExMDA0NjA1MCwxMjMyNTczNDIxLDE3Nzg3NDAwMzksLTMxMzcx
-            Nzg3OSwtNzEzNTcyMTcwXX0=
+            eyJoaXN0b3J5IjpbMTkwMDQwMjcyMiwtOTg0NDgyMDYwLC0xMj
+            c1MDEwMzU3LC0yMTEwMDQ2MDUwLDEyMzI1NzM0MjEsMTc3ODc0
+            MDAzOSwtMzEzNzE3ODc5LC03MTM1NzIxNzBdfQ==
             -->
             <h3 id="入力情報修正">入力情報修正</h3>
             <p>アンケートや申請などの帳票を通じて登録されたユーザの、データ内容の修正やステータス（未対応・処理中・処理済み・完了）の設定・変更の方法を説明します。</p>
@@ -3487,7 +3490,10 @@
             <li>カレンダーで使用するCSVの形式は下記になります。</li>
             </ol>
             <ul>
-            <li>1列目にはデータのIDを設定します。こちらの項目は（____）と表示されていますが、カレンダー上では「開始時間」と表示されます。</li>
+            <li>1列目にはデータのIDを設定します。こちらの項目は（____）と表示されていますが、カレンダー上では「開始時間」と表示されます。
+            <ul>
+            <li>後で設定したコマとコマの間に新しいコマを追加する可能性もありますので、コマIDを設定する際には10桁づつで設定することを推奨しております。※ 詳細は【予約期間・制限設定(カレンダー枠再設定)】を参照。</li>
+            </ul></li>
             <li>2列目には開始時間を設定します。こちらの項目は（____）と表示されていますが、カレンダー上では「終了時間」と表示されます。</li>
             <li>3列目には終了時間を設定します。</li>
             <li>1行目4列目以降の日付は連続した日付を設定します。</li>
@@ -3510,13 +3516,13 @@
 
             </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbLTMxOTg2ODQwOSwtMTczNzQxODQwNywtMz
-            E5ODY4NDA5LC0xMDU4MTMxNTcsLTE2NDg2NjQ3ODMsMTQ5MzMx
-            ODIxMiw2NjI3NTUyMiwxNDkzMzE4MjEyLC0xNTYxMDU0OTI2LD
-            EyNzIwNjgxNDYsMTU5MTU3ODEzNiwtMTE4ODk2NzU4Myw2MzMx
-            Mzg5NywtNzM3Mzc1MjI1LDYzMjQ3MzgzMiwtNzEzODE0OTk0LD
-            EwOTIzODcyMzIsMTQwODM3NTc3NywtMTc5MzI4MTYxNSwtNTMy
-            MTU0MjExXX0=
+            eyJoaXN0b3J5IjpbNTM5NzM3NTE1LC0zMTk4Njg0MDksLTE3Mz
+            c0MTg0MDcsLTMxOTg2ODQwOSwtMTA1ODEzMTU3LC0xNjQ4NjY0
+            NzgzLDE0OTMzMTgyMTIsNjYyNzU1MjIsMTQ5MzMxODIxMiwtMT
+            U2MTA1NDkyNiwxMjcyMDY4MTQ2LDE1OTE1NzgxMzYsLTExODg5
+            Njc1ODMsNjMzMTM4OTcsLTczNzM3NTIyNSw2MzI0NzM4MzIsLT
+            cxMzgxNDk5NCwxMDkyMzg3MjMyLDE0MDgzNzU3NzcsLTE3OTMy
+            ODE2MTVdfQ==
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="分類設定名称">分類設定(名称) <!-- 目次サブメニュー --></h3>
@@ -3723,9 +3729,17 @@
             </div>
             <p><!-- 強制的に改ページ --></p>
             <ol start="2" type="1">
-            <li>全ての期間に対して設定を行いたい場合には、公開設定を「全期間」に設定します。</li>
+            <li>「期間」を選択します。 <img src='./images/calendar/CALENDAR_043_period-2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></li>
             </ol>
-            <p><img src='./images/calendar/CALENDAR_043_period-2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="3" type="1">
+            <li>全ての期間に対して設定を行いたい場合には、公開設定を「全期間」にします。</li>
+            </ol>
+            <p><img src='./images/calendar/CALENDAR_043_period-3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -3735,18 +3749,19 @@
             <li>カレンダーに対する予約・キャンセル・変更等の操作に制限を加えたい場合は、何営業日前まで操作を制限するかの数字を入力し、「保存」をクリックします。
             <ul>
             <li>制限を加えない場合は、0にしてください。</li>
+            <li>「キャンセル・変更」に2を入力した場合、営業日の2日前までキャンセル・変更が可能になります。</li>
             </ul></li>
             </ul>
-            <p><img src='./images/calendar/CALENDAR_043_period-3.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/calendar/CALENDAR_043_period-4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
             </div>
             <p><!-- 強制的に改ページ --></p>
-            <ol start="3" type="1">
+            <ol start="4" type="1">
             <li>特定の期間にのみ設定を追加したい場合には、公開設定を「詳細設定」に設定します。</li>
             </ol>
-            <p><img src='./images/calendar/CALENDAR_043_period-4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/calendar/CALENDAR_043_period-5.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -3755,11 +3770,13 @@
             <ul>
             <li>「予約可能日制御を追加」をクリックし、追加した予約可能日制御に日付・時間を設定します。
             <ul>
-            <li>こちらの「予約可能日制御」は複数作成可能です。</li>
+            <li>「予約可能日制御」は複数作成可能です。</li>
             <li>「予約可能日制御」を削除したい場合には、各「予約可能日制御」の右側に付属しているゴミ箱アイコンをクリックします。</li>
+            <li>※ 予約可能日制御を複数作成する場合は、公開期間の時間帯が重複しないように設定する必要があります。</li>
+            <li>※ 追加で設定する開始日は、既存設定の終了日時以降に設定する必要があります。</li>
             </ul></li>
             </ul>
-            <p><img src='./images/calendar/CALENDAR_043_period-5.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/calendar/CALENDAR_043_period-6.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -3767,8 +3784,11 @@
             <p><!-- 強制的に改ページ --></p>
             <ul>
             <li>予約受付を行う期間を「予約受付」の各欄に入力します。</li>
+            <li>下図の設定例では、接種日の2日前から2ヶ月先まで予約変更が可能になります。</li>
+            <li>※ 日数の指定は営業日です。カレンダーで休日指定を行うと、休日分が除外されます。</li>
+            <li>※ 予約日制御設定と受付条件を組み合わせて設定が可能になります。</li>
             </ul>
-            <p><img src='./images/calendar/CALENDAR_043_period-6.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/calendar/CALENDAR_043_period-7.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -3780,16 +3800,16 @@
             <li>制限を加えない場合は、0にしてください。</li>
             </ul></li>
             </ul>
-            <p><img src='./images/calendar/CALENDAR_043_period-7.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/calendar/CALENDAR_043_period-8.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
             </div>
             <p><!-- 強制的に改ページ --></p>
-            <ol start="4" type="1">
-            <li>「2.」もしくは「3.」の設定が完了しましたら、「保存」をクリックします。</li>
+            <ol start="5" type="1">
+            <li>「3.」もしくは「4.」の設定が完了しましたら、「保存」をクリックします。</li>
             </ol>
-            <p><img src='./images/calendar/CALENDAR_043_period-8.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><img src='./images/calendar/CALENDAR_043_period-9.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
@@ -3806,6 +3826,9 @@
             <ol type="1">
             <li>「予約可能期間中」の数字を変更することで、一人のユーザーが行える予約可能枠を設定することができます。</li>
             </ol>
+            <ul>
+            <li>※ ユーザの予約枠数が予約可能枠を超えている場合、予約期間が過ぎるまで予約をすることできません。</li>
+            </ul>
             <p><img src='./images/calendar/CALENDAR_044_limit-1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
@@ -3845,6 +3868,9 @@
             <div style="page-break-before:always">
 
             </div>
+            <ul>
+            <li>※ 帳票・メッセージ送信設定で登録した配信メッセージを表示後に、1.で設定した補足メッセージが表示します。</li>
+            </ul>
             <ol start="2" type="1">
             <li>「保存」をクリックし、設定した内容を反映させます。</li>
             </ol>
@@ -3867,6 +3893,8 @@
             <li>予約項目は必須項目となりますので、必要なければ追加しなくても良いです。</li>
             <li>こちらの「予約項目を追加」は複数追加可能です。</li>
             <li>「予約項目」を削除したい場合には、各「予約項目」の右側に付属しているゴミ箱アイコンをクリックします。</li>
+            <li>※ 予約項目は必須項目ですので、必要時のみ設定をしてください。</li>
+            <li>※ 空き枠数より消費者数が大きい場合は、予約日時を選択する時に「×」が表示され予約することができません。</li>
             </ul>
             <p><img src='./images/calendar/CALENDAR_046_management-1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
@@ -3899,7 +3927,7 @@
             <ul>
             <li>こちらが出力したCSVファイルになります。
             <ul>
-            <li>開始時刻・終了時刻の変更、コマの並べ替え、「コマID、開始時刻、終了時刻」の文字列の変更などを行いたい場合はこちらで行ってください。</li>
+            <li>コマの追加、開始時刻・終了時刻の変更、コマの並べ替え、「コマID、開始時刻、終了時刻」の文字列の変更などを行いたい場合はこちらで行ってください。</li>
             <li>※ コマの削除はできないため注意が必要です。</li>
             </ul></li>
             </ul>
@@ -3924,10 +3952,59 @@
             <div style="page-break-before:always">
 
             </div>
+            <ol start="3" type="1">
+            <li>コマIDの追加方法</li>
+            </ol>
+            <ul>
+            <li>ID間に新しい時間帯を追加で挿入を考えている場合は、ID番号を十桁毎で入力することを推奨しております。
+            <ul>
+            <li>コマIDは日付毎に予約数、最大予約可能数(空き数)が紐づいております。</li>
+            <li>※ 無理に新しい時間帯を挿入するとデータの整合性が取れない可能性があります。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_047_resetting-2.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>ID間で挿入を行う場合は、写真図の赤枠のようにコマID、開始時間、終了時間を追加します。</li>
+            <li>2.と同様の作業をおこない、ファイルをインポートします。</li>
+            <li>※ 各日付は空白で挿入されるため、インポート後のカレンダーには表示されないので注意が必要です。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_047_resetting-5.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>上記と同様のカレンダーを一覧から選択する</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_047_resetting-6.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>【カレンダーCSV出力】の手順に従って、空き枠数を入力します。 <img src='./images/calendar/CALENDAR_047_resetting-7.png' style='border:solid 2px lightgray' /> <!-- 画像 --></li>
+            </ul>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>【トップ画面と初期設定-CSVファイルインポート】の手順に従ってファイルをインポートすると、新しい開始時間、終了時間に各日付の空き数が表示されます。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_047_resetting-8.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
             <!--stackedit_data:
-            eyJoaXN0b3J5IjpbMTQzODY2NjA1OCwtMTI4MTI5NTQ0NSwtMT
-            EyMjU5NzkxMCwtMTkzMTQzMTMzNiw3MDQxMzM3NDgsMTUwODAw
-            MTE5Nyw3MzA5OTgxMTZdfQ==
+            eyJoaXN0b3J5IjpbMTIxMDY2NjM2MiwtMjc3Nzk2NywtMTgwMz
+            gyMTAwOSwxNDM4NjY2MDU4LC0xMjgxMjk1NDQ1LC0xMTIyNTk3
+            OTEwLC0xOTMxNDMxMzM2LDcwNDEzMzc0OCwxNTA4MDAxMTk3LD
+            czMDk5ODExNl19
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="枠数変更">枠数変更<!-- 目次サブメニュー --></h3>
