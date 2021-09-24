@@ -570,49 +570,119 @@
             -->
             <!-- 目次メインメニュー（HOME、セグメント配信 など） -->
             <h3 id="追加型帳票-csvエクスポート">追加型帳票-CSVエクスポート<!-- 目次サブメニュー --></h3>
-            <p>追加型帳票のCSVエクスポート方法について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
+            <p>追加型帳票にあるデータのCSVエクスポート方法について説明します。 <!-- 最初に何の説明をするのか明記 --></p>
             <p><br></p>
             <ol type="1">
-            <li>メインメニュー【ホーム】をクリックし、エクスポートしたい帳票を選択します。</li>
+            <li>帳票選択</li>
             </ol>
+            <ul>
+            <li>追加型帳票を選択します。</li>
+            </ul>
             <p><img src='./images/home/HOME_export_1.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
             </div>
             <p><!-- 強制的に改ページ --></p>
+            <p><br> 追加型帳票のCSV出力には、絞り込んだ条件で出力する方法と、必要なデータを選択して出力する方法の二通りがあります。 <br> ※概して、扱うデータが多い場合には前者、少ない場合には後者の方法が便利です。 <br></p>
             <ol start="2" type="1">
-            <li>出力する内容を絞り込む場合は「検索条件」や「日付」から抽出条件を指定し、「この条件で検索」をクリックしてデータを絞り込みます。 <br> <!-- 改行 --> ※詳しくは【検索(基本)】、【検索(日付)】を参照ください</li>
+            <li>絞り込んだ条件で出力する方法でCSVエクスポート</li>
             </ol>
+            <ul>
+            <li>条件に合うデータを全て出力する
+            <ul>
+            <li>検索エリアで設定した条件に当てはまるデータ全てを出力する方法です。データの検索と同様、「基本」「日付」タブを組み合わせて絞り込むことができます。</li>
+            </ul></li>
+            </ul>
             <p><img src='./images/home/HOME_export_2.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
-            <ol start="3" type="1">
-            <li>エクスポートしたいデータのチェックボックスにチェックを入れ、表示されたデータの最下部にある「CSV出力」をクリックし、データをダウンロードします。 <br> ※チェックを入れないとデータがエクスポートされないので注意</li>
-            </ol>
             <ul>
-            <li>下記の画像上の「状態」「宛名番号」等の項目の左にあるチェックボックスにチェックを入れると、表示されているデータのチェックボックスに一気にチェックが入ります。</li>
-            <li>「検索条件のCSV出力処理」をクリックし、「通知情報」の「CSVエクスポート」タブからダウンロードボタンを押下することでファイルを保存することが可能です。
-            <ul>
-            <li>※ 「検索」「検索条件をクリア」「検索条件のCSV出力処理」は「2.」の画面に表示されている「検索条件」をクリックすることで表示されます。</li>
-            <li>「検索条件のCSV出力処理」完了後、snackbarに通知情報を確認する旨のメッセージが表示されます。</li>
-            </ul></li>
+            <li>条件を指定し、「検索」をクリックします。ここではワクチン接種用の帳票を用い、接種回数2回目、2021年8月20日以降の予約で指定します。 ※ 「検索」をクリックしなくても絞り込みはCSV出力に反映されます。</li>
             </ul>
             <p><img src='./images/home/HOME_export_3.png' style='border:solid 2px lightgray' /></p>
             <br>
             <div style="page-break-before:always">
 
             </div>
-            <ol start="4" type="1">
-            <li>エクスポートしたデータは、エクセルやテキストエディタなどのアプリケーションで閲覧や編集することができます。</li>
+            <ul>
+            <li>「検索条件のCSV出力処理」をクリックします。</li>
+            </ul>
+            <p><img src='./images/home/HOME_export_4.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>ポップアップが表示されるので、任意の選択肢を選び、「処理」をクリックします。</li>
+            </ul>
+            <p><img src='./images/home/HOME_export_5.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>表示中の項目のみ：表示するよう設定した項目のみを出力</li>
+            <li>全ての項目：表示項目に関わらず、全ての項目を出力</li>
+            </ul>
+            <p>「処理」をクリックすると、「検索条件のCSV出力処理」ボタンがローディングシンボルとともに灰色になります。</p>
+            <p><img src='./images/home/HOME_export_6.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「検索条件のCSV出力処理」ボタンが元に戻ったら、「通知情報」をクリックします。</li>
+            </ul>
+            <p><img src='./images/home/HOME_export_7.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>ポップアップが表示されるので、「CSVエクスポート」のタブを選択します。 ステータスが完了になっているのを確認し、「ダウンロード」をクリックします。</li>
+            <li>※ ダウンロードできるのは出力処理を開始してから15分間です。また、ダウンロードできるのは出力を実行したユーザーのみです。</li>
+            </ul>
+            <p><img src='./images/home/HOME_export_8.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ol start="3" type="1">
+            <li>必要なデータを選択して出力でのCSVエクスポート</li>
             </ol>
             <ul>
-            <li>以下の画像はエクスポートしたCSVファイルになります。 <br> ※こちらはコロナワクチン接種のテンプレートを用いて作成した帳票であり、帳票ごとにCSVファイルの内容は変わるので注意が必要です。</li>
+            <li>出力したいデータを選択して出力する方法です。
+            <ul>
+            <li>出力したいデータの左側にあるチェックボックスをクリックします。</li>
+            </ul></li>
             </ul>
-            <p><img src='./images/home/HOME_export_4.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
-            <p><br></p>
+            <p><img src='./images/home/HOME_export_9.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>一番上のチェックボックスをクリックすると、一括選択・一括選択解除ができます。
+            <ul>
+            <li>※ 一括選択の対象は表示されているデータのみであり、他のページがある場合、そちらのデータは選択しないことにご注意ください。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/home/HOME_export_10.png' style='border:solid 2px lightgray' /></p>
+            <br>
+            <div style="page-break-before:always">
+
+            </div>
+            <ul>
+            <li>「CSVエクスポート」をクリックすると、選択したデータの出力、ダウンロードが始まります。
+            <ul>
+            <li>※ 歯車アイコンの表示設定での設定に関わらず、全ての項目が出力されます。</li>
+            </ul></li>
+            </ul>
+            <p><img src='./images/home/HOME_export_11.png' style='border:solid 2px lightgray' /></p>
+            <br>
             <div style="page-break-before:always">
 
             </div>
@@ -3810,6 +3880,18 @@
             <li>「3.」もしくは「4.」の設定が完了しましたら、「保存」をクリックします。</li>
             </ol>
             <p><img src='./images/calendar/CALENDAR_043_period-9.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
+            <p><br> <!-- 改行 --></p>
+            <div style="page-break-before:always">
+
+            </div>
+            <p><!-- 強制的に改ページ --></p>
+            <ol start="6" type="1">
+            <li>実行済みの設定を削除する。</li>
+            </ol>
+            <ul>
+            <li>「実行済みを削除」を押すと「実行済み」の設定を削除します。</li>
+            </ul>
+            <p><img src='./images/calendar/CALENDAR_043_period-10.png' style='border:solid 2px lightgray' /> <!-- 画像 --></p>
             <p><br> <!-- 改行 --></p>
             <div style="page-break-before:always">
 
