@@ -274,74 +274,7 @@ LINE公式アカウントを利用できる状態にするため、シナリオ�
 
 ## 4. バージョンアップについて
 
-数世代前の旧バージョンから最新版にバージョンアップする場合、  
-事前に「[LINE SMART CITY GovTechプログラム：マイグレーション](./docs/LSC_MIGRATIONS.md)」をご参照ください。
-
-### 1. リモートリポジトリの変更内容を取り込む
-
-```
-$ git remote -v
-origin	git@github.com:linefukuoka/line-smart-city.git (fetch)
-origin	git@github.com:linefukuoka/line-smart-city.git (push)
-
-$ git fetch origin main
-$ git pull 
-```
-
-* 既存の環境を**1.8.2以下のバージョンから1.9.0以上にアップデートした場合、以下のDB移行コマンドを実行**してください。
-    * 実行しない場合、予約可能期間が正しく設定できませんので、必ず実行をお願い致します
-
-```
-$ ./lsc.sh migrate v1.9.0
-```
-
-* 1.8.1以下のバージョンからバージョンアップした後、`commands/`以下の不要なファイルがGitに残りますので、以下のコマンドで削除を行ってください。
-
-```
-$ git status -s | awk '{print $2}' | xargs rm -fdr
-```
-
-#### バージョン1.8.1以下の場合
-`./lsc.sh build`の実行が必要です。
-
-```
-$ git remote -v
-origin	git@github.com:linefukuoka/line-smart-city.git (fetch)
-origin	git@github.com:linefukuoka/line-smart-city.git (push)
-
-$ git fetch origin main
-$ git pull 
-
-#lsc.shのビルド
-$ ./lsc.sh build
-```
-
-#### バージョン1.1.2以下の場合
-
-```
-$ git remote -v
-origin	git@github.com:linefukuoka/line-smart-city.git (fetch)
-origin	git@github.com:linefukuoka/line-smart-city.git (push)
-
-$ git fetch origin main
-$ git reset --hard origin/main
-
-#lsc.shのビルド
-$ ./lsc.sh build
-```
-
-### 2. 全環境の更新
-
-下記を実行することで、シークレットのキー及びバージョン値の更新後、環境を全て更新します。
-
-* **1.10.0以降のバージョンから、lsc.shではNode.js v12以下は利用できなくなりました。[1-1. 実行環境](#1-1-実行環境)のバージョンにアップデートしてください**
-* 時間がかかりますので、一部だけ更新する場合は個別に行ってください（「[モジュール単位の更新](./docs/LSC_COMMANDS.md#モジュール単位の更新)」参照）
-
-* オプションコマンドを付与して初期構築した場合は、環境更新時も初期構築時と同じオプションを付与するようにしてください。
-
-```bash
-$ ./lsc.sh deploy
-```
+LINE SMART CITY GovTechプログラムの最新バージョンへのバージョンアップについては、「[LINE SMART CITY GovTechプログラム：マイグレーション](./docs/LSC_MIGRATIONS.md)」をご参照ください。
 
 ## 5. ソースコードの開発について
 
