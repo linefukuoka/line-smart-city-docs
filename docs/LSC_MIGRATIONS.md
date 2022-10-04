@@ -7,15 +7,18 @@ LINE SMART CITY GovTechプログラムの最新バージョンへのバージョ
 - [1. バージョンアップの最短ルート](#1-バージョンアップの最短ルート)
 - [2. 事前準備](#2-事前準備)
 - [3. バージョンアップ手順](#3-バージョンアップ手順)
+    - [1.21.2 → 1.22.0](#1212--1220)
     - [1.20.1 → 1.21.2](#1201--1212)
     - [1.19.0 → 1.20.1](#1190--1201)
     - [1.18.2 → 1.19.0](#1182--1190)
 
 ## 1. バージョンアップの最短ルート
+* 1.21.2 → 1.22.0
+    * Node.js： v14.x.x,v16.x.x、npm：7.x.x、SAM CLI：1.49.0以上
 * 1.20.1 → 1.21.2
-    * Node.js： v14.x.x、npm：7.x.x
+    * Node.js： v14.x.x、npm：7.x.x、SAM CLI：1.0.0以上
 * 1.18.2 → 1.19.0 → 1.20.1
-    * Node.js： v14.x.x、npm：6.x.x
+    * Node.js： v14.x.x、npm：6.x.x、SAM CLI：1.0.0以上
     * 削除予定のライブラリを含むため、`replace-lsc-npm.sh` によるライブラリパス置換が必要です。
 
 ### 備考
@@ -70,6 +73,31 @@ $ tree
     ```
 
 ## 3. バージョンアップ手順
+### 1.21.2 → 1.22.0
+* LINE SMART CITY GovTechプログラムのバージョン：1.21.2
+* 事前にNode.jsとnpm、SAM CLIのバージョンを合わせてください。
+* 決済機能を利用する場合、 「[決済機能の設定手順](./LSC_PAYMENT_SETTINGS.md)」をご参照ください。
+
+```bash
+$ node -v
+v14.4.0
+$ npm -v
+7.24.2
+$ sam --version
+SAM CLI, version 1.49.0
+ 
+# 1.22.0をチェックアウト
+$ git remote -v
+origin  git@github.com:linefukuoka/line-smart-city.git (fetch)
+origin  git@github.com:linefukuoka/line-smart-city.git (push)
+$ git fetch origin main
+$ git reset --hard origin/main
+$ git checkout -f -b tags/1.22.0 refs/tags/1.22.0
+ 
+# バージョンアップ
+$ ./lsc.sh deploy
+```
+
 ### 1.20.1 → 1.21.2
 * LINE SMART CITY GovTechプログラムのバージョン：1.20.1
 * 事前にNode.jsとnpmのバージョンを合わせてください。

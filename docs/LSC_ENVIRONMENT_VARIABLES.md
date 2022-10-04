@@ -46,4 +46,3 @@
 | CHATBOT_TRASH_SEPARATION_FUZZY_SEARCH | ゴミ分別シナリオのあいまい検索を有効または無効にします（本番チャネル） |　| 1 -> 有効 0 -> 無効 |
 | SB_CHATBOT_TRASH_SEPARATION_FUZZY_SEARCH | ゴミ分別シナリオのあいまい検索を有効または無効にします（サンドボックスチャネル） |　| 1 -> 有効 0 -> 無効 |
 | VUE_APP_MEMBERS_TAB | 会員帳票機能を有効・無効を切り替え | デフォルトは無効 | 1 -> 有効、0 -> 無効 |
-

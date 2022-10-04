@@ -60,6 +60,7 @@ $ ./lsc.sh -e 環境名 -p lsc-dev -r ap-northeast-1
 | distribution | 配信モジュール |
 | bi | BI (Business Intelligence) |
 | bosai | 防災モジュール |
+| payment | 決済モジュール |
 
 ### 使用するAWSサービス
 * AWS Secrets Manager （以下、「Secrets Manager」）
@@ -78,6 +79,7 @@ $ ./lsc.sh -e 環境名 -p lsc-dev -r ap-northeast-1
 * AWS Backup
 * AWS Glue
 * AWS Athena
+* AWS VPC(NAT Gateway, Internet Gateway, Elastic IP, VPC Endpoint)
 
 ## 2. コマンド：メニュー操作
 
@@ -114,6 +116,7 @@ $ ./lsc.sh deploy
 * `--xray-trace` : X-Rayによるトレースの有無を設定します
 * `--kms-encrypt` : KMSによる暗号化の有無を設定します
 * `--work-around-lambda-memory-limit` : Lambdaのメモリ制限エラー `'MemorySize' value failed to satisfy constraint: Member must have value less than or equal to 3008` が発生した場合、3GBを超えているLambda関数を3GBに置き換えてデプロイします。このエラーはAWSアカウントの開設日やプランによって発生する場合としない場合があります。
+* `--usePayment` : 決済モジュールをデプロイしたい場合に利用します。決済モジュールではNAT Gateway、Elastic IPを利用する為AWSアカウントの使用料が追加で発生します。(目安 : 月額約4000円)
 
 セキュリティに関するオプションの詳細は、[環境構築スクリプトのセキュリティオプション](./LSC_SECURITY_OPTIONS.md)を参照してください。
 
@@ -157,6 +160,9 @@ $ ./lsc.sh scenario fresh
 
 ## 配信モジュールの更新
 $ ./lsc.sh distribution fresh
+
+## 決決済モジュールの更新
+$ ./lsc.sh payment fresh
 ```
 
 #### 管理画面フロントエンドの更新
@@ -217,6 +223,9 @@ $ ./lsc.sh survey sam delete
 
 ## 管理画面 API  - SAM
 $ ./lsc.sh platform sam delete
+
+## 決済モジュール
+$ ./lsc.sh payment delete
 
 ## BI  - SAM
 $ ./lsc.sh bi sam delete

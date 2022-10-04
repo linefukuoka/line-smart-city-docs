@@ -45,10 +45,10 @@
 
 | アプリケーション名 | 必須バージョン | 備考 |
 |---|---|---|
-| [Node.js](https://nodejs.org/ja/download/) | 14.x, 15.x | [npm バージョン7](https://docs.npmjs.com/cli/v7)以降の利用を推奨 |
+| [Node.js](https://nodejs.org/ja/download/) | 14.x, 16.x | [npm バージョン7](https://docs.npmjs.com/cli/v7)以降の利用を推奨 |
 | [Python](https://www.python.jp/install/install.html) | 3.8 | 複数バージョンを管理する場合、[pyenv](https://github.com/pyenv/pyenv) / [pyenv-win](https://github.com/pyenv-win/pyenv-win) の利用を推奨 |
 | [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2.html) | 2.0以上 ||
-| [SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) | 1.0以上 ||
+| [SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) | 1.49.0以上 ||
 
 * Macの場合は `ターミナル`、Windowsの場合は [WSL 2](https://docs.microsoft.com/ja-jp/windows/wsl/) を立ち上げて作業を行ってください。
 * pip ([macOS](https://www.python.jp/install/macos/pip.html) / [Windows](https://www.python.jp/install/windows/pip.html)) で必要なパッケージをインストールしてください。
@@ -77,7 +77,8 @@ $ git clone git@github.com:linefukuoka/line-smart-city.git
 
 #### 1. LINE Developersのチャネル作成
 
-下記の手順に従って、LINE Developersの設定を行ってください。
+[LINE Official Account Manager](https://manager.line.biz/)、[LINE Developers](https://developers.line.biz/ja/)にて、チャネル設定を行います。  
+チャネル作成の際、[LINEビジネスID](https://faq.linebiz.com/help/s/article/000001155?language=ja)を用いた作成を推奨しています。
 
 * LINE Developers チャネル設定(Messaging API)
    * [スタック作成前の設定](./docs/LINE_MESSAGING_API_SETTINGS.md#1-スタック作成前の設定)
@@ -129,7 +130,9 @@ $ ./lsc.sh -e 環境名 -p プロファイル名 secrets create
 | 12 | 共通 | DISTRIBUTION_TRIGGER_EMAIL | セグメント配信で利用する受信メールアドレス。「任意の文字 + `@環境名.ルートドメイン (example.com など)`」を入力 | 入力例：`mail@lsc-fukuoka-dev.line-smartcity.com`<br />入力しなかった場合、デプロイ時にデフォルト値`receive-mail@環境名.ルートドメイン`が設定されます<br />**カスタムドメインを有効にしていない場合は外部配信機能は利用できません** |
 | 13 | 共通 | VUE_APP_MEMBERS_TAB | 会員帳票機能の有効・無効を切り替え | 有効にする場合`1`に変更 |
 
-* 参考：Secrets Managerで設定している値の詳細は、「[環境変数](./docs/LSC_ENVIRONMENT_VARIABLES.md)」を確認してください。
+* 参考
+    * Secrets Managerで設定している値の詳細は、「[環境変数](./docs/LSC_ENVIRONMENT_VARIABLES.md)」を確認してください。
+
 
 3. シークレット反映  
 jsonを編集後、下記を実行してシークレット更新します。
@@ -146,6 +149,7 @@ $ ./lsc.sh secrets update
 #### 2. 初期構築
 下記のコマンドを実行することで、AWS環境のデプロイを行います。
 * 所要時間は約40〜50分です
+* 決済機能を利用する場合は、[決済機能の設定手順](./docs/LSC_PAYMENT_SETTINGS.md)をご参照ください。
 
 ```bash
 $ ./lsc.sh deploy
@@ -162,13 +166,6 @@ $ ./lsc.sh deploy
     *  ```bash
        $ ./lsc.sh deploy --useContainer
        ```
-
-* Lambdaのデプロイ途中でメモリ制限エラー `'MemorySize' value failed to satisfy constraint: Member must have value less than or equal to 3008` が発生した場合、`--work-around-lambda-memory-limit`オプションを付けて実行してください。
-
-    *  ```bash
-       $ ./lsc.sh deploy --work-around-lambda-memory-limit
-       ```
-    * メモリサイズを変更してデプロイする場合のシステム影響については、[--work-around-lambda-memory-limitオプション適用時の注意点](./docs/LSC_COMMANDS.md#--work-around-lambda-memory-limitオプション適用時の注意点)を参照ください。
 
 * オプションの詳細は「[開発用コマンド一覧](./docs/LSC_COMMANDS.md#3-コマンド即座に実行)」をご確認ください。
 

@@ -12,7 +12,8 @@
 先ずは1-1.〜1-3.の手順を行ってください。
 
 ### 1-1. LINE DevelopersでProviderを選択
-[LINE Developers](https://developers.line.biz/ja/)にログインします
+[LINE Developers](https://developers.line.biz/ja/)にログインします  
+※ 「ビジネスアカウントでログイン」を選択
 
 * プロバイダーの選択
     * トップより [LINE Developers チャネル設定(Messaging API)](./LINE_MESSAGING_API_SETTINGS.md#1-line-developersでproviderを作成)で作成したプロバイダーを選択します
