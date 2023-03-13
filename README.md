@@ -1,10 +1,10 @@
 # LINE SMART CITY
 ![License](https://img.shields.io/badge/License-Apache2.0-blue.svg)
 
-[![LINE SMART CITY GovTechプログラム](./docs/images/line-smart-city.png)](https://linefukuoka.co.jp/ja/project/smartcityproject/govtech/)
+[![LINE SMART CITY GovTechプログラム](./docs/images/line-smart-city.png)](https://smartcity.linefukuoka.co.jp/ja/project/smartcityproject/govtech)
 
 ## 「LINE SMART CITY GovTechプログラム」とは？
-「LINE SMART CITY GovTechプログラム」とは、LINE公式アカウント追加機能のソースコードを無償で提供するプログラムです。本プログラムのソースコードを活用することで、全国の自治体はより簡易にLINE公式アカウントへの追加機能の導入が可能です。詳しくは[「LINE Smart City GovTechプログラム」](https://linefukuoka.co.jp/ja/project/smartcityproject/govtech/)をご覧ください。
+「LINE SMART CITY GovTechプログラム」とは、LINE公式アカウント追加機能のソースコードを無償で提供するプログラムです。本プログラムのソースコードを活用することで、全国の自治体はより簡易にLINE公式アカウントへの追加機能の導入が可能です。詳しくは[「LINE Smart City GovTechプログラム」](https://smartcity.linefukuoka.co.jp/ja/project/smartcityproject/govtech)をご覧ください。
 
 ### 「LINE SMART CITY GovTechプログラム」で提供する４つの機能  
 
@@ -45,7 +45,7 @@
 
 | アプリケーション名 | 必須バージョン | 備考 |
 |---|---|---|
-| [Node.js](https://nodejs.org/ja/download/) | 14.x, 16.x | [npm バージョン7](https://docs.npmjs.com/cli/v7)以降の利用を推奨 |
+| [Node.js](https://nodejs.org/ja/download/) | 16.x | [npm バージョン7](https://docs.npmjs.com/cli/v7)以降の利用を推奨 |
 | [Python](https://www.python.jp/install/install.html) | 3.8 | 複数バージョンを管理する場合、[pyenv](https://github.com/pyenv/pyenv) / [pyenv-win](https://github.com/pyenv-win/pyenv-win) の利用を推奨 |
 | [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2.html) | 2.0以上 ||
 | [SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) | 1.49.0以上 ||
