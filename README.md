@@ -1,7 +1,7 @@
 # LINE SMART CITY
 ![License](https://img.shields.io/badge/License-Apache2.0-blue.svg)
 
-[![LINE SMART CITY GovTechプログラム](./docs/images/line-smart-city.png)](https://smartcity.linefukuoka.co.jp/ja/project/smartcityproject/govtech)
+[![LINE SMART CITY GovTechプログラム](./docs/images/line-smart-city_termination.png)](https://smartcity.linefukuoka.co.jp/ja/project/smartcityproject/govtech)
 
 ## 「LINE SMART CITY GovTechプログラム」とは？
 「LINE SMART CITY GovTechプログラム」とは、LINE公式アカウント追加機能のソースコードを無償で提供するプログラムです。本プログラムのソースコードを活用することで、全国の自治体はより簡易にLINE公式アカウントへの追加機能の導入が可能です。詳しくは[「LINE Smart City GovTechプログラム」](https://smartcity.linefukuoka.co.jp/ja/project/smartcityproject/govtech)をご覧ください。
